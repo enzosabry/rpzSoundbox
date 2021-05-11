@@ -1,7 +1,7 @@
 
-![logo]:(./img/logorpz.png)
+<img src="https://raw.githubusercontent.com/enzosabry/rpzSoundbox/master/img/logorpz.png" width=200 >
 
-Sound box non officielle: par des fans pour des fans
+**Sound box non officielle: par des fans pour des fans**
 
 # Une image ou un son vous appartient?
 Contactez-nous via une Issue ou sur [Discord](https://discord.gg/yTQZ46Bh), nous la supprimerons.
