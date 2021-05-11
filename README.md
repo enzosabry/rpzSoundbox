@@ -1,5 +1,5 @@
 
-<img src="https://raw.githubusercontent.com/enzosabry/rpzSoundbox/master/img/logorpz.png" width=200 >
+<img src="https://raw.githubusercontent.com/enzosabry/rpzSoundbox/master/assets/img/logorpz.png" width=200 >
 
 **Sound box non officielle: par des fans pour des fans**
 
@@ -11,4 +11,4 @@ Ce projet ne contient pas de pub, il est à but bon lucratif.
 Crée une issue sur github ou parle nous sur [Discord!](https://discord.gg/yTQZ46Bh)
 
 # Tu veux améliorer l'application?
-Le projet est en [React Native](https://github.com/facebook/react-native), fais-nous une pull request propre et elle sera certainement acceptée ;)
+Le projet est en [React Native](https://github.com/facebook/react-native) et utilise [Expo](https://github.com/expo/expo), fais-nous une pull request propre et elle sera certainement acceptée ;)
