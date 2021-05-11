@@ -1,0 +1,12 @@
+{
+  "name": "rpzSoundboard",
+  "displayName": "rpzSoundboard",
+  "expo": {
+    "name": "rpzSoundboard",
+    "slug": "rpzSoundboard",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
