@@ -5,7 +5,7 @@
 
 # Une image ou un son vous appartient?
 Contactez-nous via une Issue ou sur [Discord](https://discord.gg/yTQZ46Bh), nous la supprimerons.
-Ce projet ne contient pas de pub, il est à but bon lucratif.
+Ce projet ne contient pas de pub, il est à but non lucratif.
 
 # Tu veux un nouveau son?
 Crée une issue sur github ou parle nous sur [Discord!](https://discord.gg/yTQZ46Bh)
