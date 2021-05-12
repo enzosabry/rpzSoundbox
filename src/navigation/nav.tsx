@@ -35,10 +35,10 @@ const NavAccueil = createStackNavigator({
         //name: 'Home',
         screen: Home,
         navigationOptions: {
-            headerTitle: () => <Text style={{fontSize: width / 18}}> RPZ SoundBox </Text>,
+            headerTitle: () => <Text style={{fontSize: width / 15, color: "#FFF"}}> RPZ SoundBox </Text>,
             // @ts-ignore
             headerStyle: {
-                backgroundColor: '#FFF',
+                backgroundColor: "#19171C",
                 elevation: 0,
                 shadowRadius: 0,
                 shadowOffset: {
@@ -55,7 +55,7 @@ const NavAccueil = createStackNavigator({
 
 const CustomDrawerComponent = (props => (
 
-    <SafeAreaView style={{flex:1}}>
+    <SafeAreaView style={{flex:1, marginTop: 25}}>
         <DrawerItems {...props}/>
 
     </SafeAreaView>
@@ -75,7 +75,7 @@ const AppNavigator=createDrawerNavigator({
                 tabBarOptions: {
                     showIcon: true
                 },
-                drawerLabel: <Text style={{fontSize: 20, marginTop: 10, marginBottom: 10}}> Accueil </Text>,
+                drawerLabel: <Text style={{fontSize: 20, marginTop: 10, marginBottom: 10,}}> Accueil </Text>,
                 headerStyle: {
                     backgroundColor:  '#FFF'
                 },

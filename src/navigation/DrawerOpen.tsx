@@ -9,7 +9,7 @@ const DrawerOpen = (props) => {
 
     return (
         <TouchableOpacity onPress={() => props.navigation.openDrawer()}>
-            <Ionicons name="md-menu" size={32} style={{marginLeft:15, marginTop:5}} />
+            <Ionicons name="md-menu" size={32} style={{marginLeft:15, marginTop:5, color: "#FFF"}} />
         </TouchableOpacity>
     );
 };
