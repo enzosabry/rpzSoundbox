@@ -1,24 +1,16 @@
-import React, {useEffect, useState} from 'react';
+import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import Home from "./src/screens/Home";
+import Navigation from "./src/navigation/nav";
 
-export default function App() {
-  const [data, setData] = useState([]);
-  useEffect(()=> {
-    const data = [];
-    const assetCategory = './assets/';const fs = require('fs');
-    const path = require('path');
+export default class App extends React.Component {
 
-    fs.readdirSync(assetCategory).forEach((file: string) => {
-      console.log(file); // 'brave.png'
-    });
-  }, []);
+  render() {
+    return (
 
-  return (
-    <View style={styles.container}>
-      <Home data={data}/>
-    </View>
-  );
+        <Navigation/>
+    )
+  }
 }
 
 const styles = StyleSheet.create({
