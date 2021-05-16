@@ -47,8 +47,10 @@ const styles = StyleSheet.create({
     },
     text: {
         color: "#000",
-        fontSize: 16,
-        textAlign: 'center'
+        fontSize: width/28,
+        textAlign: 'center',
+        textAlignVertical: 'center',
+        height: 30
     },
     textCat: {
         color: "#FFF",
@@ -64,7 +66,7 @@ const styles = StyleSheet.create({
         right: 0,
         bottom: 0,
         justifyContent: 'center',
-        alignItems: 'center'
+        alignItems: 'center',
     },
 });
 
