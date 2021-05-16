@@ -64,8 +64,8 @@ const soundLibrary: Sound[] = [
         image: require("../img/logorpz.png"),
         sounds: [ 
             {
-                name: "allez l'om!!", 
-                audio: (()=>{let s = new Audio.Sound(); s.loadAsync(require("./Fabien Torez/allez_l'om!!.mp3")).catch(console.error); return s;})(),
+                name: "allez l'om", 
+                audio: (()=>{let s = new Audio.Sound(); s.loadAsync(require("./Fabien Torez/allez_l'om.mp3")).catch(console.error); return s;})(),
                 image: require("../img/logorpz.png"),
             },
             {
@@ -75,7 +75,7 @@ const soundLibrary: Sound[] = [
             },
             {
                 name: "repompa", 
-                audio: (()=>{let s = new Audio.Sound(); s.loadAsync(require("./Fabien Torez/repompa.️.mp3")).catch(console.error); return s;})(),
+                audio: (()=>{let s = new Audio.Sound(); s.loadAsync(require("./Fabien Torez/repompa.mp3")).catch(console.error); return s;})(),
                 image: require("../img/logorpz.png"),
             },
             {
@@ -105,8 +105,8 @@ const soundLibrary: Sound[] = [
                 image: require("./Johnny_Monnay/thumb_1.jpg"),
             },
             {
-                name: "un ville de dégénéréééééé!", 
-                audio: (()=>{let s = new Audio.Sound(); s.loadAsync(require("./Johnny_Monnay/un ville de dégénéréééééé!.mp3")).catch(console.error); return s;})(),
+                name: "un ville de dégénéréééééé", 
+                audio: (()=>{let s = new Audio.Sound(); s.loadAsync(require("./Johnny_Monnay/un ville de dégénéréééééé.mp3")).catch(console.error); return s;})(),
                 image: require("./Johnny_Monnay/thumb_1.jpg"),
             }
         ],
@@ -154,7 +154,7 @@ const soundLibrary: Sound[] = [
             },
             {
                 name: "lspd dont move", 
-                audio: (()=>{let s = new Audio.Sound(); s.loadAsync(require("./Lieutenant Kuck/lspd dont move.mp3")).catch(console.error); return s;})(),
+                audio: (()=>{let s = new Audio.Sound(); s.loadAsync(require("./Lieutenant Kuck/lspd_dont_move.mp3")).catch(console.error); return s;})(),
                 image: require("../img/logorpz.png"),
             },
             {
