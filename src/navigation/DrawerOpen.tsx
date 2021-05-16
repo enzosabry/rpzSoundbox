@@ -1,14 +1,13 @@
-import React, {Component} from 'react';
+import React from 'react';
 import { TouchableOpacity } from 'react-native';
-import { withNavigation } from 'react-navigation';
 import { Ionicons } from '@expo/vector-icons';
 import PT from 'prop-types';
 
 
-const DrawerOpen = (props) => {
+const DrawerOpen = ({navigation}) => {
 
     return (
-        <TouchableOpacity onPress={() => props.navigation.openDrawer()}>
+        <TouchableOpacity onPress={() => navigation.openDrawer()}>
             <Ionicons name="md-menu" size={32} style={{marginLeft:15, marginTop:5, color: "#FFF"}} />
         </TouchableOpacity>
     );
@@ -20,4 +19,4 @@ DrawerOpen.propTypes = {
     }),
 };
 
-export default withNavigation(DrawerOpen);
+export default DrawerOpen;

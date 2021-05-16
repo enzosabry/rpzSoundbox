@@ -1,6 +1,11 @@
-type Sound = {
-    audio: any;
-    image: any;
-}
+import {Audio} from "expo-av";
 
-export default Sound;
+export type Sound = {
+    name: string;
+    image: any;
+    sounds: AudioName[];
+}
+export type AudioName = {
+    name: string;
+    audio: Audio.Sound;
+}

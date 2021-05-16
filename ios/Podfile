@@ -20,4 +20,8 @@ target 'rpzSoundboard' do
   # end
   pod 'RNFS', :path => '../node_modules/react-native-fs'
 
+  pod 'RNVectorIcons', :path => '../node_modules/react-native-vector-icons'
+
+  pod 'RNGestureHandler', :path => '../node_modules/react-native-gesture-handler'
+
 end
