@@ -63,7 +63,7 @@ const CategoriesStack = ({route, navigation}) => {
 };
 
 export const App = () => {
-    const [category, setCategory] = useState<number>(undefined);
+    const [category, setCategory] = useState<number>(0);
 
     useEffect(() => {
         if (category) console.log("setCategory: " + category);

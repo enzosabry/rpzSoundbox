@@ -1,12 +1,12 @@
 import React from 'react';
-import {Dimensions, ImageBackground, StyleSheet, Text, TouchableOpacity, View} from "react-native";
+import {Dimensions, Image, ImageBackground, ScrollView, StyleSheet, Text, TouchableOpacity, View} from "react-native";
 import DrawerOpen from "../navigation/DrawerOpen";
 import {AudioName} from "../components/Sound";
 import soundLibrary from "../../assets/category/config";
 import {StackNavigationProp} from "@react-navigation/stack";
 import {RouteProp} from '@react-navigation/native';
 import {DrawerParams} from "../../App";
-
+import SortableGridView from 'react-native-sortable-gridview';
 
 const {width, height} = Dimensions.get("window");
 
@@ -22,27 +22,46 @@ type Props = {
 export class Home extends React.Component<Props, {}> {
     render() {
         const {category} = this.props.route.params;
+
         const play = (i: number) => {
             soundLibrary[category]?.sounds[i].audio?.replayAsync().catch(console.error);
         };
 
         return (
-            <View>
-                <Text>
-                    Home
+
+            <ScrollView style={styles.container}>
+                <Text style={styles.textCat}>
+                    {soundLibrary[category].name}
                 </Text>
                 <View>
-                    {soundLibrary[category]?.sounds.map((s: AudioName, i: number) => {
-                        return (
-                            <TouchableOpacity style={styles.tile} key={category+"-"+s.name} onPress={() => play(i)}>
-                                <ImageBackground source={soundLibrary[category].image}
-                                                 style={{width: 100, height: 100, borderRadius: 50}}/>
-                                <Text>{s.name}</Text>
-                            </TouchableOpacity>
-                        );
-                    })}
+                    <View style={{marginTop: 20}}>
+                        <SortableGridView
+                            data={ soundLibrary[category]?.sounds.map(s => {return {name: s.name, image: s.image}}) }
+                            onDragStart={() => {
+                                console.log('Default onDragStart');
+                            }}
+                            onDragRelease={(data) => {
+                                console.log('Default onDragRelease', data);
+                            }}
+                            renderItem={(item: {name: string, image: any}, i) => {
+                                return (
+                                    <TouchableOpacity
+                                        key={item.name} // Important! Should add this props!!!
+                                        onPress={() => {
+                                            play(i);
+                                            console.log(i)
+                                        }}
+                                        style={styles.item}
+                                    >
+                                        <Image style={{resizeMode: 'contain', height: 80}} source={item.image}/>
+                                        <Text style={styles.text}>{item.name}</Text>
+                                    </TouchableOpacity >
+                                )
+                            }}
+                        />
+                    </View>
                 </View>
-            </View>
+            </ScrollView>
         );
     }
 }
@@ -76,7 +95,7 @@ const styles = StyleSheet.create({
         height: 58,
     },
     text: {
-        color: "#FFF",
+        color: "#000",
         fontSize: 24,
         textAlign: 'center'
     },

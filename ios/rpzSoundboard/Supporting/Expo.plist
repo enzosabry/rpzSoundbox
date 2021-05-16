@@ -5,12 +5,14 @@
     <key>EXUpdatesSDKVersion</key>
     <string>41.0.0</string>
     <key>EXUpdatesURL</key>
-    <string>https://exp.host/@enzosabry/rpzSoundboard</string>
+    <string>https://exp.host/@preyl/rpzSoundboard</string>
     <key>EXUpdatesEnabled</key>
     <true/>
     <key>EXUpdatesCheckOnLaunch</key>
     <string>ALWAYS</string>
     <key>EXUpdatesLaunchWaitMs</key>
     <integer>0</integer>
+    <key>EXUpdatesReleaseChannel</key>
+    <string>default</string>
   </dict>
 </plist>
