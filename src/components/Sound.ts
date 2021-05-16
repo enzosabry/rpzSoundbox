@@ -8,4 +8,5 @@ export type Sound = {
 export type AudioName = {
     name: string;
     audio: Audio.Sound;
+    image: any;
 }

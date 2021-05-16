@@ -2,7 +2,6 @@ import React from 'react';
 import {ImageBackground, Text, TouchableOpacity, View} from "react-native";
 import soundLibrary from "../../assets/category/config";
 import {Sound} from "../components/Sound";
-import DrawerOpen from "../navigation/DrawerOpen";
 import {RouteProp} from "@react-navigation/native";
 import {DrawerParams} from "../../App";
 import {StackNavigationProp} from "@react-navigation/stack";

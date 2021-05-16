@@ -34,7 +34,7 @@ export class Home extends React.Component<Props, {}> {
                 <View>
                     {soundLibrary[category]?.sounds.map((s: AudioName, i: number) => {
                         return (
-                            <TouchableOpacity style={styles.tile} key={s.name} onPress={() => play(i)}>
+                            <TouchableOpacity style={styles.tile} key={category+"-"+s.name} onPress={() => play(i)}>
                                 <ImageBackground source={soundLibrary[category].image}
                                                  style={{width: 100, height: 100, borderRadius: 50}}/>
                                 <Text>{s.name}</Text>
