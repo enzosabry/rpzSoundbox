@@ -106,7 +106,7 @@ const soundLibrary: Sound[] = [
             },
             {
                 name: "un ville de dégénéréééééé", 
-                audio: (()=>{let s = new Audio.Sound(); s.loadAsync(require("./Johnny_Monnay/un ville de dégénéréééééé.mp3")).catch(console.error); return s;})(),
+                audio: (()=>{let s = new Audio.Sound(); s.loadAsync(require("./Johnny_Monnay/une_ville_de_dégénéréééééé.mp3")).catch(console.error); return s;})(),
                 image: require("./Johnny_Monnay/thumb_1.jpg"),
             }
         ],
