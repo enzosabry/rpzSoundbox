@@ -38,7 +38,7 @@ const soundLibrary: Sound[] = [
         sounds: [ 
             {
                 name: "il pleut", 
-                audio: (()=>{let s = new Audio.Sound(); s.loadAsync(require("./Bill Boid/il_pleut.mp3")).catch(console.error); return s;})(),
+                audio: (()=>{let s = new Audio.Sound(); s.loadAsync(require("./Bill_Boid/il_pleut.mp3")).catch(console.error); return s;})(),
                 image: require("../img/logorpz.png"),
             }
         ],
@@ -65,22 +65,22 @@ const soundLibrary: Sound[] = [
         sounds: [ 
             {
                 name: "allez l'om", 
-                audio: (()=>{let s = new Audio.Sound(); s.loadAsync(require("./Fabien Torez/allez_l'om.mp3")).catch(console.error); return s;})(),
+                audio: (()=>{let s = new Audio.Sound(); s.loadAsync(require("./Fabien_Torez/allez_l'om.mp3")).catch(console.error); return s;})(),
                 image: require("../img/logorpz.png"),
             },
             {
                 name: "DOOONNNNAAA", 
-                audio: (()=>{let s = new Audio.Sound(); s.loadAsync(require("./Fabien Torez/DOOONNNNAAA.mp3")).catch(console.error); return s;})(),
+                audio: (()=>{let s = new Audio.Sound(); s.loadAsync(require("./Fabien_Torez/DOOONNNNAAA.mp3")).catch(console.error); return s;})(),
                 image: require("../img/logorpz.png"),
             },
             {
                 name: "repompa", 
-                audio: (()=>{let s = new Audio.Sound(); s.loadAsync(require("./Fabien Torez/repompa.mp3")).catch(console.error); return s;})(),
+                audio: (()=>{let s = new Audio.Sound(); s.loadAsync(require("./Fabien_Torez/repompa.mp3")).catch(console.error); return s;})(),
                 image: require("../img/logorpz.png"),
             },
             {
                 name: "salut moi c'est Fab", 
-                audio: (()=>{let s = new Audio.Sound(); s.loadAsync(require("./Fabien Torez/salut_moi_c'est_Fab.mp3")).catch(console.error); return s;})(),
+                audio: (()=>{let s = new Audio.Sound(); s.loadAsync(require("./Fabien_Torez/salut_moi_c'est_Fab.mp3")).catch(console.error); return s;})(),
                 image: require("../img/logorpz.png"),
             }
         ],
@@ -144,27 +144,27 @@ const soundLibrary: Sound[] = [
         sounds: [ 
             {
                 name: "Ceinnntuuuure", 
-                audio: (()=>{let s = new Audio.Sound(); s.loadAsync(require("./Lieutenant Kuck/Ceinnntuuuure.mp3")).catch(console.error); return s;})(),
+                audio: (()=>{let s = new Audio.Sound(); s.loadAsync(require("./Lieutenant_Kuck/Ceinnntuuuure.mp3")).catch(console.error); return s;})(),
                 image: require("../img/logorpz.png"),
             },
             {
                 name: "Les unites delites du LSPD ", 
-                audio: (()=>{let s = new Audio.Sound(); s.loadAsync(require("./Lieutenant Kuck/Les_unites_delites_du_LSPD_.mp3")).catch(console.error); return s;})(),
+                audio: (()=>{let s = new Audio.Sound(); s.loadAsync(require("./Lieutenant_Kuck/Les_unites_delites_du_LSPD_.mp3")).catch(console.error); return s;})(),
                 image: require("../img/logorpz.png"),
             },
             {
                 name: "lspd dont move", 
-                audio: (()=>{let s = new Audio.Sound(); s.loadAsync(require("./Lieutenant Kuck/lspd_dont_move.mp3")).catch(console.error); return s;})(),
+                audio: (()=>{let s = new Audio.Sound(); s.loadAsync(require("./Lieutenant_Kuck/lspd_dont_move.mp3")).catch(console.error); return s;})(),
                 image: require("../img/logorpz.png"),
             },
             {
                 name: "nous sommes les unites deliites du LSPiiDiii", 
-                audio: (()=>{let s = new Audio.Sound(); s.loadAsync(require("./Lieutenant Kuck/nous_sommes_les_unites_deliites_du_LSPiiDiii.mp3")).catch(console.error); return s;})(),
+                audio: (()=>{let s = new Audio.Sound(); s.loadAsync(require("./Lieutenant_Kuck/nous_sommes_les_unites_deliites_du_LSPiiDiii.mp3")).catch(console.error); return s;})(),
                 image: require("../img/logorpz.png"),
             },
             {
                 name: "pompage", 
-                audio: (()=>{let s = new Audio.Sound(); s.loadAsync(require("./Lieutenant Kuck/pompage.mp3")).catch(console.error); return s;})(),
+                audio: (()=>{let s = new Audio.Sound(); s.loadAsync(require("./Lieutenant_Kuck/pompage.mp3")).catch(console.error); return s;})(),
                 image: require("../img/logorpz.png"),
             }
         ],
