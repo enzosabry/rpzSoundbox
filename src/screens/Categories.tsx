@@ -1,7 +1,6 @@
 import React from 'react';
-import {Alert, Dimensions, ImageBackground, ScrollView, StyleSheet, Text, TouchableOpacity, View, Image} from "react-native";
+import {Dimensions, ScrollView, StyleSheet, Text, TouchableOpacity, View, Image} from "react-native";
 import soundLibrary from "../../assets/category/config";
-import {Sound} from "../components/Sound";
 import {RouteProp} from "@react-navigation/native";
 import {DrawerParams} from "../../App";
 import {StackNavigationProp} from "@react-navigation/stack";

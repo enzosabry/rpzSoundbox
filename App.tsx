@@ -12,11 +12,13 @@ const {width, height} = Dimensions.get("window");
 export enum ROUTES {
     Home = "Home",
     Categories = "Categories",
+    Accueil= "Accueil",
 }
 
 export type DrawerParams = {
     Home: { category: number };
     Categories: { setCategory: (category: number) => void };
+    Accueil: { category: number };
 }
 
 
@@ -72,7 +74,7 @@ export const App = () => {
     return (
         <NavigationContainer>
             <Drawer.Navigator>
-                <Drawer.Screen name={ROUTES.Home} component={HomeStack} initialParams={{category}}/>
+                <Drawer.Screen name={ROUTES.Accueil} component={HomeStack} initialParams={{category}}/>
                 <Drawer.Screen name={ROUTES.Categories} component={CategoriesStack} initialParams={{setCategory}}/>
             </Drawer.Navigator>
         </NavigationContainer>
