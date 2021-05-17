@@ -25,6 +25,7 @@ export class Home extends React.Component<Props, {}> {
     }
 
     render() {
+        let prevSound;
         const {route, navigation} = this.props;
         const {category} = route.params;
 
@@ -64,8 +65,13 @@ export class Home extends React.Component<Props, {}> {
                             keyExtractor={(s, i) => s.name + i}
                             renderItem={({item, index}) => {
                                 return (
-                                    <TouchableOpacity style={{height: 150, borderRadius: 50}}
-                                                      onPress={() => play(index)}>
+                                    <TouchableOpacity
+                                        style={{height: 150, borderRadius: 50}}
+                                        onPress={() => {
+                                            if(prevSound) prevSound.stopAsync();
+                                            prevSound=item.audio;
+                                            item.audio?.replayAsync().catch(console.error)
+                                        }}>
                                         <ImageBackground
                                             style={{height: 100, width: 100, alignSelf: 'center', position: "relative"}}
                                             imageStyle={{borderRadius: 50}}
