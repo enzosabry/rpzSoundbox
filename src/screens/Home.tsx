@@ -58,7 +58,7 @@ export class Home extends React.Component<Props, {}> {
                     {category !== undefined ? soundLibrary[category]?.name : "Accueil"}
                 </Text>
                 <View>
-                    <SafeAreaView style={{marginTop: 20}}>
+                    <SafeAreaView style={{marginTop: 20, marginBottom: 100}}>
                         <FlatGrid
                             data={category !== undefined ? soundLibrary[category]?.sounds : soundLibrary.flatMap(s => s.sounds)}
                             keyExtractor={(s, i) => s.name + i}
