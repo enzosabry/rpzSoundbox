@@ -1,10 +1,14 @@
 {
-  "name": "rpzSoundboard",
-  "displayName": "rpzSoundboard",
+  "name": "rpzSoundbox",
+  "displayName": "rpzSoundbox",
   "expo": {
-    "name": "rpzSoundboard",
-    "slug": "rpzSoundboard",
+    "name": "rpzSoundbox",
+    "slug": "rpzSoundbox",
     "version": "1.0.0",
+    "splash": {
+      "image": "./assets/img/logorpz.png",
+      "backgroundColor": "#19171C"
+    },
     "assetBundlePatterns": [
       "**/*"
     ],

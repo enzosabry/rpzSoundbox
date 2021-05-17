@@ -1,10 +1,11 @@
 import React from 'react';
-import {Dimensions, ScrollView, StyleSheet, Text, TouchableOpacity, View, Image} from "react-native";
+import {Dimensions, Image, ScrollView, StyleSheet, Text, TouchableOpacity, View} from "react-native";
 import soundLibrary from "../../assets/category/config";
 import {RouteProp} from "@react-navigation/native";
 import {DrawerParams} from "../../App";
 import {StackNavigationProp} from "@react-navigation/stack";
 import SortableGridView from 'react-native-sortable-gridview';
+import {Ionicons} from "@expo/vector-icons";
 
 type CategoriesScreenRouteProp = RouteProp<DrawerParams, 'Categories'>;
 
@@ -47,7 +48,7 @@ const styles = StyleSheet.create({
     },
     text: {
         color: "#fff",
-        fontSize: width/28,
+        fontSize: width / 28,
         textAlign: 'center',
         textAlignVertical: 'center',
         height: 30,
@@ -72,34 +73,48 @@ const styles = StyleSheet.create({
 
 export class Categories extends React.Component<Props, object> {
     render() {
-        const {setCategory} = this.props.route.params;
-        const navigate = this.props.navigation.navigate;
+        const {route, navigation} = this.props;
+        const navigate = navigation.navigate;
+
+        navigation.setOptions({
+            headerTitle: () => <Text style={{fontSize: width / 15, color: "#FFF"}}>Categories</Text>,
+            headerStyle: {
+                backgroundColor: "#19171C",
+                elevation: 0,
+                shadowRadius: 0,
+                shadowOffset: {
+                    height: 0,
+                    width: 0,
+                },
+            },
+            headerTitleAlign: 'center',
+            headerLeft: () =>
+                (<TouchableOpacity onPress={() => navigation.navigate("Home", undefined)}>
+                    <Ionicons name="home-outline" size={32} style={{marginLeft: 15, marginTop: 5, color: "#FFF"}}/>
+                </TouchableOpacity>),
+        });
 
         return (
             <ScrollView style={styles.container}>
                 <Text style={styles.textCat}>Choose Category</Text>
                 <View style={{marginTop: 20}}>
                     <SortableGridView
-                        data={ soundLibrary.map(s => {return {name: s.name, image: s.image}}) }
-                        onDragStart={() => {
-                            console.log('Default onDragStart');
-                        }}
-                        onDragRelease={(data) => {
-                            console.log('Default onDragRelease', data);
-                        }}
-                        renderItem={(item: {name: string, image: any}, i) => {
+                        data={soundLibrary.map(s => {
+                            return {name: s.name, image: s.image}
+                        })}
+                        renderItem={(item: { name: string, image: any }, i) => {
                             return (
                                 <TouchableOpacity
                                     key={item.name} // Important! Should add this props!!!
                                     onPress={() => {
-                                        setCategory(i);
                                         navigate('Home', {category: i});
                                     }}
                                     style={styles.item}
                                 >
-                                    <Image style={{resizeMode: 'contain', height: 80, borderRadius: 40}} source={item.image}/>
+                                    <Image style={{resizeMode: 'contain', height: 80, borderRadius: 40}}
+                                           source={item.image}/>
                                     <Text style={styles.text}>{item.name}</Text>
-                                </TouchableOpacity >
+                                </TouchableOpacity>
                             )
                         }}
                     />

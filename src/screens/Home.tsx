@@ -5,6 +5,7 @@ import {StackNavigationProp} from "@react-navigation/stack";
 import {RouteProp} from '@react-navigation/native';
 import {DrawerParams} from "../../App";
 import {FlatGrid} from 'react-native-super-grid';
+import {Ionicons} from "@expo/vector-icons";
 
 const {width, height} = Dimensions.get("window");
 
@@ -18,42 +19,62 @@ type Props = {
 };
 
 export class Home extends React.Component<Props, {}> {
-
     componentDidUpdate() {
         console.log(`Nouvelle catégorie : ${this.props.route.params.category}. 
         Ca correspond à ${this.props.route.params.category ? soundLibrary[this.props.route.params.category].name : "rien"}`);
     }
 
     render() {
-        const {category} = this.props.route.params;
+        const {route, navigation} = this.props;
+        const {category} = route.params;
+
+        navigation.setOptions({
+            headerTitle: () => <Text style={{fontSize: width / 15, color: "#FFF"}}>RPZ SoundBox</Text>,
+            headerStyle: {
+                backgroundColor: "#19171C",
+                elevation: 0,
+                shadowRadius: 0,
+                shadowOffset: {
+                    height: 0,
+                    width: 0,
+                },
+            },
+            headerTitleAlign: 'center',
+            headerLeft: () =>
+                (<TouchableOpacity onPress={() => navigation.navigate("Categories")}>
+                    <Ionicons name="apps-outline" size={32} style={{marginLeft: 15, marginTop: 5, color: "#FFF"}}/>
+                </TouchableOpacity>),
+        });
 
         const play = (i: number) => {
             soundLibrary[category]?.sounds[i].audio?.replayAsync().catch(console.error);
         };
 
+
         return (
 
             <View style={styles.container}>
                 <Text style={styles.textCat}>
-                    {category ? soundLibrary[category]?.name : "Accueil"}
+                    {category !== undefined ? soundLibrary[category]?.name : "Accueil"}
                 </Text>
                 <View>
                     <SafeAreaView style={{marginTop: 20}}>
-                        {category ? <FlatGrid
-                            data={soundLibrary[category]?.sounds}
+                        <FlatGrid
+                            data={category !== undefined ? soundLibrary[category]?.sounds : soundLibrary.flatMap(s => s.sounds)}
                             keyExtractor={(s, i) => s.name + i}
                             renderItem={({item, index}) => {
                                 return (
                                     <TouchableOpacity style={{height: 150, borderRadius: 50}}
                                                       onPress={() => play(index)}>
-                                        <ImageBackground style={{height: 100, width: 100, alignSelf: 'center', position: "relative"}}
-                                                         imageStyle={{borderRadius: 50}}
-                                                         source={item.image}/>
+                                        <ImageBackground
+                                            style={{height: 100, width: 100, alignSelf: 'center', position: "relative"}}
+                                            imageStyle={{borderRadius: 50}}
+                                            source={item.image}/>
                                         <Text style={styles.text}>{item.name}</Text>
                                     </TouchableOpacity>
                                 )
                             }}
-                        /> : null}
+                        />
                     </SafeAreaView>
                 </View>
             </View>
@@ -91,7 +112,7 @@ const styles = StyleSheet.create({
     },
     text: {
         color: "#fff",
-        fontSize: width/28,
+        fontSize: width / 28,
         textAlign: 'center',
         textAlignVertical: 'center',
     },
