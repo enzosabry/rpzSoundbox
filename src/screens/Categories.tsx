@@ -46,7 +46,7 @@ const styles = StyleSheet.create({
         height: 58,
     },
     text: {
-        color: "#000",
+        color: "#fff",
         fontSize: 16,
         textAlign: 'center'
     },
@@ -56,8 +56,8 @@ const styles = StyleSheet.create({
         marginLeft: 15
     },
     item: {
-        borderRadius: 4,
-        backgroundColor: 'white',
+        borderRadius: 55,
+        //backgroundColor: 'white',
         position: 'absolute',
         top: 0,
         left: 0,
@@ -95,7 +95,7 @@ export class Categories extends React.Component<Props, object> {
                                     }}
                                     style={styles.item}
                                 >
-                                    <Image style={{resizeMode: 'contain', height: 80}} source={item.image}/>
+                                    <Image style={{resizeMode: 'contain', height: 80, borderRadius: 40}} source={item.image}/>
                                     <Text style={styles.text}>{item.name}</Text>
                                 </TouchableOpacity >
                             )

@@ -1,12 +1,10 @@
 import React from 'react';
-import {Dimensions, Image, ImageBackground, ScrollView, StyleSheet, Text, TouchableOpacity, View} from "react-native";
-import DrawerOpen from "../navigation/DrawerOpen";
-import {AudioName} from "../components/Sound";
+import {Dimensions, ImageBackground, SafeAreaView, StyleSheet, Text, TouchableOpacity, View} from "react-native";
 import soundLibrary from "../../assets/category/config";
 import {StackNavigationProp} from "@react-navigation/stack";
 import {RouteProp} from '@react-navigation/native';
 import {DrawerParams} from "../../App";
-import SortableGridView from 'react-native-sortable-gridview';
+import {FlatGrid} from 'react-native-super-grid';
 
 const {width, height} = Dimensions.get("window");
 
@@ -20,6 +18,12 @@ type Props = {
 };
 
 export class Home extends React.Component<Props, {}> {
+
+    componentDidUpdate() {
+        console.log(`Nouvelle catégorie : ${this.props.route.params.category}. 
+        Ca correspond à ${this.props.route.params.category ? soundLibrary[this.props.route.params.category].name : "rien"}`);
+    }
+
     render() {
         const {category} = this.props.route.params;
 
@@ -29,39 +33,30 @@ export class Home extends React.Component<Props, {}> {
 
         return (
 
-            <ScrollView style={styles.container}>
+            <View style={styles.container}>
                 <Text style={styles.textCat}>
-                    {soundLibrary[category].name}
+                    {category ? soundLibrary[category]?.name : "Accueil"}
                 </Text>
                 <View>
-                    <View style={{marginTop: 20}}>
-                        <SortableGridView
-                            data={ soundLibrary[category]?.sounds.map(s => {return {name: s.name, image: s.image}}) }
-                            onDragStart={() => {
-                                console.log('Default onDragStart');
-                            }}
-                            onDragRelease={(data) => {
-                                console.log('Default onDragRelease', data);
-                            }}
-                            renderItem={(item: {name: string, image: any}, i) => {
+                    <SafeAreaView style={{marginTop: 20}}>
+                        {category ? <FlatGrid
+                            data={soundLibrary[category]?.sounds}
+                            keyExtractor={(s, i) => s.name + i}
+                            renderItem={({item, index}) => {
                                 return (
-                                    <TouchableOpacity
-                                        key={item.name} // Important! Should add this props!!!
-                                        onPress={() => {
-                                            play(i);
-                                            console.log(i)
-                                        }}
-                                        style={styles.item}
-                                    >
-                                        <Image style={{resizeMode: 'contain', height: 80}} source={item.image}/>
+                                    <TouchableOpacity style={{height: 150, borderRadius: 50}}
+                                                      onPress={() => play(index)}>
+                                        <ImageBackground style={{height: 100, width: 100, alignSelf: 'center', position: "relative"}}
+                                                         imageStyle={{borderRadius: 50}}
+                                                         source={item.image}/>
                                         <Text style={styles.text}>{item.name}</Text>
-                                    </TouchableOpacity >
+                                    </TouchableOpacity>
                                 )
                             }}
-                        />
-                    </View>
+                        /> : null}
+                    </SafeAreaView>
                 </View>
-            </ScrollView>
+            </View>
         );
     }
 }
@@ -95,9 +90,9 @@ const styles = StyleSheet.create({
         height: 58,
     },
     text: {
-        color: "#000",
-        fontSize: 24,
-        textAlign: 'center'
+        color: "#fff",
+        fontSize: 22,
+        textAlign: 'center',
     },
     textCat: {
         color: "#FFF",
