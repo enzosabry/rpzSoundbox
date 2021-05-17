@@ -91,8 +91,9 @@ const styles = StyleSheet.create({
     },
     text: {
         color: "#fff",
-        fontSize: 22,
+        fontSize: width/28,
         textAlign: 'center',
+        textAlignVertical: 'center',
     },
     textCat: {
         color: "#FFF",
