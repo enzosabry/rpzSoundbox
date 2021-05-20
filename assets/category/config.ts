@@ -10,12 +10,12 @@ const soundLibrary: Sound[] = [
         image: require("../img/logorpz.png"),
         sounds: [ 
             {
-                name: "coma", 
+                name: "Coma", 
                 audio: (()=>{let s = new Audio.Sound(); s.loadAsync(require("./Autres/coma.mp3")).catch(console.error); return s;})(),
                 image: require("../img/logorpz.png"),
             },
             {
-                name: "tazer", 
+                name: "Tazer", 
                 audio: (()=>{let s = new Audio.Sound(); s.loadAsync(require("./Autres/tazer.mp3")).catch(console.error); return s;})(),
                 image: require("../img/logorpz.png"),
             }
@@ -26,8 +26,8 @@ const soundLibrary: Sound[] = [
         image: require("./Bazil/thumb_1.jpg"),
         sounds: [ 
             {
-                name: "deja suce un pote", 
-                audio: (()=>{let s = new Audio.Sound(); s.loadAsync(require("./Bazil/deja_suce_un_pote.mp3")).catch(console.error); return s;})(),
+                name: "Déjà s**é un pote", 
+                audio: (()=>{let s = new Audio.Sound(); s.loadAsync(require("./Bazil/déjà_sxxé_un_pote.mp3")).catch(console.error); return s;})(),
                 image: require("./Bazil/thumb_1.jpg"),
             }
         ],
@@ -37,7 +37,7 @@ const soundLibrary: Sound[] = [
         image: require("../img/logorpz.png"),
         sounds: [ 
             {
-                name: "il pleut", 
+                name: "Il pleut", 
                 audio: (()=>{let s = new Audio.Sound(); s.loadAsync(require("./Bill_Boid/il_pleut.mp3")).catch(console.error); return s;})(),
                 image: require("../img/logorpz.png"),
             }
@@ -53,7 +53,7 @@ const soundLibrary: Sound[] = [
                 image: require("./Donatien_de_Montazac/thumb_1.png"),
             },
             {
-                name: "je suis millionaire", 
+                name: "Je suis millionaire", 
                 audio: (()=>{let s = new Audio.Sound(); s.loadAsync(require("./Donatien_de_Montazac/je_suis_millionaire.mp3")).catch(console.error); return s;})(),
                 image: require("./Donatien_de_Montazac/thumb_1.png"),
             }
@@ -61,27 +61,27 @@ const soundLibrary: Sound[] = [
     },
     {
         name: "Fabien Torez",
-        image: require("../img/logorpz.png"),
+        image: require("./Fabien_Torez/thumb_1.jpg"),
         sounds: [ 
             {
-                name: "allez l'om", 
+                name: "Allez l'om", 
                 audio: (()=>{let s = new Audio.Sound(); s.loadAsync(require("./Fabien_Torez/allez_l'om.mp3")).catch(console.error); return s;})(),
-                image: require("../img/logorpz.png"),
+                image: require("./Fabien_Torez/thumb_1.jpg"),
             },
             {
                 name: "DOOONNNNAAA", 
                 audio: (()=>{let s = new Audio.Sound(); s.loadAsync(require("./Fabien_Torez/DOOONNNNAAA.mp3")).catch(console.error); return s;})(),
-                image: require("../img/logorpz.png"),
+                image: require("./Fabien_Torez/thumb_1.jpg"),
             },
             {
-                name: "repompa", 
+                name: "Repompa", 
                 audio: (()=>{let s = new Audio.Sound(); s.loadAsync(require("./Fabien_Torez/repompa.mp3")).catch(console.error); return s;})(),
-                image: require("../img/logorpz.png"),
+                image: require("./Fabien_Torez/thumb_1.jpg"),
             },
             {
-                name: "salut moi c'est Fab", 
+                name: "Salut moi c'est Fab", 
                 audio: (()=>{let s = new Audio.Sound(); s.loadAsync(require("./Fabien_Torez/salut_moi_c'est_Fab.mp3")).catch(console.error); return s;})(),
-                image: require("../img/logorpz.png"),
+                image: require("./Fabien_Torez/thumb_1.jpg"),
             }
         ],
     },
@@ -90,22 +90,22 @@ const soundLibrary: Sound[] = [
         image: require("./Johnny_Monnay/thumb_1.jpg"),
         sounds: [ 
             {
-                name: "okayyy", 
+                name: "Okayyy", 
                 audio: (()=>{let s = new Audio.Sound(); s.loadAsync(require("./Johnny_Monnay/okayyy.mp3")).catch(console.error); return s;})(),
                 image: require("./Johnny_Monnay/thumb_1.jpg"),
             },
             {
-                name: "pas faire chier papa johnny", 
-                audio: (()=>{let s = new Audio.Sound(); s.loadAsync(require("./Johnny_Monnay/pas_faire_chier_papa_johnny.mp3")).catch(console.error); return s;})(),
+                name: "Pas faire ch**r papa Johnny", 
+                audio: (()=>{let s = new Audio.Sound(); s.loadAsync(require("./Johnny_Monnay/pas_faire_chxxr_papa_Johnny.mp3")).catch(console.error); return s;})(),
                 image: require("./Johnny_Monnay/thumb_1.jpg"),
             },
             {
-                name: "pub", 
+                name: "Pub", 
                 audio: (()=>{let s = new Audio.Sound(); s.loadAsync(require("./Johnny_Monnay/pub.mp3")).catch(console.error); return s;})(),
                 image: require("./Johnny_Monnay/thumb_1.jpg"),
             },
             {
-                name: "une ville de dégénéréééééé", 
+                name: "Une ville de dégénéréééééé", 
                 audio: (()=>{let s = new Audio.Sound(); s.loadAsync(require("./Johnny_Monnay/une_ville_de_dégénéréééééé.mp3")).catch(console.error); return s;})(),
                 image: require("./Johnny_Monnay/thumb_1.jpg"),
             }
@@ -116,12 +116,12 @@ const soundLibrary: Sound[] = [
         image: require("./Lenny_Johnson/thumb_1.jpg"),
         sounds: [ 
             {
-                name: "jvous parle plou burnouuut", 
+                name: "Jvous parle plou burnouuut", 
                 audio: (()=>{let s = new Audio.Sound(); s.loadAsync(require("./Lenny_Johnson/jvous_parle_plou_burnouuut.mp3")).catch(console.error); return s;})(),
                 image: require("./Lenny_Johnson/thumb_1.jpg"),
             },
             {
-                name: "mais boss burnouuut", 
+                name: "Mais boss burnouuut", 
                 audio: (()=>{let s = new Audio.Sound(); s.loadAsync(require("./Lenny_Johnson/mais_boss_burnouuut.mp3")).catch(console.error); return s;})(),
                 image: require("./Lenny_Johnson/thumb_1.jpg"),
             }
@@ -132,7 +132,7 @@ const soundLibrary: Sound[] = [
         image: require("./Le_iench/thumb_1.jpg"),
         sounds: [ 
             {
-                name: "programme iench", 
+                name: "Programme iench", 
                 audio: (()=>{let s = new Audio.Sound(); s.loadAsync(require("./Le_iench/programme_iench.mp3")).catch(console.error); return s;})(),
                 image: require("./Le_iench/thumb_1.jpg"),
             }
@@ -140,32 +140,32 @@ const soundLibrary: Sound[] = [
     },
     {
         name: "Lieutenant Kuck",
-        image: require("../img/logorpz.png"),
+        image: require("./Lieutenant_Kuck/thumb_1.jpg"),
         sounds: [ 
             {
                 name: "Ceinnntuuuure", 
                 audio: (()=>{let s = new Audio.Sound(); s.loadAsync(require("./Lieutenant_Kuck/Ceinnntuuuure.mp3")).catch(console.error); return s;})(),
-                image: require("../img/logorpz.png"),
+                image: require("./Lieutenant_Kuck/thumb_1.jpg"),
             },
             {
                 name: "Les unites delites du LSPD ", 
                 audio: (()=>{let s = new Audio.Sound(); s.loadAsync(require("./Lieutenant_Kuck/Les_unites_delites_du_LSPD_.mp3")).catch(console.error); return s;})(),
-                image: require("../img/logorpz.png"),
+                image: require("./Lieutenant_Kuck/thumb_1.jpg"),
             },
             {
-                name: "lspd dont move", 
-                audio: (()=>{let s = new Audio.Sound(); s.loadAsync(require("./Lieutenant_Kuck/lspd_dont_move.mp3")).catch(console.error); return s;})(),
-                image: require("../img/logorpz.png"),
+                name: "LSPD don't move", 
+                audio: (()=>{let s = new Audio.Sound(); s.loadAsync(require("./Lieutenant_Kuck/LSPD_don't_move.mp3")).catch(console.error); return s;})(),
+                image: require("./Lieutenant_Kuck/thumb_1.jpg"),
             },
             {
-                name: "nous sommes les unites deliites du LSPiiDiii", 
-                audio: (()=>{let s = new Audio.Sound(); s.loadAsync(require("./Lieutenant_Kuck/nous_sommes_les_unites_deliites_du_LSPiiDiii.mp3")).catch(console.error); return s;})(),
-                image: require("../img/logorpz.png"),
+                name: "Nous sommes les unités d'éliites du LSPiiDiii", 
+                audio: (()=>{let s = new Audio.Sound(); s.loadAsync(require("./Lieutenant_Kuck/nous_sommes_les_unités_d'éliites_du_LSPiiDiii.mp3")).catch(console.error); return s;})(),
+                image: require("./Lieutenant_Kuck/thumb_1.jpg"),
             },
             {
-                name: "pompage", 
+                name: "Pompage", 
                 audio: (()=>{let s = new Audio.Sound(); s.loadAsync(require("./Lieutenant_Kuck/pompage.mp3")).catch(console.error); return s;})(),
-                image: require("../img/logorpz.png"),
+                image: require("./Lieutenant_Kuck/thumb_1.jpg"),
             }
         ],
     },
@@ -174,7 +174,7 @@ const soundLibrary: Sound[] = [
         image: require("./Lorenza_Blake/thumb_1.jpg"),
         sounds: [ 
             {
-                name: "donadonadona", 
+                name: "Donadonadona", 
                 audio: (()=>{let s = new Audio.Sound(); s.loadAsync(require("./Lorenza_Blake/donadonadona.mp3")).catch(console.error); return s;})(),
                 image: require("./Lorenza_Blake/thumb_1.jpg"),
             }
@@ -182,17 +182,17 @@ const soundLibrary: Sound[] = [
     },
     {
         name: "Marius Rotarez",
-        image: require("../img/logorpz.png"),
+        image: require("./Marius_Rotarez/thumb_1.jpg"),
         sounds: [ 
             {
                 name: "DEGLINGUER", 
                 audio: (()=>{let s = new Audio.Sound(); s.loadAsync(require("./Marius_Rotarez/DEGLINGUER.mp3")).catch(console.error); return s;})(),
-                image: require("../img/logorpz.png"),
+                image: require("./Marius_Rotarez/thumb_1.jpg"),
             },
             {
-                name: "hoo putaing", 
-                audio: (()=>{let s = new Audio.Sound(); s.loadAsync(require("./Marius_Rotarez/hoo_putaing.mp3")).catch(console.error); return s;})(),
-                image: require("../img/logorpz.png"),
+                name: "HOO put**ng", 
+                audio: (()=>{let s = new Audio.Sound(); s.loadAsync(require("./Marius_Rotarez/HOO_putxxng.mp3")).catch(console.error); return s;})(),
+                image: require("./Marius_Rotarez/thumb_1.jpg"),
             }
         ],
     },
@@ -201,38 +201,38 @@ const soundLibrary: Sound[] = [
         image: require("./Miguel_Rodriguez/thumb_1.jpg"),
         sounds: [ 
             {
-                name: "ceintour", 
+                name: "Ceintour", 
                 audio: (()=>{let s = new Audio.Sound(); s.loadAsync(require("./Miguel_Rodriguez/ceintour.mp3")).catch(console.error); return s;})(),
                 image: require("./Miguel_Rodriguez/thumb_1.jpg"),
             },
             {
-                name: "haylie vagosvagosvagos", 
+                name: "Haylie vagosvagosvagos", 
                 audio: (()=>{let s = new Audio.Sound(); s.loadAsync(require("./Miguel_Rodriguez/haylie_vagosvagosvagos.mp3")).catch(console.error); return s;})(),
                 image: require("./Miguel_Rodriguez/thumb_1.jpg"),
             },
             {
-                name: "moutmout", 
+                name: "Moutmout", 
                 audio: (()=>{let s = new Audio.Sound(); s.loadAsync(require("./Miguel_Rodriguez/moutmout.mp3")).catch(console.error); return s;})(),
                 image: require("./Miguel_Rodriguez/thumb_1.jpg"),
             },
             {
-                name: "tkt moutmout", 
-                audio: (()=>{let s = new Audio.Sound(); s.loadAsync(require("./Miguel_Rodriguez/tkt_moutmout.mp3")).catch(console.error); return s;})(),
+                name: "Tkt on fait moutmout", 
+                audio: (()=>{let s = new Audio.Sound(); s.loadAsync(require("./Miguel_Rodriguez/tkt_on_fait_moutmout.mp3")).catch(console.error); return s;})(),
                 image: require("./Miguel_Rodriguez/thumb_1.jpg"),
             },
             {
-                name: "vagosvagosvagos", 
+                name: "Vagosvagosvagos", 
                 audio: (()=>{let s = new Audio.Sound(); s.loadAsync(require("./Miguel_Rodriguez/vagosvagosvagos.mp3")).catch(console.error); return s;})(),
                 image: require("./Miguel_Rodriguez/thumb_1.jpg"),
             },
             {
-                name: "yeletu", 
+                name: "Yeletu", 
                 audio: (()=>{let s = new Audio.Sound(); s.loadAsync(require("./Miguel_Rodriguez/yeletu.mp3")).catch(console.error); return s;})(),
                 image: require("./Miguel_Rodriguez/thumb_1.jpg"),
             },
             {
-                name: "yenpeutplou des croutes", 
-                audio: (()=>{let s = new Audio.Sound(); s.loadAsync(require("./Miguel_Rodriguez/yenpeutplou_des_croutes.mp3")).catch(console.error); return s;})(),
+                name: "Yenpeutplou des Croutes", 
+                audio: (()=>{let s = new Audio.Sound(); s.loadAsync(require("./Miguel_Rodriguez/yenpeutplou_des_Croutes.mp3")).catch(console.error); return s;})(),
                 image: require("./Miguel_Rodriguez/thumb_1.jpg"),
             }
         ],
@@ -248,7 +248,7 @@ const soundLibrary: Sound[] = [
         image: require("../img/logorpz.png"),
         sounds: [ 
             {
-                name: "sonnerie", 
+                name: "Sonnerie", 
                 audio: (()=>{let s = new Audio.Sound(); s.loadAsync(require("./Wiko/sonnerie.mp3")).catch(console.error); return s;})(),
                 image: require("../img/logorpz.png"),
             }
