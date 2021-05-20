@@ -27,19 +27,19 @@ const soundLibrary: Sound[] = [
         sounds: [ 
             {
                 name: "Déjà s**é un pote", 
-                audio: (()=>{let s = new Audio.Sound(); s.loadAsync(require("./Bazil/déjà_sxxé_un_pote.mp3")).catch(console.error); return s;})(),
+                audio: (()=>{let s = new Audio.Sound(); s.loadAsync(require("./Bazil/déjà_sXXé_un_pote.mp3")).catch(console.error); return s;})(),
                 image: require("./Bazil/thumb_1.jpg"),
             }
         ],
     },
     {
         name: "Bill Boid",
-        image: require("../img/logorpz.png"),
+        image: require("./Bill_Boid/thumb_1.jpg"),
         sounds: [ 
             {
                 name: "Il pleut", 
                 audio: (()=>{let s = new Audio.Sound(); s.loadAsync(require("./Bill_Boid/il_pleut.mp3")).catch(console.error); return s;})(),
-                image: require("../img/logorpz.png"),
+                image: require("./Bill_Boid/thumb_1.jpg"),
             }
         ],
     },
@@ -96,7 +96,7 @@ const soundLibrary: Sound[] = [
             },
             {
                 name: "Pas faire ch**r papa Johnny", 
-                audio: (()=>{let s = new Audio.Sound(); s.loadAsync(require("./Johnny_Monnay/pas_faire_chxxr_papa_Johnny.mp3")).catch(console.error); return s;})(),
+                audio: (()=>{let s = new Audio.Sound(); s.loadAsync(require("./Johnny_Monnay/pas_faire_chXXr_papa_Johnny.mp3")).catch(console.error); return s;})(),
                 image: require("./Johnny_Monnay/thumb_1.jpg"),
             },
             {
@@ -191,7 +191,7 @@ const soundLibrary: Sound[] = [
             },
             {
                 name: "HOO put**ng", 
-                audio: (()=>{let s = new Audio.Sound(); s.loadAsync(require("./Marius_Rotarez/HOO_putxxng.mp3")).catch(console.error); return s;})(),
+                audio: (()=>{let s = new Audio.Sound(); s.loadAsync(require("./Marius_Rotarez/HOO_putXXng.mp3")).catch(console.error); return s;})(),
                 image: require("./Marius_Rotarez/thumb_1.jpg"),
             }
         ],
