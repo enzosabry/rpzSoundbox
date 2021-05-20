@@ -3,6 +3,7 @@
   "displayName": "rpzSoundbox",
   "expo": {
     "name": "rpzSoundbox",
+    "icon": "assets/icon.png",
     "slug": "rpzSoundbox",
     "version": "1.0.0",
     "splash": {
