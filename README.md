@@ -2,7 +2,9 @@
 <img src="https://raw.githubusercontent.com/enzosabry/rpzSoundbox/master/assets/img/logorpz.png" width=200 >
 
 **Sound box non officielle: par des fans pour des fans**
+
 [Google Play Store](https://play.google.com/store/apps/details?id=com.playadev.rpzsoundbox)
+
 [Twitter](https://twitter.com/Playa_Dev)
 
 # Une image ou un son vous appartient?
