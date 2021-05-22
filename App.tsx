@@ -18,6 +18,12 @@ export type DrawerParams = {
 
 const Stack = createStackNavigator<DrawerParams>();
 
+const forFade = ({ current, closing }) => ({
+    cardStyle: {
+        opacity: current.progress,
+    },
+});
+
 export const App = () => {
     useEffect(()=> {
        ScreenOrientation.lockAsync(ScreenOrientation.OrientationLock.PORTRAIT)
@@ -26,8 +32,8 @@ export const App = () => {
         <NavigationContainer>
             <StatusBar style="light" />
             <Stack.Navigator>
-                <Stack.Screen name={ROUTES.Home} component={Home} initialParams={{category: undefined}}/>
-                <Stack.Screen name={ROUTES.Categories} component={Categories}/>
+                <Stack.Screen name={ROUTES.Home} component={Home} initialParams={{category: undefined}} options={{ cardStyleInterpolator: forFade }}/>
+                <Stack.Screen name={ROUTES.Categories} component={Categories} options={{ cardStyleInterpolator: forFade }}/>
             </Stack.Navigator>
         </NavigationContainer>
     );
