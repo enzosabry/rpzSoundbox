@@ -181,17 +181,17 @@ const soundLibrary: Sound[] = [
     },
     {
         name: "Les croutes ♡",
-        image: require("../img/logorpz.png"),
+        image: require("./Les_croutes_♡/thumb_1.png"),
         sounds: [ 
             {
                 name: "J'ai coincé l'camion", 
                 audio: (()=>{let s = new Audio.Sound(); s.loadAsync(require("./Les_croutes_♡/j'ai_coincé_l'camion.mp3")).catch(console.error); return s;})(),
-                image: require("../img/logorpz.png"),
+                image: require("./Les_croutes_♡/thumb_1.png"),
             },
             {
                 name: "Trace trace trace", 
                 audio: (()=>{let s = new Audio.Sound(); s.loadAsync(require("./Les_croutes_♡/trace_trace_trace.mp3")).catch(console.error); return s;})(),
-                image: require("../img/logorpz.png"),
+                image: require("./Les_croutes_♡/thumb_1.png"),
             }
         ],
     },
@@ -264,12 +264,12 @@ const soundLibrary: Sound[] = [
     },
     {
         name: "Lindsay Walker",
-        image: require("../img/logorpz.png"),
+        image: require("./Lindsay_Walker/thumb_1.png"),
         sounds: [ 
             {
                 name: "Viande dans le torchon", 
                 audio: (()=>{let s = new Audio.Sound(); s.loadAsync(require("./Lindsay_Walker/viande_dans_le_torchon.mp3")).catch(console.error); return s;})(),
-                image: require("../img/logorpz.png"),
+                image: require("./Lindsay_Walker/thumb_1.png"),
             }
         ],
     },
