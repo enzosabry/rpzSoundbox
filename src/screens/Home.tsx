@@ -23,20 +23,19 @@ export class Home extends React.Component<Props, {}> {
 
     state = {
         currentPageIndex: 0,
-        firstLaunch:false
+        firstLaunch: false
     };
 
     componentDidUpdate() {
-        console.log(`Nouvelle catégorie : ${this.props.route.params.category}. 
-        Ca correspond à ${this.props.route.params.category ? soundLibrary[this.props.route.params.category].name : "rien"}`);
-        AsyncStorage.getItem("@alreadyLaunched").then(value => {
-            if (value == null) {
-                AsyncStorage.setItem('@alreadyLaunched', JSON.stringify(true)); // No need to wait for `setItem` to finish, although you might want to handle errors
-                this.setState({firstLaunch: true});
-            } else {
-                this.setState({firstLaunch: false});
-            }
-        }) // Add some error handling, also you can simply do this.setState({fistLaunch: value == null})
+        if (this.state.firstLaunch !== null)
+            AsyncStorage.getItem("@alreadyLaunched").then(value => {
+                if (value == null) {
+                    AsyncStorage.setItem('@alreadyLaunched', JSON.stringify(true)); // No need to wait for `setItem` to finish, although you might want to handle errors
+                    this.setState({firstLaunch: true});
+                } else {
+                    this.setState({firstLaunch: null});
+                }
+            }) // Add some error handling, also you can simply do this.setState({fistLaunch: value == null})
     }
 
     showAlert1() {
@@ -75,22 +74,20 @@ export class Home extends React.Component<Props, {}> {
             },
             headerTitleAlign: 'center',
             headerLeft: () =>
-                (<TouchableOpacity onPress={() => navigation.navigate("Categories")}>
+                (<TouchableOpacity onPress={() => {
+                    if (prevSound) prevSound.stopAsync();
+                    navigation.navigate("Categories");
+                }}>
                     <Ionicons name="apps-outline" size={32} style={{marginLeft: 15, marginTop: 5, color: "#FFF"}}/>
                 </TouchableOpacity>),
         });
-
-        const play = (i: number) => {
-            soundLibrary[category]?.sounds[i].audio?.replayAsync().catch(console.error);
-        };
-
 
         return (
 
             <View style={styles.container}>
                 {
-                    this.state.firstLaunch?
-                        this.showAlert1():null}
+                    this.state.firstLaunch ?
+                        this.showAlert1() : null}
                 <Text style={styles.textCat}>
                     {category !== undefined ? soundLibrary[category]?.name : "Accueil"}
                 </Text>
@@ -104,9 +101,9 @@ export class Home extends React.Component<Props, {}> {
                                     <TouchableOpacity
                                         style={{height: 150, borderRadius: 50}}
                                         onPress={() => {
-                                            if(prevSound) prevSound.stopAsync();
-                                            prevSound=item.audio;
-                                            item.audio?.replayAsync().catch(console.error)
+                                            if (prevSound) prevSound.stopAsync();
+                                            prevSound = item.audio;
+                                            item.audio?.replayAsync().catch(console.error);
                                         }}>
                                         <ImageBackground
                                             style={{height: 100, width: 100, alignSelf: 'center', position: "relative"}}

@@ -1,5 +1,5 @@
 import React from 'react';
-import {Dimensions, Image, ScrollView, StyleSheet, Text, TouchableOpacity, View} from "react-native";
+import {Dimensions, Image, Linking, ScrollView, StyleSheet, Text, TouchableOpacity, View} from "react-native";
 import soundLibrary from "../../assets/category/config";
 import {RouteProp} from "@react-navigation/native";
 import {DrawerParams} from "../../App";
@@ -92,6 +92,10 @@ export class Categories extends React.Component<Props, object> {
                 (<TouchableOpacity onPress={() => navigation.navigate("Home", undefined)}>
                     <Ionicons name="home-outline" size={32} style={{marginLeft: 15, marginTop: 5, color: "#FFF"}}/>
                 </TouchableOpacity>),
+            headerRight: () =>
+                (<TouchableOpacity onPress={() => Linking.openURL("https://twitter.com/Playa_Dev")}>
+                    <Ionicons name="logo-twitter" size={32} style={{marginRight: 15, marginTop: 5, color: "#FFF"}}/>
+                </TouchableOpacity>),
         });
 
         return (
@@ -107,12 +111,12 @@ export class Categories extends React.Component<Props, object> {
                                 <TouchableOpacity
                                     key={item?.name || "general"} // Important! Should add this props!!!
                                     onPress={() => {
-                                        navigate('Home', {category: item ? i : undefined});
+                                        navigate('Home', {category: item ? i - 1 : undefined});
                                     }}
                                     style={styles.item}
                                 >
                                     <Image style={{resizeMode: 'contain', height: 80, borderRadius: 40}}
-                                           source={item?.image||soundLibrary[0].image}/>
+                                           source={item?.image || soundLibrary[0].image}/>
                                     <Text style={styles.text}>{item?.name || "Accueil"}</Text>
                                 </TouchableOpacity>
                             )
