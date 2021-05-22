@@ -1,5 +1,15 @@
-import React from 'react';
-import {Alert, Dimensions, ImageBackground, SafeAreaView, StyleSheet, Text, TouchableOpacity, View} from "react-native";
+import React, {useState} from 'react';
+import {
+    Alert,
+    Dimensions,
+    ImageBackground, Linking,
+    SafeAreaView,
+    ScrollView,
+    StyleSheet,
+    Text,
+    TouchableOpacity,
+    View
+} from "react-native";
 import soundLibrary from "../../assets/category/config";
 import {StackNavigationProp} from "@react-navigation/stack";
 import {RouteProp} from '@react-navigation/native';
@@ -7,6 +17,7 @@ import {DrawerParams} from "../../App";
 import {FlatGrid} from 'react-native-super-grid';
 import {Ionicons} from "@expo/vector-icons";
 import AsyncStorage from "@react-native-async-storage/async-storage";
+import Dialog from "react-native-dialog";
 
 const {width, height} = Dimensions.get("window");
 
@@ -21,10 +32,63 @@ type Props = {
 
 export class Home extends React.Component<Props, {}> {
 
+    state = {
+        currentPageIndex: 0,
+        firstLaunch: false,
+        visible: true
+    };
+    private handleCancel: any;
+
+    componentDidUpdate() {
+        if (this.state.firstLaunch !== null)
+            AsyncStorage.getItem("@alreadyLaunched").then(value => {
+                if (value == null) {
+                    AsyncStorage.setItem('@alreadyLaunched', JSON.stringify(true)); // No need to wait for `setItem` to finish, although you might want to handle errors
+                    this.setState({firstLaunch: true});
+                } else {
+                    this.setState({firstLaunch: null});
+                }
+            }) // Add some error handling, also you can simply do this.setState({fistLaunch: value == null})
+    }
+
+    showAlert1() {
+
+
+    }
+
+
     render() {
         let prevSound;
         const {route, navigation} = this.props;
         const {category} = route.params;
+
+        const showDialog = () => {
+            this.setState({
+                visible: true
+            });
+        };
+        const handleCancel = () => {
+            this.setState({
+                visible: false
+            });
+        };
+        const dial = (
+            <View>
+                <Dialog.Container visible={this.state.visible}>
+                    <Dialog.Title>Merci d'avoir téléchargé l'application !</Dialog.Title>
+                    <Dialog.Description>
+                        <Text>Cette application a été créé tout comme toi par des personnes ayant passionnément aimé l'évènement GTA RPZ.{"\n"}</Text>
+                        <Text>Tu veux ajouter un nouveau son ou alors participer au développement de l'app ? Rejoins nous vite sur :{"\n"}</Text>
+                        -<Text onPress={() => Linking.openURL('https://github.com/enzosabry/rpzSoundbox')}
+                              style={{textDecorationLine: 'underline', color: 'blue'}}>Github</Text>{"\n"}
+
+                        -<Text onPress={() => Linking.openURL('https://discord.gg/yTQZ46Bh')}
+                              style={{textDecorationLine: 'underline', color: 'blue'}}>Discord</Text>{"\n"}
+                        <Text>Bisou.</Text>
+                    </Dialog.Description>
+                    <Dialog.Button label="Laisse moi tester !" onPress={handleCancel}/>
+                </Dialog.Container>
+            </View>);
 
         navigation.setOptions({
             headerTitle: () => <Text style={{fontSize: width / 15, color: "#FFF"}}>RPZ SoundBox</Text>,
@@ -50,6 +114,7 @@ export class Home extends React.Component<Props, {}> {
         return (
 
             <View style={styles.container}>
+                { this.state.firstLaunch? dial:null}
                 <Text style={styles.textCat}>
                     {category !== undefined ? soundLibrary[category]?.name : "Accueil"}
                 </Text>

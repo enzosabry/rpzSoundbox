@@ -1,6 +1,5 @@
 import React from 'react';
 import {
-    Alert,
     Dimensions,
     Image,
     ImageBackground,
@@ -17,7 +16,6 @@ import {DrawerParams} from "../../App";
 import {StackNavigationProp} from "@react-navigation/stack";
 import SortableGridView from 'react-native-sortable-gridview';
 import {Ionicons} from "@expo/vector-icons";
-import AsyncStorage from "@react-native-async-storage/async-storage";
 
 type CategoriesScreenRouteProp = RouteProp<DrawerParams, 'Categories'>;
 
@@ -64,42 +62,6 @@ const styles = StyleSheet.create({
 });
 
 export class Categories extends React.Component<Props, object> {
-
-    state = {
-        currentPageIndex: 0,
-        firstLaunch: false
-    };
-
-    componentDidUpdate() {
-        if (this.state.firstLaunch !== null)
-            AsyncStorage.getItem("@alreadyLaunched").then(value => {
-                if (value == null) {
-                    AsyncStorage.setItem('@alreadyLaunched', JSON.stringify(true)); // No need to wait for `setItem` to finish, although you might want to handle errors
-                    this.setState({firstLaunch: true});
-                } else {
-                    this.setState({firstLaunch: null});
-                }
-            }) // Add some error handling, also you can simply do this.setState({fistLaunch: value == null})
-    }
-
-    showAlert1() {
-        Alert.alert(
-            "Merci d'avoir téléchargé l'application !",
-            'Si l\'app te plaît, mets nous une bonne note sur le store\n' +
-            '\n' +
-            'Tu veux un nouveau son ou tu veux participer au développement de l\'app?\n' +
-            'Github: https://github.com/enzosabry/rpzSoundbox\n' +
-            'Discord: https://discord.gg/yTQZ46Bh\n' +
-            '\n' +
-            'Bisou.',
-            [
-                {
-                    text: 'ok'
-                }
-            ]
-        );
-    }
-
     render() {
         const {route, navigation} = this.props;
         const navigate = navigation.navigate;
@@ -128,8 +90,6 @@ export class Categories extends React.Component<Props, object> {
 
         return (
             <ScrollView style={styles.container}>
-                { this.state.firstLaunch ?
-                        this.showAlert1() : null}
                 <Text style={styles.textCat}>Choisis une catégorie :</Text>
                 <View>
                     <SortableGridView
