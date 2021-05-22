@@ -76,7 +76,7 @@ export class Home extends React.Component<Props, {}> {
                         -<Text onPress={() => Linking.openURL('https://github.com/enzosabry/rpzSoundbox')}
                                style={{textDecorationLine: 'underline', color: 'blue'}}>Github</Text>{"\n"}
 
-                        -<Text onPress={() => Linking.openURL('https://discord.gg/yTQZ46Bh')}
+                        -<Text onPress={() => Linking.openURL('https://discord.gg/Ry5qNYJG83')}
                                style={{textDecorationLine: 'underline', color: 'blue'}}>Discord</Text>{"\n"}
                         <Text>Bisou.</Text>
                     </Dialog.Description>
@@ -108,7 +108,7 @@ export class Home extends React.Component<Props, {}> {
         return (
 
             <View style={styles.container}>
-                { this.state.firstLaunch? dial:null}
+                { this.state.firstLaunch? dial:dial}
                 <Text style={styles.textCat}>
                     {category !== undefined ? soundLibrary[category]?.name : "Accueil"}
                 </Text>
