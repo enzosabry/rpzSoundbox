@@ -26,7 +26,7 @@ fs.readdirSync(path).forEach((val) => {
         image: require("${image[0] ? ("./" + val + "/" + image[0]) : "../img/logorpz.png"}"),
         sounds: [ ${sounds.map((file, i) => `
             {
-                name: "${(file.split('.')[0].charAt(0).toUpperCase() + file.split('.')[0].slice(1)).split("_").join(" ").split('x').join('*')}", 
+                name: "${(file.split('.')[0].charAt(0).toUpperCase() + file.split('.')[0].slice(1)).split("_").join(" ").split('X').join('*')}", 
                 audio: (()=>{let s = new Audio.Sound(); s.loadAsync(require("${"./" + val + "/" + file}")).catch(console.error); return s;})(),
                 image: require("${image[i] ? ("./" + val + "/" + image[i]) : image[0] ? ("./" + val + "/" + image[0]) : "../img/logorpz.png"}"),
             }`).join(",")}

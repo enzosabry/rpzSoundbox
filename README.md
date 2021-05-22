@@ -3,6 +3,10 @@
 
 **Sound box non officielle: par des fans pour des fans**
 
+[Google Play Store](https://play.google.com/store/apps/details?id=com.playadev.rpzsoundbox)
+
+[Twitter](https://twitter.com/Playa_Dev)
+
 # Une image ou un son vous appartient?
 Contactez-nous via une Issue ou sur [Discord](https://discord.gg/yTQZ46Bh), nous la supprimerons.
 Ce projet ne contient pas de pub, il est à but non lucratif.
