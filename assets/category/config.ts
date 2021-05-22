@@ -37,8 +37,18 @@ const soundLibrary: Sound[] = [
         image: require("./Bill_Boid/thumb_1.jpg"),
         sounds: [ 
             {
+                name: "Fin de service", 
+                audio: (()=>{let s = new Audio.Sound(); s.loadAsync(require("./Bill_Boid/fin_de_service.mp3")).catch(console.error); return s;})(),
+                image: require("./Bill_Boid/thumb_1.jpg"),
+            },
+            {
                 name: "Il pleut", 
                 audio: (()=>{let s = new Audio.Sound(); s.loadAsync(require("./Bill_Boid/il_pleut.mp3")).catch(console.error); return s;})(),
+                image: require("./Bill_Boid/thumb_1.jpg"),
+            },
+            {
+                name: "Il pleut des cordes", 
+                audio: (()=>{let s = new Audio.Sound(); s.loadAsync(require("./Bill_Boid/il_pleut_des_cordes.mp3")).catch(console.error); return s;})(),
                 image: require("./Bill_Boid/thumb_1.jpg"),
             },
             {
@@ -50,12 +60,12 @@ const soundLibrary: Sound[] = [
     },
     {
         name: "Docteur Maison",
-        image: require("../img/logorpz.png"),
+        image: require("./Docteur_Maison/thumb_1.png"),
         sounds: [ 
             {
                 name: "Très grosse erreur", 
                 audio: (()=>{let s = new Audio.Sound(); s.loadAsync(require("./Docteur_Maison/Très_grosse_erreur.mp3")).catch(console.error); return s;})(),
-                image: require("../img/logorpz.png"),
+                image: require("./Docteur_Maison/thumb_1.png"),
             }
         ],
     },
@@ -390,12 +400,12 @@ const soundLibrary: Sound[] = [
     },
     {
         name: "Wiko",
-        image: require("../img/logorpz.png"),
+        image: require("./Wiko/thumb_1.png"),
         sounds: [ 
             {
                 name: "Sonnerie", 
                 audio: (()=>{let s = new Audio.Sound(); s.loadAsync(require("./Wiko/sonnerie.mp3")).catch(console.error); return s;})(),
-                image: require("../img/logorpz.png"),
+                image: require("./Wiko/thumb_1.png"),
             }
         ],
     },
