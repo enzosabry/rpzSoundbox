@@ -108,7 +108,7 @@ export class Home extends React.Component<Props, {}> {
         return (
 
             <View style={styles.container}>
-                { this.state.firstLaunch? dial:dial}
+                { this.state.firstLaunch? dial:null}
                 <Text style={styles.textCat}>
                     {category !== undefined ? soundLibrary[category]?.name : "Accueil"}
                 </Text>
