@@ -149,7 +149,7 @@ export class Categories extends React.Component<Props, object> {
                                         <ImageBackground
                                             style={styles.itemImage}
                                             imageStyle={{height: 80, resizeMode: 'center',}}
-                                            source={item?.image || soundLibrary[0].image}/>
+                                            source={item?.image || require("../../assets/img/logorpz.png")}/>
                                     </View>
                                     <Text style={styles.text}>{item?.name || "Accueil"}</Text>
                                 </TouchableOpacity>
