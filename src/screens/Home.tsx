@@ -85,14 +85,12 @@ export class Home extends React.Component<Props, {}> {
         return (
 
             <View style={styles.container}>
-                {
-                    this.state.firstLaunch ?
-                        this.showAlert1() : null}
+                { this.state.firstLaunch ? this.showAlert1() : null}
                 <Text style={styles.textCat}>
                     {category !== undefined ? soundLibrary[category]?.name : "Accueil"}
                 </Text>
                 <View>
-                    <SafeAreaView style={{marginTop: 20, marginBottom: 100}}>
+                    <SafeAreaView style={{marginTop: 20}}>
                         <FlatGrid
                             data={category !== undefined ? soundLibrary[category]?.sounds : soundLibrary.flatMap(s => s.sounds)}
                             keyExtractor={(s, i) => s.name + i}
@@ -122,32 +120,12 @@ export class Home extends React.Component<Props, {}> {
 }
 
 const styles = StyleSheet.create({
-    tile: {
-        width: 100,
-        height: 100,
-        borderRadius: 50,
-    },
-
     container: {
         paddingTop: 0,
         backgroundColor: "#19171C",
         height: "100%",
         width: "100%",
         color: "#FFF"
-    },
-    tinyLogo: {
-        width: width,
-        height: height / 5,
-        resizeMode: 'contain',
-    },
-    containrLogo: {
-        width: width,
-        justifyContent: 'center',
-        alignItems: 'center',
-    },
-    logo: {
-        width: 66,
-        height: 58,
     },
     text: {
         color: "#fff",
@@ -159,16 +137,5 @@ const styles = StyleSheet.create({
         color: "#FFF",
         fontSize: 24,
         marginLeft: 15
-    },
-    item: {
-        borderRadius: 4,
-        backgroundColor: 'white',
-        position: 'absolute',
-        top: 0,
-        left: 0,
-        right: 0,
-        bottom: 0,
-        justifyContent: 'center',
-        alignItems: 'center'
     },
 });
