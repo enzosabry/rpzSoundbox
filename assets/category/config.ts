@@ -26,7 +26,7 @@ const soundLibrary: Sound[] = [
         image: require("./Bazil/thumb_1.jpg"),
         sounds: [ 
             {
-                name: "Déjà sXXé un pote", 
+                name: "Déjà s**é un pote", 
                 audio: (()=>{let s = new Audio.Sound(); s.loadAsync(require("./Bazil/déjà_sXXé_un_pote.mp3")).catch(console.error); return s;})(),
                 image: require("./Bazil/thumb_1.jpg"),
             }
@@ -39,6 +39,22 @@ const soundLibrary: Sound[] = [
             {
                 name: "Il pleut", 
                 audio: (()=>{let s = new Audio.Sound(); s.loadAsync(require("./Bill_Boid/il_pleut.mp3")).catch(console.error); return s;})(),
+                image: require("../img/logorpz.png"),
+            },
+            {
+                name: "Oui rien à f**tre", 
+                audio: (()=>{let s = new Audio.Sound(); s.loadAsync(require("./Bill_Boid/oui_rien_à_fXXtre.mp3")).catch(console.error); return s;})(),
+                image: require("../img/logorpz.png"),
+            }
+        ],
+    },
+    {
+        name: "Docteur Maison",
+        image: require("../img/logorpz.png"),
+        sounds: [ 
+            {
+                name: "Très grosse erreur", 
+                audio: (()=>{let s = new Audio.Sound(); s.loadAsync(require("./Docteur_Maison/Très_grosse_erreur.mp3")).catch(console.error); return s;})(),
                 image: require("../img/logorpz.png"),
             }
         ],
@@ -100,13 +116,18 @@ const soundLibrary: Sound[] = [
                 image: require("./Johnny_Monnay/thumb_1.jpg"),
             },
             {
-                name: "Pas faire chXXr papa Johnny", 
+                name: "Pas faire ch**r papa Johnny", 
                 audio: (()=>{let s = new Audio.Sound(); s.loadAsync(require("./Johnny_Monnay/pas_faire_chXXr_papa_Johnny.mp3")).catch(console.error); return s;})(),
                 image: require("./Johnny_Monnay/thumb_1.jpg"),
             },
             {
                 name: "Pub", 
                 audio: (()=>{let s = new Audio.Sound(); s.loadAsync(require("./Johnny_Monnay/pub.mp3")).catch(console.error); return s;})(),
+                image: require("./Johnny_Monnay/thumb_1.jpg"),
+            },
+            {
+                name: "Trop intelligent", 
+                audio: (()=>{let s = new Audio.Sound(); s.loadAsync(require("./Johnny_Monnay/trop_intelligent.mp3")).catch(console.error); return s;})(),
                 image: require("./Johnny_Monnay/thumb_1.jpg"),
             },
             {
@@ -175,6 +196,17 @@ const soundLibrary: Sound[] = [
         ],
     },
     {
+        name: "Lindsay Walker",
+        image: require("../img/logorpz.png"),
+        sounds: [ 
+            {
+                name: "Viande dans le torchon", 
+                audio: (()=>{let s = new Audio.Sound(); s.loadAsync(require("./Lindsay_Walker/viande_dans_le_torchon.mp3")).catch(console.error); return s;})(),
+                image: require("../img/logorpz.png"),
+            }
+        ],
+    },
+    {
         name: "Lorenza Blake",
         image: require("./Lorenza_Blake/thumb_1.jpg"),
         sounds: [ 
@@ -190,12 +222,17 @@ const soundLibrary: Sound[] = [
         image: require("./Marius_Rotarez/thumb_1.jpg"),
         sounds: [ 
             {
+                name: "ALLER GONTRANNNN", 
+                audio: (()=>{let s = new Audio.Sound(); s.loadAsync(require("./Marius_Rotarez/ALLER_GONTRANNNN.mp3")).catch(console.error); return s;})(),
+                image: require("./Marius_Rotarez/thumb_1.jpg"),
+            },
+            {
                 name: "DEGLINGUER", 
                 audio: (()=>{let s = new Audio.Sound(); s.loadAsync(require("./Marius_Rotarez/DEGLINGUER.mp3")).catch(console.error); return s;})(),
                 image: require("./Marius_Rotarez/thumb_1.jpg"),
             },
             {
-                name: "HOO putXXng", 
+                name: "HOO put**ng", 
                 audio: (()=>{let s = new Audio.Sound(); s.loadAsync(require("./Marius_Rotarez/HOO_putXXng.mp3")).catch(console.error); return s;})(),
                 image: require("./Marius_Rotarez/thumb_1.jpg"),
             }
