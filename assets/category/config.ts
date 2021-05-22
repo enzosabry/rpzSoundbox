@@ -26,8 +26,8 @@ const soundLibrary: Sound[] = [
         image: require("./Bazil/thumb_1.jpg"),
         sounds: [ 
             {
-                name: "Déjà s**é un pote", 
-                audio: (()=>{let s = new Audio.Sound(); s.loadAsync(require("./Bazil/déjà_sxxé_un_pote.mp3")).catch(console.error); return s;})(),
+                name: "Déjà sXXé un pote", 
+                audio: (()=>{let s = new Audio.Sound(); s.loadAsync(require("./Bazil/déjà_sXXé_un_pote.mp3")).catch(console.error); return s;})(),
                 image: require("./Bazil/thumb_1.jpg"),
             }
         ],
@@ -95,8 +95,13 @@ const soundLibrary: Sound[] = [
                 image: require("./Johnny_Monnay/thumb_1.jpg"),
             },
             {
-                name: "Pas faire ch**r papa Johnny", 
-                audio: (()=>{let s = new Audio.Sound(); s.loadAsync(require("./Johnny_Monnay/pas_faire_chxxr_papa_Johnny.mp3")).catch(console.error); return s;})(),
+                name: "Passif agressif", 
+                audio: (()=>{let s = new Audio.Sound(); s.loadAsync(require("./Johnny_Monnay/passif_agressif.mp3")).catch(console.error); return s;})(),
+                image: require("./Johnny_Monnay/thumb_1.jpg"),
+            },
+            {
+                name: "Pas faire chXXr papa Johnny", 
+                audio: (()=>{let s = new Audio.Sound(); s.loadAsync(require("./Johnny_Monnay/pas_faire_chXXr_papa_Johnny.mp3")).catch(console.error); return s;})(),
                 image: require("./Johnny_Monnay/thumb_1.jpg"),
             },
             {
@@ -190,8 +195,8 @@ const soundLibrary: Sound[] = [
                 image: require("./Marius_Rotarez/thumb_1.jpg"),
             },
             {
-                name: "HOO put**ng", 
-                audio: (()=>{let s = new Audio.Sound(); s.loadAsync(require("./Marius_Rotarez/HOO_putxxng.mp3")).catch(console.error); return s;})(),
+                name: "HOO putXXng", 
+                audio: (()=>{let s = new Audio.Sound(); s.loadAsync(require("./Marius_Rotarez/HOO_putXXng.mp3")).catch(console.error); return s;})(),
                 image: require("./Marius_Rotarez/thumb_1.jpg"),
             }
         ],
