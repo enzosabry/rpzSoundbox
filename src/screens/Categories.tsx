@@ -1,5 +1,15 @@
 import React from 'react';
-import {Dimensions, Image, Linking, ScrollView, StyleSheet, Text, TouchableOpacity, View} from "react-native";
+import {
+    Dimensions,
+    Image,
+    ImageBackground,
+    Linking,
+    ScrollView,
+    StyleSheet,
+    Text,
+    TouchableOpacity,
+    View
+} from "react-native";
 import soundLibrary from "../../assets/category/config";
 import {RouteProp} from "@react-navigation/native";
 import {DrawerParams} from "../../App";
@@ -19,39 +29,19 @@ type Props = {
 const {width, height} = Dimensions.get("window");
 
 const styles = StyleSheet.create({
-    tile: {
-        width: 100,
-        height: 100,
-        borderRadius: 50,
-    },
-
     container: {
         paddingTop: 0,
         backgroundColor: "#19171C",
-        height: height,
-        width: width,
+        height: "100%",
+        width: "100%",
         color: "#FFF"
-    },
-    tinyLogo: {
-        width: width,
-        height: height / 5,
-        resizeMode: 'contain',
-    },
-    containrLogo: {
-        width: width,
-        justifyContent: 'center',
-        alignItems: 'center',
-    },
-    logo: {
-        width: 66,
-        height: 58,
     },
     text: {
         color: "#fff",
         fontSize: width / 28,
         textAlign: 'center',
         textAlignVertical: 'center',
-        height: 30,
+        //height: 30,
     },
     textCat: {
         color: "#FFF",
@@ -59,16 +49,16 @@ const styles = StyleSheet.create({
         marginLeft: 15
     },
     item: {
-        borderRadius: 55,
-        //backgroundColor: 'white',
-        position: 'absolute',
-        top: 0,
-        left: 0,
-        right: 0,
-        bottom: 0,
         justifyContent: 'center',
         alignItems: 'center',
     },
+    itemImage: {
+        height: 80,
+        width: 80,
+        borderRadius: 15,
+        position: "relative",
+        overflow: "hidden",
+    }
 });
 
 export class Categories extends React.Component<Props, object> {
@@ -100,8 +90,8 @@ export class Categories extends React.Component<Props, object> {
 
         return (
             <ScrollView style={styles.container}>
-                <Text style={styles.textCat}>Choose Category</Text>
-                <View style={{marginTop: 20}}>
+                <Text style={styles.textCat}>Choisis une catégorie :</Text>
+                <View>
                     <SortableGridView
                         data={[undefined, ...soundLibrary.map(s => {
                             return {name: s.name, image: s.image}
@@ -115,8 +105,12 @@ export class Categories extends React.Component<Props, object> {
                                     }}
                                     style={styles.item}
                                 >
-                                    <Image style={{resizeMode: 'contain', height: 80, borderRadius: 40}}
-                                           source={item?.image || soundLibrary[0].image}/>
+                                    <View style={styles.itemImage}>
+                                        <ImageBackground
+                                            style={styles.itemImage}
+                                            imageStyle={{height: 80, resizeMode: 'center',}}
+                                            source={item?.image || soundLibrary[0].image}/>
+                                    </View>
                                     <Text style={styles.text}>{item?.name || "Accueil"}</Text>
                                 </TouchableOpacity>
                             )
