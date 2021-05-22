@@ -6,7 +6,6 @@ import {RouteProp} from '@react-navigation/native';
 import {DrawerParams} from "../../App";
 import {FlatGrid} from 'react-native-super-grid';
 import {Ionicons} from "@expo/vector-icons";
-import AsyncStorage from "@react-native-async-storage/async-storage";
 
 const {width, height} = Dimensions.get("window");
 
@@ -20,41 +19,6 @@ type Props = {
 };
 
 export class Home extends React.Component<Props, {}> {
-
-    state = {
-        currentPageIndex: 0,
-        firstLaunch: false
-    };
-
-    componentDidUpdate() {
-        if (this.state.firstLaunch !== null)
-            AsyncStorage.getItem("@alreadyLaunched").then(value => {
-                if (value == null) {
-                    AsyncStorage.setItem('@alreadyLaunched', JSON.stringify(true)); // No need to wait for `setItem` to finish, although you might want to handle errors
-                    this.setState({firstLaunch: true});
-                } else {
-                    this.setState({firstLaunch: null});
-                }
-            }) // Add some error handling, also you can simply do this.setState({fistLaunch: value == null})
-    }
-
-    showAlert1() {
-        Alert.alert(
-            "Merci d'avoir téléchargé l'application !",
-            'Si l\'app te plaît, mets nous une bonne note sur le store\n' +
-            '\n' +
-            'Tu veux un nouveau son ou tu veux participer au développement de l\'app?\n' +
-            'Github: https://github.com/enzosabry/rpzSoundbox\n' +
-            'Discord: https://discord.gg/yTQZ46Bh\n' +
-            '\n' +
-            'Bisou.',
-            [
-                {
-                    text: 'ok'
-                }
-            ]
-        );
-    }
 
     render() {
         let prevSound;
@@ -85,7 +49,6 @@ export class Home extends React.Component<Props, {}> {
         return (
 
             <View style={styles.container}>
-                { this.state.firstLaunch ? this.showAlert1() : null}
                 <Text style={styles.textCat}>
                     {category !== undefined ? soundLibrary[category]?.name : "Accueil"}
                 </Text>

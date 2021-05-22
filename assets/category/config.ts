@@ -37,8 +37,18 @@ const soundLibrary: Sound[] = [
         image: require("./Bill_Boid/thumb_1.jpg"),
         sounds: [ 
             {
+                name: "Fin de service", 
+                audio: (()=>{let s = new Audio.Sound(); s.loadAsync(require("./Bill_Boid/fin_de_service.mp3")).catch(console.error); return s;})(),
+                image: require("./Bill_Boid/thumb_1.jpg"),
+            },
+            {
                 name: "Il pleut", 
                 audio: (()=>{let s = new Audio.Sound(); s.loadAsync(require("./Bill_Boid/il_pleut.mp3")).catch(console.error); return s;})(),
+                image: require("./Bill_Boid/thumb_1.jpg"),
+            },
+            {
+                name: "Il pleut des cordes", 
+                audio: (()=>{let s = new Audio.Sound(); s.loadAsync(require("./Bill_Boid/il_pleut_des_cordes.mp3")).catch(console.error); return s;})(),
                 image: require("./Bill_Boid/thumb_1.jpg"),
             },
             {

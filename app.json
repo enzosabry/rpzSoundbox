@@ -5,7 +5,7 @@
     "name": "rpzSoundbox",
     "icon": "assets/icon.png",
     "slug": "rpzSoundbox",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "splash": {
       "image": "./assets/img/logorpz.png",
       "backgroundColor": "#19171C"
@@ -14,7 +14,8 @@
       "**/*"
     ],
     "android": {
-      "package": "com.playadev.rpzsoundbox"
+      "package": "com.playadev.rpzsoundbox",
+      "versionCode": 2
     }
   }
 }
