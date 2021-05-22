@@ -99,21 +99,21 @@ export class Categories extends React.Component<Props, object> {
                 <Text style={styles.textCat}>Choose Category</Text>
                 <View style={{marginTop: 20}}>
                     <SortableGridView
-                        data={soundLibrary.map(s => {
+                        data={[undefined, ...soundLibrary.map(s => {
                             return {name: s.name, image: s.image}
-                        })}
-                        renderItem={(item: { name: string, image: any }, i) => {
+                        })]}
+                        renderItem={(item: { name: string, image: any } | undefined, i) => {
                             return (
                                 <TouchableOpacity
-                                    key={item.name} // Important! Should add this props!!!
+                                    key={item?.name || "general"} // Important! Should add this props!!!
                                     onPress={() => {
-                                        navigate('Home', {category: i});
+                                        navigate('Home', {category: item ? i : undefined});
                                     }}
                                     style={styles.item}
                                 >
                                     <Image style={{resizeMode: 'contain', height: 80, borderRadius: 40}}
-                                           source={item.image}/>
-                                    <Text style={styles.text}>{item.name}</Text>
+                                           source={item?.image||soundLibrary[0].image}/>
+                                    <Text style={styles.text}>{item?.name || "Accueil"}</Text>
                                 </TouchableOpacity>
                             )
                         }}

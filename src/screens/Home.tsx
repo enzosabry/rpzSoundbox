@@ -134,8 +134,8 @@ const styles = StyleSheet.create({
     container: {
         paddingTop: 0,
         backgroundColor: "#19171C",
-        height: height,
-        width: width,
+        height: "100%",
+        width: "100%",
         color: "#FFF"
     },
     tinyLogo: {
