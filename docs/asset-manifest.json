@@ -1,11 +1,11 @@
 {
   "files": {
-    "app.js": "/rpzSoundbox/static/js/app.636bf7cf.chunk.js",
-    "app.js.map": "/rpzSoundbox/static/js/app.636bf7cf.chunk.js.map",
+    "app.js": "/rpzSoundbox/static/js/app.5d7bd539.chunk.js",
+    "app.js.map": "/rpzSoundbox/static/js/app.5d7bd539.chunk.js.map",
     "runtime~app.js": "/rpzSoundbox/static/js/runtime~app.9d040d6a.js",
     "runtime~app.js.map": "/rpzSoundbox/static/js/runtime~app.9d040d6a.js.map",
-    "static/js/2.a7fcd635.chunk.js": "/rpzSoundbox/static/js/2.a7fcd635.chunk.js",
-    "static/js/2.a7fcd635.chunk.js.map": "/rpzSoundbox/static/js/2.a7fcd635.chunk.js.map",
+    "static/js/2.6aa2c4b0.chunk.js": "/rpzSoundbox/static/js/2.6aa2c4b0.chunk.js",
+    "static/js/2.6aa2c4b0.chunk.js.map": "/rpzSoundbox/static/js/2.6aa2c4b0.chunk.js.map",
     "fonts/AntDesign.ttf": "/rpzSoundbox/./fonts/AntDesign.ttf",
     "fonts/Entypo.ttf": "/rpzSoundbox/./fonts/Entypo.ttf",
     "fonts/Feather.ttf": "/rpzSoundbox/./fonts/Feather.ttf",
@@ -24,7 +24,7 @@
     "index.html": "/rpzSoundbox/index.html",
     "manifest.json": "/rpzSoundbox/manifest.json",
     "serve.json": "/rpzSoundbox/serve.json",
-    "static/js/2.a7fcd635.chunk.js.LICENSE.txt": "/rpzSoundbox/static/js/2.a7fcd635.chunk.js.LICENSE.txt",
+    "static/js/2.6aa2c4b0.chunk.js.LICENSE.txt": "/rpzSoundbox/static/js/2.6aa2c4b0.chunk.js.LICENSE.txt",
     "static/media/39_44.mp3": "/rpzSoundbox/static/media/39_44.fa1c82f3.mp3",
     "static/media/ALLEZ_GONTRANNNN.mp3": "/rpzSoundbox/static/media/ALLEZ_GONTRANNNN.004ddc0b.mp3",
     "static/media/C'est_Mickael_Jackson.mp3": "/rpzSoundbox/static/media/C'est_Mickael_Jackson.0f62266b.mp3",
@@ -107,7 +107,7 @@
   },
   "entrypoints": [
     "static/js/runtime~app.9d040d6a.js",
-    "static/js/2.a7fcd635.chunk.js",
-    "static/js/app.636bf7cf.chunk.js"
+    "static/js/2.6aa2c4b0.chunk.js",
+    "static/js/app.5d7bd539.chunk.js"
   ]
 }
