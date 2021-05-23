@@ -455,6 +455,11 @@ const soundLibrary: Sound[] = [
                 name: "L'hymne", 
                 audio: (()=>{let s = new Audio.Sound(); s.loadAsync(require("./Michael_Rixxy/L'hymne.mp3")).catch(console.error); return s;})(),
                 image: require("./Michael_Rixxy/thumb_1.jpg"),
+            },
+            {
+                name: "Woa mais c'est génial içi", 
+                audio: (()=>{let s = new Audio.Sound(); s.loadAsync(require("./Michael_Rixxy/woa_mais_c'est_génial_içi.mp3")).catch(console.error); return s;})(),
+                image: require("./Michael_Rixxy/thumb_1.jpg"),
             }
         ],
     },
