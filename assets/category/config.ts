@@ -247,6 +247,11 @@ const soundLibrary: Sound[] = [
                 name: "Bonjour la lampe", 
                 audio: (()=>{let s = new Audio.Sound(); s.loadAsync(require("./Julien_Grine/bonjour_la_lampe.mp3")).catch(console.error); return s;})(),
                 image: require("./Julien_Grine/thumb_1.jpg"),
+            },
+            {
+                name: "On est l'élite du LSPDi", 
+                audio: (()=>{let s = new Audio.Sound(); s.loadAsync(require("./Julien_Grine/on_est_l'élite_du_LSPDi.mp3")).catch(console.error); return s;})(),
+                image: require("./Julien_Grine/thumb_1.jpg"),
             }
         ],
     },
