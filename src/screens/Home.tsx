@@ -16,7 +16,7 @@ import {RouteProp} from '@react-navigation/native';
 import {DrawerParams} from "../../App";
 import {FlatGrid} from 'react-native-super-grid';
 import {Ionicons} from "@expo/vector-icons";
-import AsyncStorage from "@react-native-async-storage/async-storage";
+import AsyncStorage from '@react-native-async-storage/async-storage';
 import Dialog from "react-native-dialog";
 import {RFValue} from "react-native-responsive-fontsize";
 
@@ -33,30 +33,78 @@ type Props = {
 
 export class Home extends React.Component<Props, {}> {
 
-    state = {
-        currentPageIndex: 0,
+
+    constructor(props) {
+        super(props);
+    }
+
+    state: { firstLaunch: boolean, visible: boolean } = {
         firstLaunch: false,
         visible: true
-    };
+    }
+
     private handleCancel: any;
 
-    componentDidUpdate() {
-        if (this.state.firstLaunch !== null)
-            AsyncStorage.getItem("@alreadyLaunched").then(value => {
-                if (value == null) {
-                    AsyncStorage.setItem('@alreadyLaunched', JSON.stringify(true)); // No need to wait for `setItem` to finish, although you might want to handle errors
-                    this.setState({firstLaunch: true});
-                } else {
-                    this.setState({firstLaunch: null});
-                }
-            }) // Add some error handling, also you can simply do this.setState({fistLaunch: value == null})
+    _storeData = async () => {
+        try {
+            await AsyncStorage.setItem('@alreadyLaunched', 'First opening !');
+        } catch (error) {
+            // Error saving data
+        }
+    };
+
+    _retrieveData = async () => {
+        try {
+            const value = await AsyncStorage.getItem('@alreadyLaunched');
+            if (value !== null) {
+                // We have data!!
+                this.setState({firstLaunch: false})
+            }else {
+                await this._storeData()
+                this.setState({firstLaunch: true})
+            }
+            console.log(value);
+        } catch (error) {
+            // Error retrieving data
+        }
+    };
+
+    async componentDidMount() {
+        await this._retrieveData()
+    }
+
+    showNav() {
+        const {route, navigation} = this.props;
+        const {category} = route.params;
+        let prevSound;
+        navigation.setOptions({
+            headerTitle: () => <Text style={styles.textHeader}>RPZ SoundBox</Text>,
+            headerStyle: {
+                backgroundColor: "#19171C",
+                elevation: 0,
+                shadowRadius: 0,
+                shadowOffset: {
+                    height: 0,
+                    width: 0,
+                },
+                borderBottomWidth: 0
+            },
+            headerTitleAlign: 'center',
+            headerLeft: () =>
+                (<TouchableOpacity onPress={() => {
+                    if (prevSound) prevSound.stopAsync();
+                    navigation.navigate("Categories");
+                }}>
+                    <Ionicons name="apps-outline" size={32} style={{marginLeft: 15, marginTop: 5, color: "#FFF"}}/>
+                </TouchableOpacity>),
+        });
     }
 
     render() {
-        let prevSound;
         const {route, navigation} = this.props;
         const {category} = route.params;
-
+        let prevSound;
+        {this.showNav()}
         const showDialog = () => {
             this.setState({
                 visible: true
@@ -84,28 +132,6 @@ export class Home extends React.Component<Props, {}> {
                     <Dialog.Button label="Laisse moi tester !" onPress={handleCancel}/>
                 </Dialog.Container>
             </View>);
-
-        navigation.setOptions({
-            headerTitle: () => <Text style={styles.textHeader}>RPZ SoundBox</Text>,
-            headerStyle: {
-                backgroundColor: "#19171C",
-                elevation: 0,
-                shadowRadius: 0,
-                shadowOffset: {
-                    height: 0,
-                    width: 0,
-                },
-                borderBottomWidth: 0
-            },
-            headerTitleAlign: 'center',
-            headerLeft: () =>
-                (<TouchableOpacity onPress={() => {
-                    if (prevSound) prevSound.stopAsync();
-                    navigation.navigate("Categories");
-                }}>
-                    <Ionicons name="apps-outline" size={32} style={{marginLeft: 15, marginTop: 5, color: "#FFF"}}/>
-                </TouchableOpacity>),
-        });
 
         return (
 
