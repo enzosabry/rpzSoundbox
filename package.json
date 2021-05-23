@@ -7,8 +7,8 @@
     "web": "expo start --web",
     "start": "react-native start",
     "test": "jest",
-    "deploy": "rm -f docs/ && mkdir docs && move web-build/* docs/*",
-    "predeploy": "expo build:web"
+    "deploy": "rm -r docs/ && mkdir docs && move web-build/* docs/*",
+    "predeploy": "node src/utils/soundLibrary.js && expo build:web"
   },
   "dependencies": {
     "@react-native-async-storage/async-storage": "^1.15.4",
