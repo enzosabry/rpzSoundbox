@@ -218,6 +218,11 @@ const soundLibrary: Sound[] = [
                 image: require("./Johnny_Monnay/thumb_1.jpg"),
             },
             {
+                name: "TA GUEULE", 
+                audio: (()=>{let s = new Audio.Sound(); s.loadAsync(require("./Johnny_Monnay/TA_GUEULE.mp3")).catch(console.error); return s;})(),
+                image: require("./Johnny_Monnay/thumb_1.jpg"),
+            },
+            {
                 name: "Tension dans l'coude", 
                 audio: (()=>{let s = new Audio.Sound(); s.loadAsync(require("./Johnny_Monnay/tension_dans_l'coude.mp3")).catch(console.error); return s;})(),
                 image: require("./Johnny_Monnay/thumb_1.jpg"),
@@ -382,6 +387,17 @@ const soundLibrary: Sound[] = [
         ],
     },
     {
+        name: "Michael Rixxy",
+        image: require("./Michael_Rixxy/thumb_1.jpg"),
+        sounds: [ 
+            {
+                name: "L'hymne", 
+                audio: (()=>{let s = new Audio.Sound(); s.loadAsync(require("./Michael_Rixxy/L'hymne.mp3")).catch(console.error); return s;})(),
+                image: require("./Michael_Rixxy/thumb_1.jpg"),
+            }
+        ],
+    },
+    {
         name: "Miguel Rodriguez",
         image: require("./Miguel_Rodriguez/thumb_1.jpg"),
         sounds: [ 
@@ -416,6 +432,11 @@ const soundLibrary: Sound[] = [
                 image: require("./Miguel_Rodriguez/thumb_1.jpg"),
             },
             {
+                name: "Si", 
+                audio: (()=>{let s = new Audio.Sound(); s.loadAsync(require("./Miguel_Rodriguez/si.mp3")).catch(console.error); return s;})(),
+                image: require("./Miguel_Rodriguez/thumb_1.jpg"),
+            },
+            {
                 name: "Tkt on fait mout-mout", 
                 audio: (()=>{let s = new Audio.Sound(); s.loadAsync(require("./Miguel_Rodriguez/tkt_on_fait_mout-mout.mp3")).catch(console.error); return s;})(),
                 image: require("./Miguel_Rodriguez/thumb_1.jpg"),
@@ -444,6 +465,11 @@ const soundLibrary: Sound[] = [
             {
                 name: "CarlaHAHA", 
                 audio: (()=>{let s = new Audio.Sound(); s.loadAsync(require("./Roy_Mark/CarlaHAHA.mp3")).catch(console.error); return s;})(),
+                image: require("./Roy_Mark/thumb_1.jpg"),
+            },
+            {
+                name: "Dans le domaine", 
+                audio: (()=>{let s = new Audio.Sound(); s.loadAsync(require("./Roy_Mark/Dans_le_domaine.mp3")).catch(console.error); return s;})(),
                 image: require("./Roy_Mark/thumb_1.jpg"),
             }
         ],
