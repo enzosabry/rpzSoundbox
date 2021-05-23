@@ -224,6 +224,11 @@ const soundLibrary: Sound[] = [
         image: require("./Johnny_Monnay/thumb_1.jpg"),
         sounds: [ 
             {
+                name: "J'dois prendre congé", 
+                audio: (()=>{let s = new Audio.Sound(); s.loadAsync(require("./Johnny_Monnay/j'dois_prendre_congé.mp3")).catch(console.error); return s;})(),
+                image: require("./Johnny_Monnay/thumb_1.jpg"),
+            },
+            {
                 name: "Okayyy", 
                 audio: (()=>{let s = new Audio.Sound(); s.loadAsync(require("./Johnny_Monnay/okayyy.mp3")).catch(console.error); return s;})(),
                 image: require("./Johnny_Monnay/thumb_1.jpg"),
