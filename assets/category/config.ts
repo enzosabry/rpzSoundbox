@@ -338,6 +338,21 @@ const soundLibrary: Sound[] = [
         image: require("./Lindsay_Walker/thumb_1.png"),
         sounds: [ 
             {
+                name: "AT-cm 1146723673-converted", 
+                audio: (()=>{let s = new Audio.Sound(); s.loadAsync(require("./Lindsay_Walker/AT-cm_1146723673-converted.mp3")).catch(console.error); return s;})(),
+                image: require("./Lindsay_Walker/thumb_1.png"),
+            },
+            {
+                name: "AT-cm 1148235487-converted", 
+                audio: (()=>{let s = new Audio.Sound(); s.loadAsync(require("./Lindsay_Walker/AT-cm_1148235487-converted.mp3")).catch(console.error); return s;})(),
+                image: require("./Lindsay_Walker/thumb_1.png"),
+            },
+            {
+                name: "Kelly n'a pas vu NCIS", 
+                audio: (()=>{let s = new Audio.Sound(); s.loadAsync(require("./Lindsay_Walker/Kelly_n'a_pas_vu_NCIS.mp3")).catch(console.error); return s;})(),
+                image: require("./Lindsay_Walker/thumb_1.png"),
+            },
+            {
                 name: "Viande dans le torchon", 
                 audio: (()=>{let s = new Audio.Sound(); s.loadAsync(require("./Lindsay_Walker/viande_dans_le_torchon.mp3")).catch(console.error); return s;})(),
                 image: require("./Lindsay_Walker/thumb_1.png"),
