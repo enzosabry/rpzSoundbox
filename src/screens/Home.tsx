@@ -3,7 +3,7 @@ import {
     Alert,
     Dimensions,
     ImageBackground,
-    Linking,
+    Linking, PixelRatio,
     SafeAreaView,
     StyleSheet,
     Text,
@@ -18,6 +18,7 @@ import {FlatGrid} from 'react-native-super-grid';
 import {Ionicons} from "@expo/vector-icons";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import Dialog from "react-native-dialog";
+import {RFValue} from "react-native-responsive-fontsize";
 
 const {width, height} = Dimensions.get("window");
 
@@ -85,7 +86,7 @@ export class Home extends React.Component<Props, {}> {
             </View>);
 
         navigation.setOptions({
-            headerTitle: () => <Text style={{fontSize: width / 15, color: "#FFF"}}>RPZ SoundBox</Text>,
+            headerTitle: () => <Text style={styles.textHeader}>RPZ SoundBox</Text>,
             headerStyle: {
                 backgroundColor: "#19171C",
                 elevation: 0,
@@ -94,6 +95,7 @@ export class Home extends React.Component<Props, {}> {
                     height: 0,
                     width: 0,
                 },
+                borderBottomWidth: 0
             },
             headerTitleAlign: 'center',
             headerLeft: () =>
@@ -120,7 +122,7 @@ export class Home extends React.Component<Props, {}> {
                             renderItem={({item, index}) => {
                                 return (
                                     <TouchableOpacity
-                                        style={{height: 150, borderRadius: 50}}
+                                        style={{height: 175, borderRadius: 50,}}
                                         onPress={() => {
                                             if (prevSound) prevSound.stopAsync();
                                             prevSound = item.audio;
@@ -152,13 +154,19 @@ const styles = StyleSheet.create({
     },
     text: {
         color: "#fff",
-        fontSize: width / 28,
+        fontSize: 18,
+
         textAlign: 'center',
         textAlignVertical: 'center',
+        //height: 30,
     },
     textCat: {
         color: "#FFF",
-        fontSize: 24,
+        fontSize: RFValue(14, 580),
         marginLeft: 15
     },
+    textHeader: {
+        fontSize: RFValue(18, 580),
+        color: "#FFF"
+    }
 });
