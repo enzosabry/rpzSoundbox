@@ -3,7 +3,7 @@ import {
     Dimensions,
     Image,
     ImageBackground,
-    Linking,
+    Linking, PixelRatio,
     ScrollView,
     StyleSheet,
     Text,
@@ -16,6 +16,7 @@ import {DrawerParams} from "../../App";
 import {StackNavigationProp} from "@react-navigation/stack";
 import SortableGridView from 'react-native-sortable-gridview';
 import {Ionicons} from "@expo/vector-icons";
+import {RFValue} from "react-native-responsive-fontsize";
 
 type CategoriesScreenRouteProp = RouteProp<DrawerParams, 'Categories'>;
 
@@ -30,23 +31,28 @@ const {width, height} = Dimensions.get("window");
 
 const styles = StyleSheet.create({
     container: {
-        paddingTop: 0,
         backgroundColor: "#19171C",
         height: "100%",
         width: "100%",
-        color: "#FFF"
+        color: "#FFF",
     },
     text: {
         color: "#fff",
-        fontSize: width / 28,
+        fontSize: RFValue(12, 700),
         textAlign: 'center',
         textAlignVertical: 'center',
         //height: 30,
     },
     textCat: {
         color: "#FFF",
-        fontSize: 24,
+        fontSize: RFValue(14, 580),
         marginLeft: 15
+    },
+
+    textHeader: {
+        fontSize: RFValue(18, 580),
+        color: "#FFF",
+
     },
     item: {
         justifyContent: 'center',
@@ -65,9 +71,17 @@ export class Categories extends React.Component<Props, object> {
     render() {
         const {route, navigation} = this.props;
         const navigate = navigation.navigate;
-
+        let aspectRatio
+        let nbrCat = 3
+        if(height>950) {
+            aspectRatio = 0.6
+            nbrCat = 5
+        }else {
+            aspectRatio = 1
+            nbrCat = 3
+        }
         navigation.setOptions({
-            headerTitle: () => <Text style={{fontSize: width / 15, color: "#FFF"}}>Categories</Text>,
+            headerTitle: () => <Text style={styles.textHeader}>Categories</Text>,
             headerStyle: {
                 backgroundColor: "#19171C",
                 elevation: 0,
@@ -76,6 +90,8 @@ export class Categories extends React.Component<Props, object> {
                     height: 0,
                     width: 0,
                 },
+                borderColor: "#19171C",
+                borderBottomWidth: 0
             },
             headerTitleAlign: 'center',
             headerLeft: () =>
@@ -87,15 +103,17 @@ export class Categories extends React.Component<Props, object> {
                     <Ionicons name="logo-twitter" size={32} style={{marginRight: 15, marginTop: 5, color: "#FFF"}}/>
                 </TouchableOpacity>),
         });
-
         return (
             <ScrollView style={styles.container}>
                 <Text style={styles.textCat}>Choisis une catégorie :</Text>
-                <View>
+                <View style={{ justifyContent: 'center', alignItems: 'center', width: width, alignSelf: 'center',}}>
                     <SortableGridView
                         data={[undefined, ...soundLibrary.map(s => {
                             return {name: s.name, image: s.image}
                         })]}
+                        gapWidth={20}
+                        aspectRatio={aspectRatio}
+                        numPerRow={nbrCat}
                         renderItem={(item: { name: string, image: any } | undefined, i) => {
                             return (
                                 <TouchableOpacity

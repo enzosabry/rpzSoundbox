@@ -27,6 +27,7 @@
     "react-native-dialog": "^8.0.1",
     "react-native-gesture-handler": "~1.10.2",
     "react-native-reanimated": "~2.1.0",
+    "react-native-responsive-fontsize": "^0.5.0",
     "react-native-safe-area-context": "3.2.0",
     "react-native-screens": "~3.0.0",
     "react-native-sortable-gridview": "^1.1.5",
