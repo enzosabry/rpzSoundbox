@@ -312,6 +312,11 @@ const soundLibrary: Sound[] = [
                 image: require("./Lieutenant_Kuck/thumb_1.jpg"),
             },
             {
+                name: "Mais sur Discord b*rdel", 
+                audio: (()=>{let s = new Audio.Sound(); s.loadAsync(require("./Lieutenant_Kuck/Mais_sur_Discord_bXrdel.mp3")).catch(console.error); return s;})(),
+                image: require("./Lieutenant_Kuck/thumb_1.jpg"),
+            },
+            {
                 name: "Nous sommes les unités d'élite du LSPD", 
                 audio: (()=>{let s = new Audio.Sound(); s.loadAsync(require("./Lieutenant_Kuck/nous_sommes_les_unités_d'élite_du_LSPD.mp3")).catch(console.error); return s;})(),
                 image: require("./Lieutenant_Kuck/thumb_1.jpg"),
