@@ -209,6 +209,17 @@ const soundLibrary: Sound[] = [
         ],
     },
     {
+        name: "Inigo Montoya",
+        image: require("./Inigo_Montoya/thumb_1.jpg"),
+        sounds: [ 
+            {
+                name: "Jefe tou a toué Kiwi", 
+                audio: (()=>{let s = new Audio.Sound(); s.loadAsync(require("./Inigo_Montoya/jefe_tou_a_toué_Kiwi.mp3")).catch(console.error); return s;})(),
+                image: require("./Inigo_Montoya/thumb_1.jpg"),
+            }
+        ],
+    },
+    {
         name: "Johnny Monnay",
         image: require("./Johnny_Monnay/thumb_1.jpg"),
         sounds: [ 
