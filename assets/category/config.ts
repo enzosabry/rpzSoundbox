@@ -240,6 +240,17 @@ const soundLibrary: Sound[] = [
         ],
     },
     {
+        name: "Julien Grine",
+        image: require("./Julien_Grine/thumb_1.jpg"),
+        sounds: [ 
+            {
+                name: "Bonjour la lampe", 
+                audio: (()=>{let s = new Audio.Sound(); s.loadAsync(require("./Julien_Grine/bonjour_la_lampe.mp3")).catch(console.error); return s;})(),
+                image: require("./Julien_Grine/thumb_1.jpg"),
+            }
+        ],
+    },
+    {
         name: "Lenny Johnson",
         image: require("./Lenny_Johnson/thumb_1.jpg"),
         sounds: [ 
