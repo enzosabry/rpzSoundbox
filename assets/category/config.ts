@@ -52,6 +52,16 @@ const soundLibrary: Sound[] = [
                 image: require("./Bill_Boid/thumb_1.jpg"),
             },
             {
+                name: "Mais qui vois là'je", 
+                audio: (()=>{let s = new Audio.Sound(); s.loadAsync(require("./Bill_Boid/mais_qui_vois_là'je.mp3")).catch(console.error); return s;})(),
+                image: require("./Bill_Boid/thumb_1.jpg"),
+            },
+            {
+                name: "Ma tension je t'la met dans l'c*l", 
+                audio: (()=>{let s = new Audio.Sound(); s.loadAsync(require("./Bill_Boid/ma_tension_je_t'la_met_dans_l'cXl.mp3")).catch(console.error); return s;})(),
+                image: require("./Bill_Boid/thumb_1.jpg"),
+            },
+            {
                 name: "Oui rien à f**tre", 
                 audio: (()=>{let s = new Audio.Sound(); s.loadAsync(require("./Bill_Boid/oui_rien_à_fXXtre.mp3")).catch(console.error); return s;})(),
                 image: require("./Bill_Boid/thumb_1.jpg"),
@@ -62,6 +72,16 @@ const soundLibrary: Sound[] = [
         name: "Docteur Maison",
         image: require("./Docteur_Maison/thumb_1.png"),
         sounds: [ 
+            {
+                name: "Appuyer sur la détente", 
+                audio: (()=>{let s = new Audio.Sound(); s.loadAsync(require("./Docteur_Maison/appuyer_sur_la_détente.mp3")).catch(console.error); return s;})(),
+                image: require("./Docteur_Maison/thumb_1.png"),
+            },
+            {
+                name: "J'aime les burgers", 
+                audio: (()=>{let s = new Audio.Sound(); s.loadAsync(require("./Docteur_Maison/j'aime_les_burgers.mp3")).catch(console.error); return s;})(),
+                image: require("./Docteur_Maison/thumb_1.png"),
+            },
             {
                 name: "Très grosse erreur", 
                 audio: (()=>{let s = new Audio.Sound(); s.loadAsync(require("./Docteur_Maison/Très_grosse_erreur.mp3")).catch(console.error); return s;})(),
@@ -79,14 +99,45 @@ const soundLibrary: Sound[] = [
                 image: require("./Donatien_de_Montazac/thumb_1.png"),
             },
             {
+                name: "C'est un cauchemard", 
+                audio: (()=>{let s = new Audio.Sound(); s.loadAsync(require("./Donatien_de_Montazac/c'est_un_cauchemard.mp3")).catch(console.error); return s;})(),
+                image: require("./Donatien_de_Montazac/thumb_1.png"),
+            },
+            {
                 name: "Cui Cui Cui", 
                 audio: (()=>{let s = new Audio.Sound(); s.loadAsync(require("./Donatien_de_Montazac/Cui_Cui_Cui.mp3")).catch(console.error); return s;})(),
+                image: require("./Donatien_de_Montazac/thumb_1.png"),
+            },
+            {
+                name: "DOoonNez moi la MalEeeEtteE", 
+                audio: (()=>{let s = new Audio.Sound(); s.loadAsync(require("./Donatien_de_Montazac/DOoonNez_moi_la_MalEeeEtteE.mp3")).catch(console.error); return s;})(),
+                image: require("./Donatien_de_Montazac/thumb_1.png"),
+            },
+            {
+                name: "Je passe mon permis c*nnard", 
+                audio: (()=>{let s = new Audio.Sound(); s.loadAsync(require("./Donatien_de_Montazac/je_passe_mon_permis_cXnnard.mp3")).catch(console.error); return s;})(),
                 image: require("./Donatien_de_Montazac/thumb_1.png"),
             },
             {
                 name: "Je suis millionaire", 
                 audio: (()=>{let s = new Audio.Sound(); s.loadAsync(require("./Donatien_de_Montazac/je_suis_millionaire.mp3")).catch(console.error); return s;})(),
                 image: require("./Donatien_de_Montazac/thumb_1.png"),
+            },
+            {
+                name: "VITE", 
+                audio: (()=>{let s = new Audio.Sound(); s.loadAsync(require("./Donatien_de_Montazac/VITE.mp3")).catch(console.error); return s;})(),
+                image: require("./Donatien_de_Montazac/thumb_1.png"),
+            }
+        ],
+    },
+    {
+        name: "Earl Bailey",
+        image: require("./Earl_Bailey/thumb_1.jpg"),
+        sounds: [ 
+            {
+                name: "L'information à tout prix", 
+                audio: (()=>{let s = new Audio.Sound(); s.loadAsync(require("./Earl_Bailey/l'information_à_tout_prix.mp3")).catch(console.error); return s;})(),
+                image: require("./Earl_Bailey/thumb_1.jpg"),
             }
         ],
     },
@@ -97,6 +148,11 @@ const soundLibrary: Sound[] = [
             {
                 name: "Allez l'om", 
                 audio: (()=>{let s = new Audio.Sound(); s.loadAsync(require("./Fabien_Torez/allez_l'om.mp3")).catch(console.error); return s;})(),
+                image: require("./Fabien_Torez/thumb_1.jpg"),
+            },
+            {
+                name: "C'est marang", 
+                audio: (()=>{let s = new Audio.Sound(); s.loadAsync(require("./Fabien_Torez/C'est_marang.mp3")).catch(console.error); return s;})(),
                 image: require("./Fabien_Torez/thumb_1.jpg"),
             },
             {
