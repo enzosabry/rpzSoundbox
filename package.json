@@ -7,7 +7,7 @@
     "web": "expo start --web",
     "start": "react-native start",
     "test": "jest",
-    "deploy": "rm -r docs/ && mkdir docs && move web-build/* docs/*",
+    "deploy": "mv web-build/* docs",
     "predeploy": "node src/utils/soundLibrary.js && expo build:web"
   },
   "dependencies": {
