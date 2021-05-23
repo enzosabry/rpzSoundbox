@@ -15,6 +15,11 @@ const soundLibrary: Sound[] = [
                 image: require("./Autres/thumb_2.png"),
             },
             {
+                name: "Hey Don Juan", 
+                audio: (()=>{let s = new Audio.Sound(); s.loadAsync(require("./Autres/hey_Don_Juan.mp3")).catch(console.error); return s;})(),
+                image: require("./Autres/thumb_3.png"),
+            },
+            {
                 name: "Tazer", 
                 audio: (()=>{let s = new Audio.Sound(); s.loadAsync(require("./Autres/tazer.mp3")).catch(console.error); return s;})(),
                 image: require("./Autres/thumb_1.png"),
@@ -134,6 +139,16 @@ const soundLibrary: Sound[] = [
         name: "Earl Bailey",
         image: require("./Earl_Bailey/thumb_1.jpg"),
         sounds: [ 
+            {
+                name: "Au boulooot", 
+                audio: (()=>{let s = new Audio.Sound(); s.loadAsync(require("./Earl_Bailey/au_boulooot.mp3")).catch(console.error); return s;})(),
+                image: require("./Earl_Bailey/thumb_1.jpg"),
+            },
+            {
+                name: "J'vais descendre içi", 
+                audio: (()=>{let s = new Audio.Sound(); s.loadAsync(require("./Earl_Bailey/j'vais_descendre_içi.mp3")).catch(console.error); return s;})(),
+                image: require("./Earl_Bailey/thumb_1.jpg"),
+            },
             {
                 name: "L'information à tout prix", 
                 audio: (()=>{let s = new Audio.Sound(); s.loadAsync(require("./Earl_Bailey/l'information_à_tout_prix.mp3")).catch(console.error); return s;})(),
