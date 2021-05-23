@@ -246,18 +246,18 @@ const soundLibrary: Sound[] = [
         ],
     },
     {
-        name: "Les croutes ♡",
-        image: require("./Les_croutes_♡/thumb_1.png"),
+        name: "Les Croute ♡",
+        image: require("./Les_Croute_♡/thumb_1.png"),
         sounds: [ 
             {
                 name: "J'ai coincé l'camion", 
-                audio: (()=>{let s = new Audio.Sound(); s.loadAsync(require("./Les_croutes_♡/j'ai_coincé_l'camion.mp3")).catch(console.error); return s;})(),
-                image: require("./Les_croutes_♡/thumb_1.png"),
+                audio: (()=>{let s = new Audio.Sound(); s.loadAsync(require("./Les_Croute_♡/j'ai_coincé_l'camion.mp3")).catch(console.error); return s;})(),
+                image: require("./Les_Croute_♡/thumb_1.png"),
             },
             {
                 name: "Trace trace trace", 
-                audio: (()=>{let s = new Audio.Sound(); s.loadAsync(require("./Les_croutes_♡/trace_trace_trace.mp3")).catch(console.error); return s;})(),
-                image: require("./Les_croutes_♡/thumb_1.png"),
+                audio: (()=>{let s = new Audio.Sound(); s.loadAsync(require("./Les_Croute_♡/trace_trace_trace.mp3")).catch(console.error); return s;})(),
+                image: require("./Les_Croute_♡/thumb_1.png"),
             }
         ],
     },
