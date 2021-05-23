@@ -356,11 +356,21 @@ const soundLibrary: Sound[] = [
             {
                 name: "Kelly n'a pas vu NCIS", 
                 audio: (()=>{let s = new Audio.Sound(); s.loadAsync(require("./Lindsay_Walker/Kelly_n'a_pas_vu_NCIS.mp3")).catch(console.error); return s;})(),
+                image: require("./Lindsay_Walker/thumb_2.png"),
+            },
+            {
+                name: "NCISSSANH", 
+                audio: (()=>{let s = new Audio.Sound(); s.loadAsync(require("./Lindsay_Walker/NCISSSANH.mp3")).catch(console.error); return s;})(),
                 image: require("./Lindsay_Walker/thumb_1.png"),
             },
             {
                 name: "NCIS GET DOWN", 
                 audio: (()=>{let s = new Audio.Sound(); s.loadAsync(require("./Lindsay_Walker/NCIS_GET_DOWN.mp3")).catch(console.error); return s;})(),
+                image: require("./Lindsay_Walker/thumb_1.png"),
+            },
+            {
+                name: "On va mener l'enquête comme dans NCIS", 
+                audio: (()=>{let s = new Audio.Sound(); s.loadAsync(require("./Lindsay_Walker/On_va_mener_l'enquête_comme_dans_NCIS.mp3")).catch(console.error); return s;})(),
                 image: require("./Lindsay_Walker/thumb_1.png"),
             },
             {
