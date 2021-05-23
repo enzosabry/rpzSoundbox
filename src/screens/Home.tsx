@@ -16,8 +16,6 @@ import {RouteProp} from '@react-navigation/native';
 import {DrawerParams} from "../../App";
 import {FlatGrid} from 'react-native-super-grid';
 import {Ionicons} from "@expo/vector-icons";
-import AsyncStorage from '@react-native-async-storage/async-storage';
-import Dialog from "react-native-dialog";
 import {RFValue} from "react-native-responsive-fontsize";
 
 const {width, height} = Dimensions.get("window");
@@ -32,46 +30,6 @@ type Props = {
 };
 
 export class Home extends React.Component<Props, {}> {
-
-
-    constructor(props) {
-        super(props);
-    }
-
-    state: { firstLaunch: boolean, visible: boolean } = {
-        firstLaunch: false,
-        visible: true
-    }
-
-    private handleCancel: any;
-
-    _storeData = async () => {
-        try {
-            await AsyncStorage.setItem('@alreadyLaunched', 'First opening !');
-        } catch (error) {
-            // Error saving data
-        }
-    };
-
-    _retrieveData = async () => {
-        try {
-            const value = await AsyncStorage.getItem('@alreadyLaunched');
-            if (value !== null) {
-                // We have data!!
-                this.setState({firstLaunch: false})
-            }else {
-                await this._storeData()
-                this.setState({firstLaunch: true})
-            }
-            console.log(value);
-        } catch (error) {
-            // Error retrieving data
-        }
-    };
-
-    async componentDidMount() {
-        await this._retrieveData()
-    }
 
     showNav() {
         const {route, navigation} = this.props;
@@ -105,38 +63,10 @@ export class Home extends React.Component<Props, {}> {
         const {category} = route.params;
         let prevSound;
         {this.showNav()}
-        const showDialog = () => {
-            this.setState({
-                visible: true
-            });
-        };
-        const handleCancel = () => {
-            this.setState({
-                visible: false
-            });
-        };
-        const dial = (
-            <View>
-                <Dialog.Container visible={this.state.visible}>
-                    <Dialog.Title>Merci d'avoir téléchargé l'application !</Dialog.Title>
-                    <Dialog.Description>
-                        <Text>Cette application a été créé tout comme toi par des personnes ayant passionnément aimé l'évènement GTA RPZ.{"\n"}</Text>
-                        <Text>Tu veux ajouter un nouveau son ou alors participer au développement de l'app ? Rejoins nous vite sur :{"\n"}</Text>
-                        -<Text onPress={() => Linking.openURL('https://github.com/enzosabry/rpzSoundbox')}
-                               style={{textDecorationLine: 'underline', color: 'blue'}}>Github</Text>{"\n"}
-
-                        -<Text onPress={() => Linking.openURL('https://discord.gg/Ry5qNYJG83')}
-                               style={{textDecorationLine: 'underline', color: 'blue'}}>Discord</Text>{"\n"}
-                        <Text>Bisou.</Text>
-                    </Dialog.Description>
-                    <Dialog.Button label="Laisse moi tester !" onPress={handleCancel}/>
-                </Dialog.Container>
-            </View>);
 
         return (
 
             <View style={styles.container}>
-                { this.state.firstLaunch? dial:null}
                 <Text style={styles.textCat}>
                     {category !== undefined ? soundLibrary[category]?.name : "Accueil"}
                 </Text>
