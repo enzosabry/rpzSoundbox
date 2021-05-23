@@ -12,12 +12,12 @@ const soundLibrary: Sound[] = [
             {
                 name: "Coma", 
                 audio: (()=>{let s = new Audio.Sound(); s.loadAsync(require("./Autres/coma.mp3")).catch(console.error); return s;})(),
-                image: require("./Autres/thumb_1.png"),
+                image: require("./Autres/thumb_2.png"),
             },
             {
                 name: "Tazer", 
                 audio: (()=>{let s = new Audio.Sound(); s.loadAsync(require("./Autres/tazer.mp3")).catch(console.error); return s;})(),
-                image: require("./Autres/thumb_2.png"),
+                image: require("./Autres/thumb_1.png"),
             }
         ],
     },
