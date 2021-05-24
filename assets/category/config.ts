@@ -7,7 +7,7 @@ import { Sound } from "../../src/components/Sound";
 const soundLibrary: Sound[] = [
     {
         name: "Autres",
-        image: require("./Autres/thumb_1.png"),
+        image: require("./Autres/thumb_0.png"),
         sounds: [ 
             {
                 name: "Coma", 
@@ -22,7 +22,7 @@ const soundLibrary: Sound[] = [
             {
                 name: "Tazer", 
                 audio: (()=>{let s = new Audio.Sound(); s.loadAsync(require("./Autres/tazer.mp3")).catch(console.error); return s;})(),
-                image: require("./Autres/thumb_1.png"),
+                image: require("./Autres/thumb_0.png"),
             }
         ],
     },
@@ -415,16 +415,6 @@ const soundLibrary: Sound[] = [
                 image: require("./Lieutenant_Kuck/thumb_1.jpg"),
             },
             {
-                name: "Kelly n'a pas vu NCIS", 
-                audio: (()=>{let s = new Audio.Sound(); s.loadAsync(require("./Lieutenant_Kuck/Kelly_n'a_pas_vu_NCIS.mp3")).catch(console.error); return s;})(),
-                image: require("./Lieutenant_Kuck/thumb_1.jpg"),
-            },
-            {
-                name: "Kelly n'a pas vu NCISS", 
-                audio: (()=>{let s = new Audio.Sound(); s.loadAsync(require("./Lieutenant_Kuck/Kelly_n'a_pas_vu_NCISS.mp3")).catch(console.error); return s;})(),
-                image: require("./Lieutenant_Kuck/thumb_1.jpg"),
-            },
-            {
                 name: "LSPD don't move", 
                 audio: (()=>{let s = new Audio.Sound(); s.loadAsync(require("./Lieutenant_Kuck/LSPD_don't_move.mp3")).catch(console.error); return s;})(),
                 image: require("./Lieutenant_Kuck/thumb_1.jpg"),
@@ -447,11 +437,6 @@ const soundLibrary: Sound[] = [
             {
                 name: "Pompage", 
                 audio: (()=>{let s = new Audio.Sound(); s.loadAsync(require("./Lieutenant_Kuck/pompage.mp3")).catch(console.error); return s;})(),
-                image: require("./Lieutenant_Kuck/thumb_1.jpg"),
-            },
-            {
-                name: "Qu'est-ce que Gibs ferait dans NCIS", 
-                audio: (()=>{let s = new Audio.Sound(); s.loadAsync(require("./Lieutenant_Kuck/Qu'est-ce_que_Gibs_ferait_dans_NCIS.mp3")).catch(console.error); return s;})(),
                 image: require("./Lieutenant_Kuck/thumb_1.jpg"),
             },
             {
@@ -584,8 +569,8 @@ const soundLibrary: Sound[] = [
                 image: require("./Michael_Rixxy/thumb_1.jpg"),
             },
             {
-                name: "Woa mais c'est génial içi", 
-                audio: (()=>{let s = new Audio.Sound(); s.loadAsync(require("./Michael_Rixxy/woa_mais_c'est_génial_içi.mp3")).catch(console.error); return s;})(),
+                name: "Woa mais c'est génial ici", 
+                audio: (()=>{let s = new Audio.Sound(); s.loadAsync(require("./Michael_Rixxy/woa_mais_c'est_génial_ici.mp3")).catch(console.error); return s;})(),
                 image: require("./Michael_Rixxy/thumb_1.jpg"),
             }
         ],
@@ -658,6 +643,17 @@ const soundLibrary: Sound[] = [
                 name: "Yélétu", 
                 audio: (()=>{let s = new Audio.Sound(); s.loadAsync(require("./Miguel_Rodriguez/yélétu.mp3")).catch(console.error); return s;})(),
                 image: require("./Miguel_Rodriguez/thumb_1.jpg"),
+            }
+        ],
+    },
+    {
+        name: "Rose",
+        image: require("../img/logorpz.png"),
+        sounds: [ 
+            {
+                name: "Ich spreche deutsch", 
+                audio: (()=>{let s = new Audio.Sound(); s.loadAsync(require("./Rose/Ich_spreche_deutsch.mp3")).catch(console.error); return s;})(),
+                image: require("../img/logorpz.png"),
             }
         ],
     },
