@@ -104,6 +104,16 @@ const soundLibrary: Sound[] = [
                 image: require("./Donatien_de_Montazac/thumb_1.png"),
             },
             {
+                name: "C'est Donatien de Montazac à l'appareil", 
+                audio: (()=>{let s = new Audio.Sound(); s.loadAsync(require("./Donatien_de_Montazac/C'est_Donatien_de_Montazac_à_l'appareil.mp3")).catch(console.error); return s;})(),
+                image: require("./Donatien_de_Montazac/thumb_1.png"),
+            },
+            {
+                name: "C'est pas vrai Antoine", 
+                audio: (()=>{let s = new Audio.Sound(); s.loadAsync(require("./Donatien_de_Montazac/C'est_pas_vrai_Antoine.mp3")).catch(console.error); return s;})(),
+                image: require("./Donatien_de_Montazac/thumb_1.png"),
+            },
+            {
                 name: "C'est un cauchemard", 
                 audio: (()=>{let s = new Audio.Sound(); s.loadAsync(require("./Donatien_de_Montazac/c'est_un_cauchemard.mp3")).catch(console.error); return s;})(),
                 image: require("./Donatien_de_Montazac/thumb_1.png"),
@@ -121,6 +131,11 @@ const soundLibrary: Sound[] = [
             {
                 name: "Je passe mon permis c*nnard", 
                 audio: (()=>{let s = new Audio.Sound(); s.loadAsync(require("./Donatien_de_Montazac/je_passe_mon_permis_cXnnard.mp3")).catch(console.error); return s;})(),
+                image: require("./Donatien_de_Montazac/thumb_1.png"),
+            },
+            {
+                name: "JE suis Donatien de Montazac", 
+                audio: (()=>{let s = new Audio.Sound(); s.loadAsync(require("./Donatien_de_Montazac/JE_suis_Donatien_de_Montazac.mp3")).catch(console.error); return s;})(),
                 image: require("./Donatien_de_Montazac/thumb_1.png"),
             },
             {
@@ -302,6 +317,11 @@ const soundLibrary: Sound[] = [
         image: require("./Les_Croute_♡/thumb_1.png"),
         sounds: [ 
             {
+                name: "Antoine bisou", 
+                audio: (()=>{let s = new Audio.Sound(); s.loadAsync(require("./Les_Croute_♡/Antoine_bisou.mp3")).catch(console.error); return s;})(),
+                image: require("./Les_Croute_♡/thumb_1.png"),
+            },
+            {
                 name: "J'ai coincé l'camion", 
                 audio: (()=>{let s = new Audio.Sound(); s.loadAsync(require("./Les_Croute_♡/j'ai_coincé_l'camion.mp3")).catch(console.error); return s;})(),
                 image: require("./Les_Croute_♡/thumb_1.png"),
@@ -390,9 +410,29 @@ const soundLibrary: Sound[] = [
         image: require("./Lindsay_Walker/thumb_1.png"),
         sounds: [ 
             {
+                name: "C'est en sucant n'importe qui", 
+                audio: (()=>{let s = new Audio.Sound(); s.loadAsync(require("./Lindsay_Walker/c'est_en_sucant_n'importe_qui.mp3")).catch(console.error); return s;})(),
+                image: require("./Lindsay_Walker/thumb_2.png"),
+            },
+            {
                 name: "Kelly n'a pas vu NCIS", 
                 audio: (()=>{let s = new Audio.Sound(); s.loadAsync(require("./Lindsay_Walker/Kelly_n'a_pas_vu_NCIS.mp3")).catch(console.error); return s;})(),
-                image: require("./Lindsay_Walker/thumb_2.png"),
+                image: require("./Lindsay_Walker/thumb_1.png"),
+            },
+            {
+                name: "Kelly n'a pas vu NCISS", 
+                audio: (()=>{let s = new Audio.Sound(); s.loadAsync(require("./Lindsay_Walker/Kelly_n'a_pas_vu_NCISS.mp3")).catch(console.error); return s;})(),
+                image: require("./Lindsay_Walker/thumb_1.png"),
+            },
+            {
+                name: "NCIS", 
+                audio: (()=>{let s = new Audio.Sound(); s.loadAsync(require("./Lindsay_Walker/NCIS.mp3")).catch(console.error); return s;})(),
+                image: require("./Lindsay_Walker/thumb_1.png"),
+            },
+            {
+                name: "NCISSS", 
+                audio: (()=>{let s = new Audio.Sound(); s.loadAsync(require("./Lindsay_Walker/NCISSS.mp3")).catch(console.error); return s;})(),
+                image: require("./Lindsay_Walker/thumb_1.png"),
             },
             {
                 name: "NCISSSANH", 
@@ -415,8 +455,18 @@ const soundLibrary: Sound[] = [
                 image: require("./Lindsay_Walker/thumb_1.png"),
             },
             {
+                name: "Que ferais Gibbs", 
+                audio: (()=>{let s = new Audio.Sound(); s.loadAsync(require("./Lindsay_Walker/que_ferais_Gibbs.mp3")).catch(console.error); return s;})(),
+                image: require("./Lindsay_Walker/thumb_1.png"),
+            },
+            {
                 name: "Viande dans le torchon", 
                 audio: (()=>{let s = new Audio.Sound(); s.loadAsync(require("./Lindsay_Walker/viande_dans_le_torchon.mp3")).catch(console.error); return s;})(),
+                image: require("./Lindsay_Walker/thumb_1.png"),
+            },
+            {
+                name: "Échangez les otages avec moi", 
+                audio: (()=>{let s = new Audio.Sound(); s.loadAsync(require("./Lindsay_Walker/échangez_les_otages_avec_moi.mp3")).catch(console.error); return s;})(),
                 image: require("./Lindsay_Walker/thumb_1.png"),
             }
         ],
@@ -467,6 +517,16 @@ const soundLibrary: Sound[] = [
         name: "Michael Rixxy",
         image: require("./Michael_Rixxy/thumb_1.jpg"),
         sounds: [ 
+            {
+                name: "Communiste de merde", 
+                audio: (()=>{let s = new Audio.Sound(); s.loadAsync(require("./Michael_Rixxy/Communiste_de_merde.mp3")).catch(console.error); return s;})(),
+                image: require("./Michael_Rixxy/thumb_1.jpg"),
+            },
+            {
+                name: "FDP", 
+                audio: (()=>{let s = new Audio.Sound(); s.loadAsync(require("./Michael_Rixxy/FDP.mp3")).catch(console.error); return s;})(),
+                image: require("./Michael_Rixxy/thumb_1.jpg"),
+            },
             {
                 name: "L'hymne", 
                 audio: (()=>{let s = new Audio.Sound(); s.loadAsync(require("./Michael_Rixxy/L'hymne.mp3")).catch(console.error); return s;})(),
