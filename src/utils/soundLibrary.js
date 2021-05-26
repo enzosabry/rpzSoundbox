@@ -22,12 +22,12 @@ fs.readdirSync(path).forEach((val) => {
     // define assets array
     resArray += `
     {
-        name: "${(val.charAt(0).toUpperCase() + val.slice(1)).split("_").join(" ")}",
+        name: "${(val.charAt(0).toUpperCase() + val.slice(1)).split("_").join(" ").split( "&#33;").join("!")}",
         image: require("${images[0] ? ("./" + val + "/" + images[0]) : "../img/logorpz.png"}"),
         sounds: [ ${sounds.map((file, i) => `
             {
-                name: "${(file.split('.')[0].charAt(0).toUpperCase() + file.split('.')[0].slice(1)).split("_").join(" ").split('X').join('*')}", 
-                audio: (()=>{let s = new Audio.Sound(); s.loadAsync(require("${"./" + val + "/" + file}")).catch(console.error); return s;})(),
+                name: "${(file.split('.')[0].charAt(0).toUpperCase() + file.split('.')[0].slice(1)).split("_").join(" ").split('X').join('*').split( "&#33;").join("!")}", 
+                audio: (async () => {let s = new Audio.Sound(); await s.loadAsync(require("${"./" + val + "/" + file}")).catch(console.error); return s;}),
                 image: require("${images[i+1] ? ("./" + val + "/" + images[i+1]) : images[0] ? ("./" + val + "/" + images[0]) : "../img/logorpz.png"}"),
             }`).join(",")}
         ],
