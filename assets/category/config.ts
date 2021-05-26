@@ -648,12 +648,12 @@ const soundLibrary: Sound[] = [
     },
     {
         name: "Rose Dwight",
-        image: require("../img/logorpz.png"),
+        image: require("./Rose_Dwight/thumb_0.png"),
         sounds: [ 
             {
                 name: "Ich spreche deutsch", 
                 audio: (()=>{let s = new Audio.Sound(); s.loadAsync(require("./Rose_Dwight/Ich_spreche_deutsch.mp3")).catch(console.error); return s;})(),
-                image: require("../img/logorpz.png"),
+                image: require("./Rose_Dwight/thumb_0.png"),
             }
         ],
     },
