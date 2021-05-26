@@ -143,9 +143,21 @@ export class Categories extends React.Component<Props, object> {
         const navigate = navigation.navigate;
         let aspectRatio;
         let nbrCat = 3;
-        if(height>950) {
+        if(width>2700) {
+            aspectRatio = 0.7;
+            nbrCat = 8
+        }else if(width>1675) {
+            aspectRatio = 0.6;
+            nbrCat = 7
+        }else if(width>1375) {
+            aspectRatio = 0.6;
+            nbrCat = 6
+        }else if(width>960) {
             aspectRatio = 0.6;
             nbrCat = 5
+        }else if(width>780) {
+            aspectRatio = 0.6;
+            nbrCat = 4
         }else {
             aspectRatio = 1;
             nbrCat = 3
