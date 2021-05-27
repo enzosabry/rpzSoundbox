@@ -1,11 +1,11 @@
 {
   "files": {
-    "app.js": "/rpzSoundbox/static/js/app.de566bf0.chunk.js",
-    "app.js.map": "/rpzSoundbox/static/js/app.de566bf0.chunk.js.map",
+    "app.js": "/rpzSoundbox/static/js/app.fbee0142.chunk.js",
+    "app.js.map": "/rpzSoundbox/static/js/app.fbee0142.chunk.js.map",
     "runtime~app.js": "/rpzSoundbox/static/js/runtime~app.9d040d6a.js",
     "runtime~app.js.map": "/rpzSoundbox/static/js/runtime~app.9d040d6a.js.map",
-    "static/js/2.6cc3a3c1.chunk.js": "/rpzSoundbox/static/js/2.6cc3a3c1.chunk.js",
-    "static/js/2.6cc3a3c1.chunk.js.map": "/rpzSoundbox/static/js/2.6cc3a3c1.chunk.js.map",
+    "static/js/2.cbb1d262.chunk.js": "/rpzSoundbox/static/js/2.cbb1d262.chunk.js",
+    "static/js/2.cbb1d262.chunk.js.map": "/rpzSoundbox/static/js/2.cbb1d262.chunk.js.map",
     "fonts/AntDesign.ttf": "/rpzSoundbox/./fonts/AntDesign.ttf",
     "fonts/Entypo.ttf": "/rpzSoundbox/./fonts/Entypo.ttf",
     "fonts/Feather.ttf": "/rpzSoundbox/./fonts/Feather.ttf",
@@ -24,7 +24,7 @@
     "index.html": "/rpzSoundbox/index.html",
     "manifest.json": "/rpzSoundbox/manifest.json",
     "serve.json": "/rpzSoundbox/serve.json",
-    "static/js/2.6cc3a3c1.chunk.js.LICENSE.txt": "/rpzSoundbox/static/js/2.6cc3a3c1.chunk.js.LICENSE.txt",
+    "static/js/2.cbb1d262.chunk.js.LICENSE.txt": "/rpzSoundbox/static/js/2.cbb1d262.chunk.js.LICENSE.txt",
     "static/media/39_44.mp3": "/rpzSoundbox/static/media/39_44.fa1c82f3.mp3",
     "static/media/ALLEZ_GONTRANNNN.mp3": "/rpzSoundbox/static/media/ALLEZ_GONTRANNNN.004ddc0b.mp3",
     "static/media/Antoine_bisou.mp3": "/rpzSoundbox/static/media/Antoine_bisou.d7936d47.mp3",
@@ -95,7 +95,7 @@
     "static/media/jefe_tou_a_toué_Kiwi.mp3": "/rpzSoundbox/static/media/jefe_tou_a_toué_Kiwi.795890b1.mp3",
     "static/media/l'information_à_tout_prix.mp3": "/rpzSoundbox/static/media/l'information_à_tout_prix.7dcffef2.mp3",
     "static/media/le_domaine_en_feu.mp3": "/rpzSoundbox/static/media/le_domaine_en_feu.c84ed4c5.mp3",
-    "static/media/logorpz.png": "/rpzSoundbox/static/media/logorpz.adcf3a0e.png",
+    "static/media/logorpz.png": "/rpzSoundbox/static/media/logorpz.0910b5c2.png",
     "static/media/ma_tension_je_t'la_met_dans_l'cXl.mp3": "/rpzSoundbox/static/media/ma_tension_je_t'la_met_dans_l'cXl.bf7527c6.mp3",
     "static/media/mais_boss_burnouuut.mp3": "/rpzSoundbox/static/media/mais_boss_burnouuut.9085ef08.mp3",
     "static/media/mais_qui_vois_là'je.mp3": "/rpzSoundbox/static/media/mais_qui_vois_là'je.fa9a67c4.mp3",
@@ -119,10 +119,10 @@
     "static/media/sonnerie.mp3": "/rpzSoundbox/static/media/sonnerie.1d587ac4.mp3",
     "static/media/tazer.mp3": "/rpzSoundbox/static/media/tazer.1cc4d88b.mp3",
     "static/media/tension_dans_l'coude.mp3": "/rpzSoundbox/static/media/tension_dans_l'coude.82912fa1.mp3",
-    "static/media/thumb_0.png": "/rpzSoundbox/static/media/thumb_0.fff5939f.png",
-    "static/media/thumb_0.jpg": "/rpzSoundbox/static/media/thumb_0.f85549f0.jpg",
-    "static/media/thumb_2.png": "/rpzSoundbox/static/media/thumb_2.fd023acd.png",
-    "static/media/thumb_3.png": "/rpzSoundbox/static/media/thumb_3.ce936d4b.png",
+    "static/media/thumb_0.jpg": "/rpzSoundbox/static/media/thumb_0.fa0d4cd0.jpg",
+    "static/media/thumb_0.png": "/rpzSoundbox/static/media/thumb_0.f29e9772.png",
+    "static/media/thumb_2.png": "/rpzSoundbox/static/media/thumb_2.e669ee31.png",
+    "static/media/thumb_3.png": "/rpzSoundbox/static/media/thumb_3.100ccf5c.png",
     "static/media/tkt_on_fait_mout-mout.mp3": "/rpzSoundbox/static/media/tkt_on_fait_mout-mout.aaa92ac7.mp3",
     "static/media/tou_peux_pas_mourir.mp3": "/rpzSoundbox/static/media/tou_peux_pas_mourir.03fcf99d.mp3",
     "static/media/trace_trace_trace.mp3": "/rpzSoundbox/static/media/trace_trace_trace.bfba75d5.mp3",
@@ -140,7 +140,7 @@
   },
   "entrypoints": [
     "static/js/runtime~app.9d040d6a.js",
-    "static/js/2.6cc3a3c1.chunk.js",
-    "static/js/app.de566bf0.chunk.js"
+    "static/js/2.cbb1d262.chunk.js",
+    "static/js/app.fbee0142.chunk.js"
   ]
 }

@@ -3,7 +3,7 @@ import {
     Dimensions,
     Image,
     ImageBackground,
-    Linking, PixelRatio,
+    Linking, PixelRatio, Platform,
     ScrollView,
     StyleSheet,
     Text,
@@ -143,9 +143,21 @@ export class Categories extends React.Component<Props, object> {
         const navigate = navigation.navigate;
         let aspectRatio;
         let nbrCat = 3;
-        if(height>950) {
+        if(width>2700) {
+            aspectRatio = 0.7;
+            nbrCat = 8
+        }else if(width>1675) {
+            aspectRatio = 0.6;
+            nbrCat = 7
+        }else if(width>1375) {
+            aspectRatio = 0.6;
+            nbrCat = 6
+        }else if(width>960) {
             aspectRatio = 0.6;
             nbrCat = 5
+        }else if(width>780) {
+            aspectRatio = 0.6;
+            nbrCat = 4
         }else {
             aspectRatio = 1;
             nbrCat = 3
@@ -162,23 +174,29 @@ export class Categories extends React.Component<Props, object> {
                 visible: false
             });
         };
-        const dial = (
-            <View>
-                <Dialog.Container visible={this.state.visible}>
-                    <Dialog.Title>Merci d'avoir téléchargé l'application !</Dialog.Title>
-                    <Dialog.Description>
-                        <Text>Cette application a été créé tout comme toi par des personnes ayant passionnément aimé l'évènement GTA RPZ.{"\n"}</Text>
-                        <Text>Tu veux ajouter un nouveau son ou alors participer au développement de l'app ? Rejoins nous vite sur :{"\n"}</Text>
-                        -<Text onPress={() => Linking.openURL('https://github.com/enzosabry/rpzSoundbox')}
-                               style={{textDecorationLine: 'underline', color: 'blue'}}>Github</Text>{"\n"}
+        let dial: JSX.Element = <View/>;
+        if (Platform.OS !== 'web') {
+            dial = (
+                <View>
+                    <Dialog.Container visible={this.state.visible}>
+                        <Dialog.Title>Merci d'avoir téléchargé l'application !</Dialog.Title>
+                        <Dialog.Description>
+                            <Text>Cette application a été créé tout comme toi par des personnes ayant passionnément aimé
+                                l'évènement GTA RPZ.{"\n"}</Text>
+                            <Text>Tu veux ajouter un nouveau son ou alors participer au développement de l'app ? Rejoins
+                                nous vite sur :{"\n"}</Text>
+                            -<Text onPress={() => Linking.openURL('https://github.com/enzosabry/rpzSoundbox')}
+                                   style={{textDecorationLine: 'underline', color: 'blue'}}>Github</Text>{"\n"}
 
-                        -<Text onPress={() => Linking.openURL('https://discord.gg/Ry5qNYJG83')}
-                               style={{textDecorationLine: 'underline', color: 'blue'}}>Discord</Text>{"\n"}
-                        <Text>Bisou.</Text>
-                    </Dialog.Description>
-                    <Dialog.Button label="Laisse moi tester !" onPress={handleCancel}/>
-                </Dialog.Container>
-            </View>);
+                            -<Text onPress={() => Linking.openURL('https://discord.gg/Ry5qNYJG83')}
+                                   style={{textDecorationLine: 'underline', color: 'blue'}}>Discord</Text>{"\n"}
+                            <Text>Bisou.</Text>
+                        </Dialog.Description>
+                        <Dialog.Button color={"#169689"} label="Laisse moi tester !" onPress={handleCancel}/>
+                    </Dialog.Container>
+                </View>);
+        }else
+            dial = null;
 
         return (
             <ScrollView style={styles.container}>

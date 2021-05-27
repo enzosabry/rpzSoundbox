@@ -5,6 +5,8 @@
 
 [Google Play Store](https://play.google.com/store/apps/details?id=com.playadev.rpzsoundbox)
 
+[Version web](https://enzosabry.github.io/rpzSoundbox/)
+
 [Twitter](https://twitter.com/Playa_Dev)
 
 # Une image ou un son vous appartient?
