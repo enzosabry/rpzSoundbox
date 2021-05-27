@@ -1,4 +1,4 @@
-import {Audio} from "expo-av";
+import { Asset } from 'expo-asset';
 
 export type Sound = {
     name: string;
@@ -7,6 +7,6 @@ export type Sound = {
 }
 export type AudioName = {
     name: string;
-    audio: Audio.Sound;
+    audio: Asset;
     image: any;
 }

@@ -27,7 +27,7 @@ fs.readdirSync(path).forEach((val) => {
         sounds: [ ${sounds.map((file, i) => `
             {
                 name: "${(file.split('.')[0].charAt(0).toUpperCase() + file.split('.')[0].slice(1)).split("_").join(" ").split('X').join('*').split( "&#33;").join("!")}", 
-                audio: (async () => {let s = new Audio.Sound(); await s.loadAsync(require("${"./" + val + "/" + file}"), {},true).catch(console.error); return s;}),
+                audio: Asset.fromModule(require("${"./" + val + "/" + file}")),
                 image: require("${images[i+1] ? ("./" + val + "/" + images[i+1]) : images[0] ? ("./" + val + "/" + images[0]) : "../img/logorpz.png"}"),
             }`).join(",")}
         ],
@@ -41,6 +41,8 @@ const res = `/****************************************************
  ****************************************************/
 import { Audio } from 'expo-av';
 import { Sound } from "../../src/components/Sound";
+import { Asset } from 'expo-asset';
+
 
 const soundLibrary: Sound[] = ${resArray};
 
