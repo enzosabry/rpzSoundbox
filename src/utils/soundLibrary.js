@@ -17,7 +17,8 @@ fs.readdirSync(path).forEach((val) => {
     const subDir = fs.readdirSync(path + val);
     // GET all sounds and image(s)
     const sounds = subDir.filter((x) => x.includes("mp3"));
-    const images = subDir.filter((x) => x.includes("thumb_"));
+    const images = [];
+    subDir.filter(x=>x.includes("thumb_")).forEach(i => images[parseInt(i.split('.')[0].split('_')[1])] = i);
 
     // define assets array
     resArray += `
