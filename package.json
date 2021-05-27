@@ -34,6 +34,7 @@
     "react-native-safe-area-context": "3.2.0",
     "react-native-screens": "~3.0.0",
     "react-native-sortable-gridview": "^1.1.5",
+    "react-native-sound-player": "^0.10.8",
     "react-native-super-grid": "^4.1.1",
     "react-native-unimodules": "~0.13.3",
     "react-native-vector-icons": "^8.1.0",
