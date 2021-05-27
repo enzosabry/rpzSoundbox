@@ -95,13 +95,73 @@ const soundLibrary: Sound[] = [
                 image: require("./Docteur_Maison/thumb_0.png"),
             },
             {
+                name: "Attachiante et Célibatante", 
+                audio: Asset.fromModule(require("./Docteur_Maison/Attachiante_et_Célibatante.mp3")),
+                image: require("./Docteur_Maison/thumb_0.png"),
+            },
+            {
+                name: "Cheh", 
+                audio: Asset.fromModule(require("./Docteur_Maison/Cheh.mp3")),
+                image: require("./Docteur_Maison/thumb_0.png"),
+            },
+            {
+                name: "Cheh sale race", 
+                audio: Asset.fromModule(require("./Docteur_Maison/Cheh_sale_race.mp3")),
+                image: require("./Docteur_Maison/thumb_0.png"),
+            },
+            {
+                name: "Cher Ami", 
+                audio: Asset.fromModule(require("./Docteur_Maison/Cher_Ami.mp3")),
+                image: require("./Docteur_Maison/thumb_0.png"),
+            },
+            {
+                name: "Expert en Bukakke", 
+                audio: Asset.fromModule(require("./Docteur_Maison/Expert_en_Bukakke.mp3")),
+                image: require("./Docteur_Maison/thumb_0.png"),
+            },
+            {
+                name: "Formidable", 
+                audio: Asset.fromModule(require("./Docteur_Maison/Formidable.mp3")),
+                image: require("./Docteur_Maison/thumb_0.png"),
+            },
+            {
                 name: "J'aime les burgers", 
                 audio: Asset.fromModule(require("./Docteur_Maison/j'aime_les_burgers.mp3")),
                 image: require("./Docteur_Maison/thumb_0.png"),
             },
             {
+                name: "Ouistiti", 
+                audio: Asset.fromModule(require("./Docteur_Maison/Ouistiti.mp3")),
+                image: require("./Docteur_Maison/thumb_0.png"),
+            },
+            {
+                name: "Peuh", 
+                audio: Asset.fromModule(require("./Docteur_Maison/Peuh.mp3")),
+                image: require("./Docteur_Maison/thumb_0.png"),
+            },
+            {
+                name: "Sangliers, fils de catin", 
+                audio: Asset.fromModule(require("./Docteur_Maison/Sangliers,_fils_de_catin.mp3")),
+                image: require("./Docteur_Maison/thumb_0.png"),
+            },
+            {
                 name: "Très grosse erreur", 
                 audio: Asset.fromModule(require("./Docteur_Maison/Très_grosse_erreur.mp3")),
+                image: require("./Docteur_Maison/thumb_0.png"),
+            },
+            {
+                name: "Un sanglier", 
+                audio: Asset.fromModule(require("./Docteur_Maison/Un_sanglier.mp3")),
+                image: require("./Docteur_Maison/thumb_0.png"),
+            },
+            {
+                name: "Vous prêchez un convaincu", 
+                audio: Asset.fromModule(require("./Docteur_Maison/Vous_prêchez_un_convaincu.mp3")),
+                image: require("./Docteur_Maison/thumb_0.png"),
+            },
+            {
+                name: "Vous êtes exquise", 
+                audio: Asset.fromModule(require("./Docteur_Maison/Vous_êtes_exquise.mp3")),
                 image: require("./Docteur_Maison/thumb_0.png"),
             }
         ],
