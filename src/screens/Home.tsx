@@ -55,6 +55,10 @@ export class Home extends React.Component<Props, {}> {
                 }}>
                     <Ionicons name="apps-outline" size={32} style={{marginLeft: 15, marginTop: 5, color: "#FFF"}}/>
                 </TouchableOpacity>),
+            headerRight: () =>
+                (<TouchableOpacity onPress={() => Linking.openURL("https://twitter.com/Playa_Dev")}>
+                    <Ionicons name="logo-twitter" size={32} style={{marginRight: 15, marginTop: 5, color: "#00acee"}}/>
+                </TouchableOpacity>),
         });
     }
 
