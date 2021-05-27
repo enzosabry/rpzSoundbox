@@ -17,6 +17,7 @@ import {DrawerParams} from "../../App";
 import {FlatGrid} from 'react-native-super-grid';
 import {Ionicons} from "@expo/vector-icons";
 import {RFValue} from "react-native-responsive-fontsize";
+import {Audio} from "expo-av";
 
 const {width, height} = Dimensions.get("window");
 
@@ -55,13 +56,18 @@ export class Home extends React.Component<Props, {}> {
                 }}>
                     <Ionicons name="apps-outline" size={32} style={{marginLeft: 15, marginTop: 5, color: "#FFF"}}/>
                 </TouchableOpacity>),
+            headerRight: () =>
+                (<TouchableOpacity onPress={() => Linking.openURL("https://twitter.com/Playa_Dev")}>
+                    <Ionicons name="logo-twitter" size={32} style={{marginRight: 15, marginTop: 5, color: "#00acee"}}/>
+                </TouchableOpacity>),
         });
     }
 
     render() {
         const {route, navigation} = this.props;
         const {category} = route.params;
-        let prevSound;
+        const sound = new Audio.Sound();
+        let prevSound: Audio.Sound;
         {this.showNav()}
 
         return (
@@ -79,10 +85,12 @@ export class Home extends React.Component<Props, {}> {
                                 return (
                                     <TouchableOpacity
                                         style={{height: 175, borderRadius: 50,}}
-                                        onPress={() => {
-                                            if (prevSound) prevSound.stopAsync();
-                                            prevSound = item.audio;
-                                            item.audio?.replayAsync().catch(console.error);
+                                        onPress={async() => {
+                                            if(prevSound) await prevSound.unloadAsync();
+                                            await sound.loadAsync(item.audio);
+                                            await sound.playAsync();
+                                            prevSound=sound;
+                                            //await sound.unloadAsync();
                                         }}>
                                         <ImageBackground
                                             style={{height: 100, width: 100, alignSelf: 'center', position: "relative"}}
