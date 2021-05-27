@@ -225,7 +225,7 @@ export class Categories extends React.Component<Props, object> {
                                             imageStyle={{height: 80, resizeMode: 'center',}}
                                             source={item?.image || require("../../assets/img/logorpz.png")}/>
                                     </View>
-                                    <Text style={styles.text}>{item?.name || "Accueil"}</Text>
+                                    <Text style={styles.text}>{item?.name || "Tout"}</Text>
                                 </TouchableOpacity>
                             )
                         }}
