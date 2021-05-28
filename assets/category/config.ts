@@ -181,8 +181,33 @@ const soundLibrary: Sound[] = [
                 image: require("./Donatien_de_Montazac/thumb_0.png"),
             },
             {
+                name: "Accidents de parcours", 
+                audio: Asset.fromModule(require("./Donatien_de_Montazac/Accidents_de_parcours.mp3")),
+                image: require("./Donatien_de_Montazac/thumb_0.png"),
+            },
+            {
+                name: "Antoine m'a complètement niqué", 
+                audio: Asset.fromModule(require("./Donatien_de_Montazac/Antoine_m'a_complètement_niqué.mp3")),
+                image: require("./Donatien_de_Montazac/thumb_0.png"),
+            },
+            {
+                name: "Beaucoup de respect mais tout de même", 
+                audio: Asset.fromModule(require("./Donatien_de_Montazac/Beaucoup_de_respect_mais_tout_de_même.mp3")),
+                image: require("./Donatien_de_Montazac/thumb_0.png"),
+            },
+            {
+                name: "Bravo Marius", 
+                audio: Asset.fromModule(require("./Donatien_de_Montazac/Bravo_Marius.mp3")),
+                image: require("./Donatien_de_Montazac/thumb_0.png"),
+            },
+            {
                 name: "C'est Donatien de Montazac à l'appareil", 
                 audio: Asset.fromModule(require("./Donatien_de_Montazac/C'est_Donatien_de_Montazac_à_l'appareil.mp3")),
+                image: require("./Donatien_de_Montazac/thumb_0.png"),
+            },
+            {
+                name: "C'est génial ici", 
+                audio: Asset.fromModule(require("./Donatien_de_Montazac/C'est_génial_ici.mp3")),
                 image: require("./Donatien_de_Montazac/thumb_0.png"),
             },
             {
@@ -196,8 +221,48 @@ const soundLibrary: Sound[] = [
                 image: require("./Donatien_de_Montazac/thumb_0.png"),
             },
             {
+                name: "C'est un piège", 
+                audio: Asset.fromModule(require("./Donatien_de_Montazac/C'est_un_piège.mp3")),
+                image: require("./Donatien_de_Montazac/thumb_0.png"),
+            },
+            {
+                name: "Ceinture", 
+                audio: Asset.fromModule(require("./Donatien_de_Montazac/Ceinture.mp3")),
+                image: require("./Donatien_de_Montazac/thumb_0.png"),
+            },
+            {
                 name: "Cui Cui Cui", 
                 audio: Asset.fromModule(require("./Donatien_de_Montazac/Cui_Cui_Cui.mp3")),
+                image: require("./Donatien_de_Montazac/thumb_0.png"),
+            },
+            {
+                name: "D'amitié", 
+                audio: Asset.fromModule(require("./Donatien_de_Montazac/d'amitié.mp3")),
+                image: require("./Donatien_de_Montazac/thumb_0.png"),
+            },
+            {
+                name: "Dernières chances", 
+                audio: Asset.fromModule(require("./Donatien_de_Montazac/Dernières_chances.mp3")),
+                image: require("./Donatien_de_Montazac/thumb_0.png"),
+            },
+            {
+                name: "Discours après l'élection", 
+                audio: Asset.fromModule(require("./Donatien_de_Montazac/Discours_après_l'élection.mp3")),
+                image: require("./Donatien_de_Montazac/thumb_0.png"),
+            },
+            {
+                name: "Doberman est mort", 
+                audio: Asset.fromModule(require("./Donatien_de_Montazac/Doberman_est_mort.mp3")),
+                image: require("./Donatien_de_Montazac/thumb_0.png"),
+            },
+            {
+                name: "Donatien doit faire justice", 
+                audio: Asset.fromModule(require("./Donatien_de_Montazac/Donatien_doit_faire_justice.mp3")),
+                image: require("./Donatien_de_Montazac/thumb_0.png"),
+            },
+            {
+                name: "Dona vrille complètement", 
+                audio: Asset.fromModule(require("./Donatien_de_Montazac/Dona_vrille_complètement.mp3")),
                 image: require("./Donatien_de_Montazac/thumb_0.png"),
             },
             {
@@ -206,8 +271,38 @@ const soundLibrary: Sound[] = [
                 image: require("./Donatien_de_Montazac/thumb_0.png"),
             },
             {
+                name: "Fab je t'aime", 
+                audio: Asset.fromModule(require("./Donatien_de_Montazac/Fab_je_t'aime.mp3")),
+                image: require("./Donatien_de_Montazac/thumb_0.png"),
+            },
+            {
+                name: "Impitoyable", 
+                audio: Asset.fromModule(require("./Donatien_de_Montazac/Impitoyable.mp3")),
+                image: require("./Donatien_de_Montazac/thumb_0.png"),
+            },
+            {
+                name: "J'ai pas compris", 
+                audio: Asset.fromModule(require("./Donatien_de_Montazac/J'ai_pas_compris.mp3")),
+                image: require("./Donatien_de_Montazac/thumb_0.png"),
+            },
+            {
+                name: "J'ai perdu tous mes camions", 
+                audio: Asset.fromModule(require("./Donatien_de_Montazac/J'ai_perdu_tous_mes_camions.mp3")),
+                image: require("./Donatien_de_Montazac/thumb_0.png"),
+            },
+            {
+                name: "J'm'en bats un peu les couilles", 
+                audio: Asset.fromModule(require("./Donatien_de_Montazac/J'm'en_bats_un_peu_les_couilles.mp3")),
+                image: require("./Donatien_de_Montazac/thumb_0.png"),
+            },
+            {
                 name: "Je passe mon permis c*nnard", 
                 audio: Asset.fromModule(require("./Donatien_de_Montazac/je_passe_mon_permis_cXnnard.mp3")),
+                image: require("./Donatien_de_Montazac/thumb_0.png"),
+            },
+            {
+                name: "Je plaide coupable", 
+                audio: Asset.fromModule(require("./Donatien_de_Montazac/Je_plaide_coupable.mp3")),
                 image: require("./Donatien_de_Montazac/thumb_0.png"),
             },
             {
@@ -216,8 +311,58 @@ const soundLibrary: Sound[] = [
                 image: require("./Donatien_de_Montazac/thumb_0.png"),
             },
             {
+                name: "Je suis en colère", 
+                audio: Asset.fromModule(require("./Donatien_de_Montazac/Je_suis_en_colère.mp3")),
+                image: require("./Donatien_de_Montazac/thumb_0.png"),
+            },
+            {
                 name: "Je suis millionaire", 
                 audio: Asset.fromModule(require("./Donatien_de_Montazac/je_suis_millionaire.mp3")),
+                image: require("./Donatien_de_Montazac/thumb_0.png"),
+            },
+            {
+                name: "Je veux chanter", 
+                audio: Asset.fromModule(require("./Donatien_de_Montazac/Je_veux_chanter.mp3")),
+                image: require("./Donatien_de_Montazac/thumb_0.png"),
+            },
+            {
+                name: "Les croutes me rappellent cette chanson", 
+                audio: Asset.fromModule(require("./Donatien_de_Montazac/les_croutes_me_rappellent_cette_chanson.mp3")),
+                image: require("./Donatien_de_Montazac/thumb_0.png"),
+            },
+            {
+                name: "New sherif in town", 
+                audio: Asset.fromModule(require("./Donatien_de_Montazac/new_sherif_in_town.mp3")),
+                image: require("./Donatien_de_Montazac/thumb_0.png"),
+            },
+            {
+                name: "Pathétique", 
+                audio: Asset.fromModule(require("./Donatien_de_Montazac/Pathétique.mp3")),
+                image: require("./Donatien_de_Montazac/thumb_0.png"),
+            },
+            {
+                name: "Poucave", 
+                audio: Asset.fromModule(require("./Donatien_de_Montazac/Poucave.mp3")),
+                image: require("./Donatien_de_Montazac/thumb_0.png"),
+            },
+            {
+                name: "Quel dommage", 
+                audio: Asset.fromModule(require("./Donatien_de_Montazac/Quel_dommage.mp3")),
+                image: require("./Donatien_de_Montazac/thumb_0.png"),
+            },
+            {
+                name: "Started from the bottom now we're here", 
+                audio: Asset.fromModule(require("./Donatien_de_Montazac/Started_from_the_bottom_now_we're_here.mp3")),
+                image: require("./Donatien_de_Montazac/thumb_0.png"),
+            },
+            {
+                name: "TA GUEULE", 
+                audio: Asset.fromModule(require("./Donatien_de_Montazac/TA_GUEULE.mp3")),
+                image: require("./Donatien_de_Montazac/thumb_0.png"),
+            },
+            {
+                name: "Ta gueuule", 
+                audio: Asset.fromModule(require("./Donatien_de_Montazac/Ta_gueuule.mp3")),
                 image: require("./Donatien_de_Montazac/thumb_0.png"),
             },
             {
@@ -228,6 +373,26 @@ const soundLibrary: Sound[] = [
             {
                 name: "VITE", 
                 audio: Asset.fromModule(require("./Donatien_de_Montazac/VITE.mp3")),
+                image: require("./Donatien_de_Montazac/thumb_0.png"),
+            },
+            {
+                name: "Vous me gênez Antoine", 
+                audio: Asset.fromModule(require("./Donatien_de_Montazac/Vous_me_gênez_Antoine.mp3")),
+                image: require("./Donatien_de_Montazac/thumb_0.png"),
+            },
+            {
+                name: "Vous me gênez beaucoup Antoine", 
+                audio: Asset.fromModule(require("./Donatien_de_Montazac/Vous_me_gênez_beaucoup_Antoine.mp3")),
+                image: require("./Donatien_de_Montazac/thumb_0.png"),
+            },
+            {
+                name: "Wonderwall", 
+                audio: Asset.fromModule(require("./Donatien_de_Montazac/Wonderwall.mp3")),
+                image: require("./Donatien_de_Montazac/thumb_0.png"),
+            },
+            {
+                name: "Ça va mal se passer", 
+                audio: Asset.fromModule(require("./Donatien_de_Montazac/ça_va_mal_se_passer.mp3")),
                 image: require("./Donatien_de_Montazac/thumb_0.png"),
             }
         ],
