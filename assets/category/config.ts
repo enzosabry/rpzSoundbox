@@ -41,6 +41,26 @@ const soundLibrary: Sound[] = [
                 name: "Déjà s**é un pote", 
                 audio: Asset.fromModule(require("./Bazil/déjà_sXXé_un_pote.mp3")),
                 image: require("./Bazil/thumb_0.jpg"),
+            },
+            {
+                name: "J'suis chasseur de truffes", 
+                audio: Asset.fromModule(require("./Bazil/J'suis_chasseur_de_truffes.mp3")),
+                image: require("./Bazil/thumb_0.jpg"),
+            },
+            {
+                name: "J'vous montre mon pipou", 
+                audio: Asset.fromModule(require("./Bazil/j'vous_montre_mon_pipou.mp3")),
+                image: require("./Bazil/thumb_0.jpg"),
+            },
+            {
+                name: "Poudlard", 
+                audio: Asset.fromModule(require("./Bazil/Poudlard.mp3")),
+                image: require("./Bazil/thumb_0.jpg"),
+            },
+            {
+                name: "Vous êtes mon héro", 
+                audio: Asset.fromModule(require("./Bazil/Vous_êtes_mon_héro.mp3")),
+                image: require("./Bazil/thumb_0.jpg"),
             }
         ],
     },
@@ -87,6 +107,44 @@ const soundLibrary: Sound[] = [
                 name: "Vous êtes connes ou quoi", 
                 audio: Asset.fromModule(require("./Bill_Boid/vous_êtes_connes_ou_quoi.mp3")),
                 image: require("./Bill_Boid/thumb_0.jpg"),
+            }
+        ],
+    },
+    {
+        name: "Detective Bauer",
+        image: require("../img/logorpz.png"),
+        sounds: [ 
+            {
+                name: "Des clients bizarres", 
+                audio: Asset.fromModule(require("./Detective_Bauer/Des_clients_bizarres.mp3")),
+                image: require("../img/logorpz.png"),
+            }
+        ],
+    },
+    {
+        name: "Devon",
+        image: require("../img/logorpz.png"),
+        sounds: [ 
+            {
+                name: "Mr", 
+                audio: Asset.fromModule(require("./Devon/Mr._de_Mongolfière.mp3")),
+                image: require("../img/logorpz.png"),
+            }
+        ],
+    },
+    {
+        name: "Docteur Cox",
+        image: require("../img/logorpz.png"),
+        sounds: [ 
+            {
+                name: "Dr Cox pète un plomb", 
+                audio: Asset.fromModule(require("./Docteur_Cox/Dr_Cox_pète_un_plomb.mp3")),
+                image: require("../img/logorpz.png"),
+            },
+            {
+                name: "Est-ce que j'ai l'air méchant", 
+                audio: Asset.fromModule(require("./Docteur_Cox/est-ce_que_j'ai_l'air_méchant.mp3")),
+                image: require("../img/logorpz.png"),
             }
         ],
     },
@@ -168,6 +226,38 @@ const soundLibrary: Sound[] = [
                 name: "Vous êtes exquise", 
                 audio: Asset.fromModule(require("./Docteur_Maison/Vous_êtes_exquise.mp3")),
                 image: require("./Docteur_Maison/thumb_0.png"),
+            }
+        ],
+    },
+    {
+        name: "Docteur Traoult",
+        image: require("../img/logorpz.png"),
+        sounds: [ 
+            {
+                name: "Vous allez faire pipi", 
+                audio: Asset.fromModule(require("./Docteur_Traoult/Vous_allez_faire_pipi.mp3")),
+                image: require("../img/logorpz.png"),
+            }
+        ],
+    },
+    {
+        name: "Docteur White",
+        image: require("../img/logorpz.png"),
+        sounds: [ 
+            {
+                name: "Dr", 
+                audio: Asset.fromModule(require("./Docteur_White/Dr._Fast.mp3")),
+                image: require("../img/logorpz.png"),
+            },
+            {
+                name: "Si vous pouvez me tuer", 
+                audio: Asset.fromModule(require("./Docteur_White/Si_vous_pouvez_me_tuer.mp3")),
+                image: require("../img/logorpz.png"),
+            },
+            {
+                name: "Ça fait plaisir", 
+                audio: Asset.fromModule(require("./Docteur_White/ça_fait_plaisir.mp3")),
+                image: require("../img/logorpz.png"),
             }
         ],
     },
@@ -428,8 +518,28 @@ const soundLibrary: Sound[] = [
                 image: require("./Fabien_Torez/thumb_0.jpg"),
             },
             {
+                name: "C'EST D'LA BOOOOMBE", 
+                audio: Asset.fromModule(require("./Fabien_Torez/C'EST_D'LA_BOOOOMBE.mp3")),
+                image: require("./Fabien_Torez/thumb_0.jpg"),
+            },
+            {
                 name: "C'est marang", 
                 audio: Asset.fromModule(require("./Fabien_Torez/C'est_marang.mp3")),
+                image: require("./Fabien_Torez/thumb_0.jpg"),
+            },
+            {
+                name: "C'est marang - Version longue", 
+                audio: Asset.fromModule(require("./Fabien_Torez/C'est_marang_-_Version_longue.mp3")),
+                image: require("./Fabien_Torez/thumb_0.jpg"),
+            },
+            {
+                name: "Complètement chtarbé", 
+                audio: Asset.fromModule(require("./Fabien_Torez/Complètement_chtarbé.mp3")),
+                image: require("./Fabien_Torez/thumb_0.jpg"),
+            },
+            {
+                name: "Depuis la 1ère fois où j'ai fait l'amour", 
+                audio: Asset.fromModule(require("./Fabien_Torez/Depuis_la_1ère_fois_où_j'ai_fait_l'amour.mp3")),
                 image: require("./Fabien_Torez/thumb_0.jpg"),
             },
             {
@@ -438,8 +548,23 @@ const soundLibrary: Sound[] = [
                 image: require("./Fabien_Torez/thumb_0.jpg"),
             },
             {
+                name: "Gardien de la merde", 
+                audio: Asset.fromModule(require("./Fabien_Torez/Gardien_de_la_merde.mp3")),
+                image: require("./Fabien_Torez/thumb_0.jpg"),
+            },
+            {
                 name: "Le domaine en feu", 
                 audio: Asset.fromModule(require("./Fabien_Torez/le_domaine_en_feu.mp3")),
+                image: require("./Fabien_Torez/thumb_0.jpg"),
+            },
+            {
+                name: "Me dites pas que c'est Dona", 
+                audio: Asset.fromModule(require("./Fabien_Torez/Me_dites_pas_que_c'est_Dona.mp3")),
+                image: require("./Fabien_Torez/thumb_0.jpg"),
+            },
+            {
+                name: "Pourquoi vous me parlez comme ça", 
+                audio: Asset.fromModule(require("./Fabien_Torez/Pourquoi_vous_me_parlez_comme_ça.mp3")),
                 image: require("./Fabien_Torez/thumb_0.jpg"),
             },
             {
@@ -451,6 +576,38 @@ const soundLibrary: Sound[] = [
                 name: "Salut moi c'est Fab", 
                 audio: Asset.fromModule(require("./Fabien_Torez/salut_moi_c'est_Fab.mp3")),
                 image: require("./Fabien_Torez/thumb_0.jpg"),
+            },
+            {
+                name: "Tout va bieng", 
+                audio: Asset.fromModule(require("./Fabien_Torez/Tout_va_bieng.mp3")),
+                image: require("./Fabien_Torez/thumb_0.jpg"),
+            },
+            {
+                name: "Tu peux me retazer gros", 
+                audio: Asset.fromModule(require("./Fabien_Torez/Tu_peux_me_retazer_gros.mp3")),
+                image: require("./Fabien_Torez/thumb_0.jpg"),
+            }
+        ],
+    },
+    {
+        name: "Feels le bro",
+        image: require("../img/logorpz.png"),
+        sounds: [ 
+            {
+                name: "Tu me prends pour un actimel là", 
+                audio: Asset.fromModule(require("./Feels_le_bro/Tu_me_prends_pour_un_actimel_là.mp3")),
+                image: require("../img/logorpz.png"),
+            }
+        ],
+    },
+    {
+        name: "GoFast",
+        image: require("../img/logorpz.png"),
+        sounds: [ 
+            {
+                name: "Hi there", 
+                audio: Asset.fromModule(require("./GoFast/Hi_there.mp3")),
+                image: require("../img/logorpz.png"),
             }
         ],
     },
@@ -570,6 +727,32 @@ const soundLibrary: Sound[] = [
         ],
     },
     {
+        name: "Kiddy West",
+        image: require("../img/logorpz.png"),
+        sounds: [ 
+            {
+                name: "Carameeeel", 
+                audio: Asset.fromModule(require("./Kiddy_West/Carameeeel.mp3")),
+                image: require("../img/logorpz.png"),
+            },
+            {
+                name: "J'ai tué un mec", 
+                audio: Asset.fromModule(require("./Kiddy_West/J'ai_tué_un_mec.mp3")),
+                image: require("../img/logorpz.png"),
+            },
+            {
+                name: "J'comprends", 
+                audio: Asset.fromModule(require("./Kiddy_West/J'comprends.mp3")),
+                image: require("../img/logorpz.png"),
+            },
+            {
+                name: "Une anus municipale", 
+                audio: Asset.fromModule(require("./Kiddy_West/Une_anus_municipale.mp3")),
+                image: require("../img/logorpz.png"),
+            }
+        ],
+    },
+    {
         name: "Kim Dwight",
         image: require("./Kim_Dwight/thumb_0.jpg"),
         sounds: [ 
@@ -590,6 +773,11 @@ const soundLibrary: Sound[] = [
                 image: require("./Lenny_Johnson/thumb_0.jpg"),
             },
             {
+                name: "Oune houloucouptère", 
+                audio: Asset.fromModule(require("./Lenny_Johnson/oune_houloucouptère.mp3")),
+                image: require("./Lenny_Johnson/thumb_0.jpg"),
+            },
+            {
                 name: "Pas n*qué", 
                 audio: Asset.fromModule(require("./Lenny_Johnson/pas_nXqué.mp3")),
                 image: require("./Lenny_Johnson/thumb_0.jpg"),
@@ -606,13 +794,33 @@ const soundLibrary: Sound[] = [
                 image: require("./Les_Croute_♡/thumb_0.png"),
             },
             {
+                name: "Bien fait", 
+                audio: Asset.fromModule(require("./Les_Croute_♡/bien_fait.mp3")),
+                image: require("./Les_Croute_♡/thumb_0.png"),
+            },
+            {
                 name: "J'ai coincé l'camion", 
                 audio: Asset.fromModule(require("./Les_Croute_♡/j'ai_coincé_l'camion.mp3")),
                 image: require("./Les_Croute_♡/thumb_0.png"),
             },
             {
+                name: "J'me suis laissé taper", 
+                audio: Asset.fromModule(require("./Les_Croute_♡/J'me_suis_laissé_taper.mp3")),
+                image: require("./Les_Croute_♡/thumb_0.png"),
+            },
+            {
+                name: "On a planté l'hélico", 
+                audio: Asset.fromModule(require("./Les_Croute_♡/On_a_planté_l'hélico.mp3")),
+                image: require("./Les_Croute_♡/thumb_0.png"),
+            },
+            {
                 name: "Trace trace trace", 
                 audio: Asset.fromModule(require("./Les_Croute_♡/trace_trace_trace.mp3")),
+                image: require("./Les_Croute_♡/thumb_0.png"),
+            },
+            {
+                name: "Un barrage pour les sangliers M'sieur", 
+                audio: Asset.fromModule(require("./Les_Croute_♡/un_barrage_pour_les_sangliers_M'sieur.mp3")),
                 image: require("./Les_Croute_♡/thumb_0.png"),
             }
         ],
@@ -629,6 +837,17 @@ const soundLibrary: Sound[] = [
         ],
     },
     {
+        name: "Liam",
+        image: require("../img/logorpz.png"),
+        sounds: [ 
+            {
+                name: "Le roumain du roi", 
+                audio: Asset.fromModule(require("./Liam/Le_roumain_du_roi.mp3")),
+                image: require("../img/logorpz.png"),
+            }
+        ],
+    },
+    {
         name: "Lieutenant Kuck",
         image: require("./Lieutenant_Kuck/thumb_0.jpg"),
         sounds: [ 
@@ -640,6 +859,11 @@ const soundLibrary: Sound[] = [
             {
                 name: "GET DOWN", 
                 audio: Asset.fromModule(require("./Lieutenant_Kuck/GET_DOWN.mp3")),
+                image: require("./Lieutenant_Kuck/thumb_0.jpg"),
+            },
+            {
+                name: "Il bave partout", 
+                audio: Asset.fromModule(require("./Lieutenant_Kuck/Il_bave_partout.mp3")),
                 image: require("./Lieutenant_Kuck/thumb_0.jpg"),
             },
             {
@@ -686,6 +910,11 @@ const soundLibrary: Sound[] = [
                 name: "Véhicule neutralisé", 
                 audio: Asset.fromModule(require("./Lieutenant_Kuck/véhicule_neutralisé.mp3")),
                 image: require("./Lieutenant_Kuck/thumb_0.jpg"),
+            },
+            {
+                name: "Ça crache hein", 
+                audio: Asset.fromModule(require("./Lieutenant_Kuck/ça_crache_hein.mp3")),
+                image: require("./Lieutenant_Kuck/thumb_0.jpg"),
             }
         ],
     },
@@ -699,9 +928,14 @@ const soundLibrary: Sound[] = [
                 image: require("./Lindsay_Walker/thumb_0.png"),
             },
             {
+                name: "Comme Gibbs dans NCISSS", 
+                audio: Asset.fromModule(require("./Lindsay_Walker/comme_Gibbs_dans_NCISSS.mp3")),
+                image: require("./Lindsay_Walker/thumb_2.png"),
+            },
+            {
                 name: "Kelly n'a pas vu NCISS", 
                 audio: Asset.fromModule(require("./Lindsay_Walker/Kelly_n'a_pas_vu_NCISS.mp3")),
-                image: require("./Lindsay_Walker/thumb_2.png"),
+                image: require("./Lindsay_Walker/thumb_0.png"),
             },
             {
                 name: "NCIS", 
@@ -771,8 +1005,18 @@ const soundLibrary: Sound[] = [
                 image: require("./Marius_Rotarez/thumb_0.jpg"),
             },
             {
+                name: "Des jeunes qui s'amusent", 
+                audio: Asset.fromModule(require("./Marius_Rotarez/Des_jeunes_qui_s'amusent.mp3")),
+                image: require("./Marius_Rotarez/thumb_0.jpg"),
+            },
+            {
                 name: "Dunotien de Montuzak", 
                 audio: Asset.fromModule(require("./Marius_Rotarez/Dunotien_de_Montuzak.mp3")),
+                image: require("./Marius_Rotarez/thumb_0.jpg"),
+            },
+            {
+                name: "Fous-moi la paix le pervers", 
+                audio: Asset.fromModule(require("./Marius_Rotarez/Fous-moi_la_paix_le_pervers.mp3")),
                 image: require("./Marius_Rotarez/thumb_0.jpg"),
             },
             {
@@ -783,6 +1027,16 @@ const soundLibrary: Sound[] = [
             {
                 name: "J'en revieng pas", 
                 audio: Asset.fromModule(require("./Marius_Rotarez/j'en_revieng_pas.mp3")),
+                image: require("./Marius_Rotarez/thumb_0.jpg"),
+            },
+            {
+                name: "Vive le vin froid", 
+                audio: Asset.fromModule(require("./Marius_Rotarez/Vive_le_vin_froid.mp3")),
+                image: require("./Marius_Rotarez/thumb_0.jpg"),
+            },
+            {
+                name: "Vous êtes en état d'arrestation", 
+                audio: Asset.fromModule(require("./Marius_Rotarez/Vous_êtes_en_état_d'arrestation.mp3")),
                 image: require("./Marius_Rotarez/thumb_0.jpg"),
             }
         ],
@@ -804,6 +1058,16 @@ const soundLibrary: Sound[] = [
             {
                 name: "L'hymne", 
                 audio: Asset.fromModule(require("./Michael_Rixxy/L'hymne.mp3")),
+                image: require("./Michael_Rixxy/thumb_0.jpg"),
+            },
+            {
+                name: "Poucave", 
+                audio: Asset.fromModule(require("./Michael_Rixxy/Poucave.mp3")),
+                image: require("./Michael_Rixxy/thumb_0.jpg"),
+            },
+            {
+                name: "Vous êtes communistes", 
+                audio: Asset.fromModule(require("./Michael_Rixxy/Vous_êtes_communistes.mp3")),
                 image: require("./Michael_Rixxy/thumb_0.jpg"),
             },
             {
@@ -885,6 +1149,28 @@ const soundLibrary: Sound[] = [
         ],
     },
     {
+        name: "MT",
+        image: require("../img/logorpz.png"),
+        sounds: [ 
+            {
+                name: "La charrue avant les boeufs", 
+                audio: Asset.fromModule(require("./MT/la_charrue_avant_les_boeufs.mp3")),
+                image: require("../img/logorpz.png"),
+            }
+        ],
+    },
+    {
+        name: "Pasteur William",
+        image: require("../img/logorpz.png"),
+        sounds: [ 
+            {
+                name: "Le sang du christ", 
+                audio: Asset.fromModule(require("./Pasteur_William/Le_sang_du_christ.mp3")),
+                image: require("../img/logorpz.png"),
+            }
+        ],
+    },
+    {
         name: "Rose Dwight",
         image: require("./Rose_Dwight/thumb_0.png"),
         sounds: [ 
@@ -933,6 +1219,37 @@ const soundLibrary: Sound[] = [
                 name: "Dans le domaine", 
                 audio: Asset.fromModule(require("./Roy_Mark/Dans_le_domaine.mp3")),
                 image: require("./Roy_Mark/thumb_0.jpg"),
+            },
+            {
+                name: "Jsuis bourré", 
+                audio: Asset.fromModule(require("./Roy_Mark/Jsuis_bourré.mp3")),
+                image: require("./Roy_Mark/thumb_0.jpg"),
+            },
+            {
+                name: "Vous n'êtes pas une petite fille", 
+                audio: Asset.fromModule(require("./Roy_Mark/Vous_n'êtes_pas_une_petite_fille.mp3")),
+                image: require("./Roy_Mark/thumb_0.jpg"),
+            }
+        ],
+    },
+    {
+        name: "Tim Lambert",
+        image: require("../img/logorpz.png"),
+        sounds: [ 
+            {
+                name: "C'est le dieu qui nous guide", 
+                audio: Asset.fromModule(require("./Tim_Lambert/C'est_le_dieu_qui_nous_guide.mp3")),
+                image: require("../img/logorpz.png"),
+            },
+            {
+                name: "Je suis très beau", 
+                audio: Asset.fromModule(require("./Tim_Lambert/Je_suis_très_beau.mp3")),
+                image: require("../img/logorpz.png"),
+            },
+            {
+                name: "Le mal de le hélicoptère", 
+                audio: Asset.fromModule(require("./Tim_Lambert/le_mal_de_le_hélicoptère.mp3")),
+                image: require("../img/logorpz.png"),
             }
         ],
     },
