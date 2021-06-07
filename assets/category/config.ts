@@ -538,6 +538,11 @@ const soundLibrary: Sound[] = [
                 image: require("./Fabien_Torez/thumb_0.jpg"),
             },
             {
+                name: "Dans mon vomit", 
+                audio: Asset.fromModule(require("./Fabien_Torez/dans_mon_vomit.mp3")),
+                image: require("./Fabien_Torez/thumb_0.jpg"),
+            },
+            {
                 name: "Depuis la 1ère fois où j'ai fait l'amour", 
                 audio: Asset.fromModule(require("./Fabien_Torez/Depuis_la_1ère_fois_où_j'ai_fait_l'amour.mp3")),
                 image: require("./Fabien_Torez/thumb_0.jpg"),
@@ -796,6 +801,11 @@ const soundLibrary: Sound[] = [
             {
                 name: "Bien fait", 
                 audio: Asset.fromModule(require("./Les_Croute_♡/bien_fait.mp3")),
+                image: require("./Les_Croute_♡/thumb_0.png"),
+            },
+            {
+                name: "C'est la poule", 
+                audio: Asset.fromModule(require("./Les_Croute_♡/c'est_la_poule.mp3")),
                 image: require("./Les_Croute_♡/thumb_0.png"),
             },
             {
