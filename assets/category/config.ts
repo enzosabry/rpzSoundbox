@@ -554,6 +554,22 @@ const soundLibrary: Sound[] = [
         ],
     },
     {
+        name: "Kenneth",
+        image: require("../img/logorpz.png"),
+        sounds: [ 
+            {
+                name: "Bonjour", 
+                audio: Asset.fromModule(require("./Kenneth/Bonjour.mp3")),
+                image: require("../img/logorpz.png"),
+            },
+            {
+                name: "Bonsoir", 
+                audio: Asset.fromModule(require("./Kenneth/Bonsoir.mp3")),
+                image: require("../img/logorpz.png"),
+            }
+        ],
+    },
+    {
         name: "Kim Dwight",
         image: require("./Kim_Dwight/thumb_0.jpg"),
         sounds: [ 
@@ -616,16 +632,6 @@ const soundLibrary: Sound[] = [
         name: "Lieutenant Kuck",
         image: require("./Lieutenant_Kuck/thumb_0.jpg"),
         sounds: [ 
-            {
-                name: "Bonjour", 
-                audio: Asset.fromModule(require("./Lieutenant_Kuck/Bonjour.mp3")),
-                image: require("./Lieutenant_Kuck/thumb_0.jpg"),
-            },
-            {
-                name: "Bonsoir", 
-                audio: Asset.fromModule(require("./Lieutenant_Kuck/Bonsoir.mp3")),
-                image: require("./Lieutenant_Kuck/thumb_0.jpg"),
-            },
             {
                 name: "Ceinnntuuuure", 
                 audio: Asset.fromModule(require("./Lieutenant_Kuck/Ceinnntuuuure.mp3")),
