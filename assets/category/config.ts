@@ -126,8 +126,8 @@ const soundLibrary: Sound[] = [
         image: require("./Devon/thumb_0.jpg"),
         sounds: [ 
             {
-                name: "Mr", 
-                audio: Asset.fromModule(require("./Devon/Mr._de_Mongolfière.mp3")),
+                name: "Mr de Mongolfière", 
+                audio: Asset.fromModule(require("./Devon/Mr_de_Mongolfière.mp3")),
                 image: require("./Devon/thumb_0.jpg"),
             }
         ],
@@ -245,8 +245,8 @@ const soundLibrary: Sound[] = [
         image: require("./Docteur_White/thumb_0.jpg"),
         sounds: [ 
             {
-                name: "Dr", 
-                audio: Asset.fromModule(require("./Docteur_White/Dr._Fast.mp3")),
+                name: "Dr Fast", 
+                audio: Asset.fromModule(require("./Docteur_White/Dr_Fast.mp3")),
                 image: require("./Docteur_White/thumb_0.jpg"),
             },
             {
@@ -1002,12 +1002,12 @@ const soundLibrary: Sound[] = [
     },
     {
         name: "Marcello Capone",
-        image: require("../img/logorpz.png"),
+        image: require("./Marcello_Capone/thumb_0.jpg"),
         sounds: [ 
             {
                 name: "Le roumain du roi", 
                 audio: Asset.fromModule(require("./Marcello_Capone/Le_roumain_du_roi.mp3")),
-                image: require("../img/logorpz.png"),
+                image: require("./Marcello_Capone/thumb_0.jpg"),
             }
         ],
     },
