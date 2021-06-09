@@ -112,12 +112,12 @@ const soundLibrary: Sound[] = [
     },
     {
         name: "Detective Bauer",
-        image: require("../img/logorpz.png"),
+        image: require("./Detective_Bauer/thumb_0.jpg"),
         sounds: [ 
             {
                 name: "Des clients bizarres", 
                 audio: Asset.fromModule(require("./Detective_Bauer/Des_clients_bizarres.mp3")),
-                image: require("../img/logorpz.png"),
+                image: require("./Detective_Bauer/thumb_0.jpg"),
             }
         ],
     },
@@ -242,22 +242,22 @@ const soundLibrary: Sound[] = [
     },
     {
         name: "Docteur White",
-        image: require("../img/logorpz.png"),
+        image: require("./Docteur_White/thumb_0.jpg"),
         sounds: [ 
             {
                 name: "Dr", 
                 audio: Asset.fromModule(require("./Docteur_White/Dr._Fast.mp3")),
-                image: require("../img/logorpz.png"),
+                image: require("./Docteur_White/thumb_0.jpg"),
             },
             {
                 name: "Si vous pouvez me tuer", 
                 audio: Asset.fromModule(require("./Docteur_White/Si_vous_pouvez_me_tuer.mp3")),
-                image: require("../img/logorpz.png"),
+                image: require("./Docteur_White/thumb_0.jpg"),
             },
             {
                 name: "Ça fait plaisir", 
                 audio: Asset.fromModule(require("./Docteur_White/ça_fait_plaisir.mp3")),
-                image: require("../img/logorpz.png"),
+                image: require("./Docteur_White/thumb_0.jpg"),
             }
         ],
     },
@@ -494,7 +494,7 @@ const soundLibrary: Sound[] = [
             {
                 name: "Au boulooot", 
                 audio: Asset.fromModule(require("./Earl_Bailey/au_boulooot.mp3")),
-                image: require("./Earl_Bailey/thumb_0.jpg"),
+                image: require("./Earl_Bailey/thumb_1.jpg"),
             },
             {
                 name: "J'vais descendre içi", 
@@ -717,17 +717,17 @@ const soundLibrary: Sound[] = [
     },
     {
         name: "Kenneth",
-        image: require("../img/logorpz.png"),
+        image: require("./Kenneth/thumb_0.jpg"),
         sounds: [ 
             {
                 name: "Bonjour", 
                 audio: Asset.fromModule(require("./Kenneth/Bonjour.mp3")),
-                image: require("../img/logorpz.png"),
+                image: require("./Kenneth/thumb_0.jpg"),
             },
             {
                 name: "Bonsoir", 
                 audio: Asset.fromModule(require("./Kenneth/Bonsoir.mp3")),
-                image: require("../img/logorpz.png"),
+                image: require("./Kenneth/thumb_0.jpg"),
             }
         ],
     },
@@ -848,12 +848,12 @@ const soundLibrary: Sound[] = [
     },
     {
         name: "Liam",
-        image: require("../img/logorpz.png"),
+        image: require("./Liam/thumb_0.jpg"),
         sounds: [ 
             {
                 name: "Le roumain du roi", 
                 audio: Asset.fromModule(require("./Liam/Le_roumain_du_roi.mp3")),
-                image: require("../img/logorpz.png"),
+                image: require("./Liam/thumb_0.jpg"),
             }
         ],
     },
@@ -1244,22 +1244,22 @@ const soundLibrary: Sound[] = [
     },
     {
         name: "Tim Lambert",
-        image: require("../img/logorpz.png"),
+        image: require("./Tim_Lambert/thumb_0.jpg"),
         sounds: [ 
             {
                 name: "C'est le dieu qui nous guide", 
                 audio: Asset.fromModule(require("./Tim_Lambert/C'est_le_dieu_qui_nous_guide.mp3")),
-                image: require("../img/logorpz.png"),
+                image: require("./Tim_Lambert/thumb_0.jpg"),
             },
             {
                 name: "Je suis très beau", 
                 audio: Asset.fromModule(require("./Tim_Lambert/Je_suis_très_beau.mp3")),
-                image: require("../img/logorpz.png"),
+                image: require("./Tim_Lambert/thumb_0.jpg"),
             },
             {
                 name: "Le mal de le hélicoptère", 
                 audio: Asset.fromModule(require("./Tim_Lambert/le_mal_de_le_hélicoptère.mp3")),
-                image: require("../img/logorpz.png"),
+                image: require("./Tim_Lambert/thumb_0.jpg"),
             }
         ],
     },
