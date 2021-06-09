@@ -123,28 +123,28 @@ const soundLibrary: Sound[] = [
     },
     {
         name: "Devon",
-        image: require("../img/logorpz.png"),
+        image: require("./Devon/thumb_0.jpg"),
         sounds: [ 
             {
                 name: "Mr", 
                 audio: Asset.fromModule(require("./Devon/Mr._de_Mongolfière.mp3")),
-                image: require("../img/logorpz.png"),
+                image: require("./Devon/thumb_0.jpg"),
             }
         ],
     },
     {
         name: "Docteur Cox",
-        image: require("../img/logorpz.png"),
+        image: require("./Docteur_Cox/thumb_0.jpg"),
         sounds: [ 
             {
                 name: "Dr Cox pète un plomb", 
                 audio: Asset.fromModule(require("./Docteur_Cox/Dr_Cox_pète_un_plomb.mp3")),
-                image: require("../img/logorpz.png"),
+                image: require("./Docteur_Cox/thumb_0.jpg"),
             },
             {
                 name: "Est-ce que j'ai l'air méchant", 
                 audio: Asset.fromModule(require("./Docteur_Cox/est-ce_que_j'ai_l'air_méchant.mp3")),
-                image: require("../img/logorpz.png"),
+                image: require("./Docteur_Cox/thumb_0.jpg"),
             }
         ],
     },
@@ -231,12 +231,12 @@ const soundLibrary: Sound[] = [
     },
     {
         name: "Docteur Traoult",
-        image: require("../img/logorpz.png"),
+        image: require("./Docteur_Traoult/thumb_0.jpg"),
         sounds: [ 
             {
                 name: "Vous allez faire pipi", 
                 audio: Asset.fromModule(require("./Docteur_Traoult/Vous_allez_faire_pipi.mp3")),
-                image: require("../img/logorpz.png"),
+                image: require("./Docteur_Traoult/thumb_0.jpg"),
             }
         ],
     },
@@ -596,23 +596,23 @@ const soundLibrary: Sound[] = [
     },
     {
         name: "Feels le bro",
-        image: require("../img/logorpz.png"),
+        image: require("./Feels_le_bro/thumb_0.jpg"),
         sounds: [ 
             {
                 name: "Tu me prends pour un actimel là", 
                 audio: Asset.fromModule(require("./Feels_le_bro/Tu_me_prends_pour_un_actimel_là.mp3")),
-                image: require("../img/logorpz.png"),
+                image: require("./Feels_le_bro/thumb_0.jpg"),
             }
         ],
     },
     {
         name: "GoFast",
-        image: require("../img/logorpz.png"),
+        image: require("./GoFast/thumb_0.jpg"),
         sounds: [ 
             {
                 name: "Hi there", 
                 audio: Asset.fromModule(require("./GoFast/Hi_there.mp3")),
-                image: require("../img/logorpz.png"),
+                image: require("./GoFast/thumb_0.jpg"),
             }
         ],
     },
@@ -733,27 +733,27 @@ const soundLibrary: Sound[] = [
     },
     {
         name: "Kiddy West",
-        image: require("../img/logorpz.png"),
+        image: require("./Kiddy_West/thumb_0.jpg"),
         sounds: [ 
             {
                 name: "Carameeeel", 
                 audio: Asset.fromModule(require("./Kiddy_West/Carameeeel.mp3")),
-                image: require("../img/logorpz.png"),
+                image: require("./Kiddy_West/thumb_0.jpg"),
             },
             {
                 name: "J'ai tué un mec", 
                 audio: Asset.fromModule(require("./Kiddy_West/J'ai_tué_un_mec.mp3")),
-                image: require("../img/logorpz.png"),
+                image: require("./Kiddy_West/thumb_0.jpg"),
             },
             {
                 name: "J'comprends", 
                 audio: Asset.fromModule(require("./Kiddy_West/J'comprends.mp3")),
-                image: require("../img/logorpz.png"),
+                image: require("./Kiddy_West/thumb_0.jpg"),
             },
             {
                 name: "Une anus municipale", 
                 audio: Asset.fromModule(require("./Kiddy_West/Une_anus_municipale.mp3")),
-                image: require("../img/logorpz.png"),
+                image: require("./Kiddy_West/thumb_0.jpg"),
             }
         ],
     },
@@ -1160,23 +1160,23 @@ const soundLibrary: Sound[] = [
     },
     {
         name: "MT",
-        image: require("../img/logorpz.png"),
+        image: require("./MT/thumb_0.jpg"),
         sounds: [ 
             {
                 name: "La charrue avant les boeufs", 
                 audio: Asset.fromModule(require("./MT/la_charrue_avant_les_boeufs.mp3")),
-                image: require("../img/logorpz.png"),
+                image: require("./MT/thumb_0.jpg"),
             }
         ],
     },
     {
         name: "Pasteur William",
-        image: require("../img/logorpz.png"),
+        image: require("./Pasteur_William/thumb_0.jpg"),
         sounds: [ 
             {
                 name: "Le sang du christ", 
                 audio: Asset.fromModule(require("./Pasteur_William/Le_sang_du_christ.mp3")),
-                image: require("../img/logorpz.png"),
+                image: require("./Pasteur_William/thumb_0.jpg"),
             }
         ],
     },
