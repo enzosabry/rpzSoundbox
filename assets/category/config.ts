@@ -499,7 +499,7 @@ const soundLibrary: Sound[] = [
             {
                 name: "J'vais descendre içi", 
                 audio: Asset.fromModule(require("./Earl_Bailey/j'vais_descendre_içi.mp3")),
-                image: require("./Earl_Bailey/thumb_0.jpg"),
+                image: require("./Earl_Bailey/thumb_2.jpg"),
             },
             {
                 name: "L'information à tout prix", 
@@ -851,6 +851,11 @@ const soundLibrary: Sound[] = [
         image: require("./Liam/thumb_0.jpg"),
         sounds: [ 
             {
+                name: "La charrue avant les boeufs", 
+                audio: Asset.fromModule(require("./Liam/la_charrue_avant_les_boeufs.mp3")),
+                image: require("./Liam/thumb_0.jpg"),
+            },
+            {
                 name: "Le roumain du roi", 
                 audio: Asset.fromModule(require("./Liam/Le_roumain_du_roi.mp3")),
                 image: require("./Liam/thumb_0.jpg"),
@@ -1155,17 +1160,6 @@ const soundLibrary: Sound[] = [
                 name: "Yélétu", 
                 audio: Asset.fromModule(require("./Miguel_Rodriguez/yélétu.mp3")),
                 image: require("./Miguel_Rodriguez/thumb_0.jpg"),
-            }
-        ],
-    },
-    {
-        name: "MT",
-        image: require("./MT/thumb_0.jpg"),
-        sounds: [ 
-            {
-                name: "La charrue avant les boeufs", 
-                audio: Asset.fromModule(require("./MT/la_charrue_avant_les_boeufs.mp3")),
-                image: require("./MT/thumb_0.jpg"),
             }
         ],
     },
