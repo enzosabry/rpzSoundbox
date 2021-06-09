@@ -854,11 +854,6 @@ const soundLibrary: Sound[] = [
                 name: "La charrue avant les boeufs", 
                 audio: Asset.fromModule(require("./Liam/la_charrue_avant_les_boeufs.mp3")),
                 image: require("./Liam/thumb_0.jpg"),
-            },
-            {
-                name: "Le roumain du roi", 
-                audio: Asset.fromModule(require("./Liam/Le_roumain_du_roi.mp3")),
-                image: require("./Liam/thumb_0.jpg"),
             }
         ],
     },
@@ -1002,6 +997,17 @@ const soundLibrary: Sound[] = [
                 name: "Dona dona", 
                 audio: Asset.fromModule(require("./Lorenza_Blake/dona_dona.mp3")),
                 image: require("./Lorenza_Blake/thumb_0.jpg"),
+            }
+        ],
+    },
+    {
+        name: "Marcello Capone",
+        image: require("../img/logorpz.png"),
+        sounds: [ 
+            {
+                name: "Le roumain du roi", 
+                audio: Asset.fromModule(require("./Marcello_Capone/Le_roumain_du_roi.mp3")),
+                image: require("../img/logorpz.png"),
             }
         ],
     },
