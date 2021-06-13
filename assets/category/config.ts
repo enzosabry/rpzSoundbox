@@ -716,6 +716,17 @@ const soundLibrary: Sound[] = [
         ],
     },
     {
+        name: "Kelly",
+        image: require("./Kelly/thumb_0.jpg"),
+        sounds: [ 
+            {
+                name: "Pas vu NCISS", 
+                audio: Asset.fromModule(require("./Kelly/pas_vu_NCISS.mp3")),
+                image: require("./Kelly/thumb_0.jpg"),
+            }
+        ],
+    },
+    {
         name: "Kenneth",
         image: require("./Kenneth/thumb_0.jpg"),
         sounds: [ 
@@ -941,11 +952,6 @@ const soundLibrary: Sound[] = [
                 name: "Comme Gibbs dans NCISSS", 
                 audio: Asset.fromModule(require("./Lindsay_Walker/comme_Gibbs_dans_NCISSS.mp3")),
                 image: require("./Lindsay_Walker/thumb_2.png"),
-            },
-            {
-                name: "Kelly n'a pas vu NCISS", 
-                audio: Asset.fromModule(require("./Lindsay_Walker/Kelly_n'a_pas_vu_NCISS.mp3")),
-                image: require("./Lindsay_Walker/thumb_0.png"),
             },
             {
                 name: "NCIS", 
