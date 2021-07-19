@@ -595,6 +595,27 @@ const soundLibrary: Sound[] = [
         ],
     },
     {
+        name: "Families",
+        image: require("./Families/thumb_0.jpg"),
+        sounds: [ 
+            {
+                name: "Caramel", 
+                audio: Asset.fromModule(require("./Families/caramel.mp3")),
+                image: require("./Families/thumb_0.jpg"),
+            },
+            {
+                name: "Neon", 
+                audio: Asset.fromModule(require("./Families/neon.mp3")),
+                image: require("./Families/thumb_0.jpg"),
+            },
+            {
+                name: "On est des caramels", 
+                audio: Asset.fromModule(require("./Families/on_est_des_caramels.mp3")),
+                image: require("./Families/thumb_0.jpg"),
+            }
+        ],
+    },
+    {
         name: "Feels le bro",
         image: require("./Feels_le_bro/thumb_0.jpg"),
         sounds: [ 
@@ -862,8 +883,23 @@ const soundLibrary: Sound[] = [
         image: require("./Liam/thumb_0.jpg"),
         sounds: [ 
             {
+                name: "Croix dbois", 
+                audio: Asset.fromModule(require("./Liam/croix_dbois.mp3")),
+                image: require("./Liam/thumb_0.jpg"),
+            },
+            {
                 name: "La charrue avant les boeufs", 
                 audio: Asset.fromModule(require("./Liam/la_charrue_avant_les_boeufs.mp3")),
+                image: require("./Liam/thumb_0.jpg"),
+            },
+            {
+                name: "Pepperoni", 
+                audio: Asset.fromModule(require("./Liam/pepperoni.mp3")),
+                image: require("./Liam/thumb_0.jpg"),
+            },
+            {
+                name: "Stupido", 
+                audio: Asset.fromModule(require("./Liam/stupido.mp3")),
                 image: require("./Liam/thumb_0.jpg"),
             }
         ],
@@ -1011,8 +1047,18 @@ const soundLibrary: Sound[] = [
         image: require("./Marcello_Capone/thumb_0.jpg"),
         sounds: [ 
             {
+                name: "Cara cara caramel", 
+                audio: Asset.fromModule(require("./Marcello_Capone/cara_cara_caramel.mp3")),
+                image: require("./Marcello_Capone/thumb_0.jpg"),
+            },
+            {
                 name: "Le roumain du roi", 
                 audio: Asset.fromModule(require("./Marcello_Capone/Le_roumain_du_roi.mp3")),
+                image: require("./Marcello_Capone/thumb_0.jpg"),
+            },
+            {
+                name: "Stupido", 
+                audio: Asset.fromModule(require("./Marcello_Capone/stupido.mp3")),
                 image: require("./Marcello_Capone/thumb_0.jpg"),
             }
         ],
@@ -1172,6 +1218,22 @@ const soundLibrary: Sound[] = [
                 name: "Yélétu", 
                 audio: Asset.fromModule(require("./Miguel_Rodriguez/yélétu.mp3")),
                 image: require("./Miguel_Rodriguez/thumb_0.jpg"),
+            }
+        ],
+    },
+    {
+        name: "MT",
+        image: require("./MT/thumb_0.jpg"),
+        sounds: [ 
+            {
+                name: "Dommage collateral", 
+                audio: Asset.fromModule(require("./MT/dommage_collateral.mp3")),
+                image: require("./MT/thumb_0.jpg"),
+            },
+            {
+                name: "Mes petits caramels", 
+                audio: Asset.fromModule(require("./MT/mes_petits_caramels.mp3")),
+                image: require("./MT/thumb_0.jpg"),
             }
         ],
     },
