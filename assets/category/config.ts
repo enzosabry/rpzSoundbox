@@ -137,6 +137,16 @@ const soundLibrary: Sound[] = [
         image: require("./Docteur_Cox/thumb_0.jpg"),
         sounds: [ 
             {
+                name: "C'est mon travail", 
+                audio: Asset.fromModule(require("./Docteur_Cox/c'est_mon_travail.mp3")),
+                image: require("./Docteur_Cox/thumb_0.jpg"),
+            },
+            {
+                name: "Conquérir le monde", 
+                audio: Asset.fromModule(require("./Docteur_Cox/conquérir_le_monde.mp3")),
+                image: require("./Docteur_Cox/thumb_0.jpg"),
+            },
+            {
                 name: "Dr Cox pète un plomb", 
                 audio: Asset.fromModule(require("./Docteur_Cox/Dr_Cox_pète_un_plomb.mp3")),
                 image: require("./Docteur_Cox/thumb_0.jpg"),
@@ -144,6 +154,31 @@ const soundLibrary: Sound[] = [
             {
                 name: "Est-ce que j'ai l'air méchant", 
                 audio: Asset.fromModule(require("./Docteur_Cox/est-ce_que_j'ai_l'air_méchant.mp3")),
+                image: require("./Docteur_Cox/thumb_0.jpg"),
+            },
+            {
+                name: "Finir comme ca", 
+                audio: Asset.fromModule(require("./Docteur_Cox/finir_comme_ca.mp3")),
+                image: require("./Docteur_Cox/thumb_0.jpg"),
+            },
+            {
+                name: "Hopital de l'ambulance", 
+                audio: Asset.fromModule(require("./Docteur_Cox/hopital_de_l'ambulance.mp3")),
+                image: require("./Docteur_Cox/thumb_0.jpg"),
+            },
+            {
+                name: "Manipuler les gens", 
+                audio: Asset.fromModule(require("./Docteur_Cox/manipuler_les_gens.mp3")),
+                image: require("./Docteur_Cox/thumb_0.jpg"),
+            },
+            {
+                name: "Ma soupe", 
+                audio: Asset.fromModule(require("./Docteur_Cox/ma_soupe.mp3")),
+                image: require("./Docteur_Cox/thumb_0.jpg"),
+            },
+            {
+                name: "Tête du directeur", 
+                audio: Asset.fromModule(require("./Docteur_Cox/tête_du_directeur.mp3")),
                 image: require("./Docteur_Cox/thumb_0.jpg"),
             }
         ],
@@ -502,6 +537,11 @@ const soundLibrary: Sound[] = [
                 image: require("./Earl_Bailey/thumb_2.jpg"),
             },
             {
+                name: "L'information s'enfuit", 
+                audio: Asset.fromModule(require("./Earl_Bailey/l'information_s'enfuit.mp3")),
+                image: require("./Earl_Bailey/thumb_0.jpg"),
+            },
+            {
                 name: "L'information à tout prix", 
                 audio: Asset.fromModule(require("./Earl_Bailey/l'information_à_tout_prix.mp3")),
                 image: require("./Earl_Bailey/thumb_0.jpg"),
@@ -634,6 +674,11 @@ const soundLibrary: Sound[] = [
                 name: "Hi there", 
                 audio: Asset.fromModule(require("./GoFast/Hi_there.mp3")),
                 image: require("./GoFast/thumb_0.jpg"),
+            },
+            {
+                name: "Ho bonne mère", 
+                audio: Asset.fromModule(require("./GoFast/ho_bonne_mère.mp3")),
+                image: require("./GoFast/thumb_0.jpg"),
             }
         ],
     },
@@ -650,6 +695,17 @@ const soundLibrary: Sound[] = [
                 name: "J'suis enceinte Gégé", 
                 audio: Asset.fromModule(require("./Gérard_Pichon/j'suis_enceinte_Gégé.mp3")),
                 image: require("./Gérard_Pichon/thumb_0.jpg"),
+            }
+        ],
+    },
+    {
+        name: "Hayley Mayers",
+        image: require("./Hayley_Mayers/thumb_0.jpg"),
+        sounds: [ 
+            {
+                name: "P'ti coté psycopathe", 
+                audio: Asset.fromModule(require("./Hayley_Mayers/p'ti_coté_psycopathe.mp3")),
+                image: require("./Hayley_Mayers/thumb_0.jpg"),
             }
         ],
     },
@@ -717,6 +773,32 @@ const soundLibrary: Sound[] = [
                 name: "Une ville de dégénérés", 
                 audio: Asset.fromModule(require("./Johnny_Monnay/une_ville_de_dégénérés.mp3")),
                 image: require("./Johnny_Monnay/thumb_0.jpg"),
+            }
+        ],
+    },
+    {
+        name: "Juan Carlos",
+        image: require("./Juan_Carlos/thumb_0.jpg"),
+        sounds: [ 
+            {
+                name: "Jour avec", 
+                audio: Asset.fromModule(require("./Juan_Carlos/jour_avec.mp3")),
+                image: require("./Juan_Carlos/thumb_0.jpg"),
+            },
+            {
+                name: "Pas dans GTA", 
+                audio: Asset.fromModule(require("./Juan_Carlos/pas_dans_GTA.mp3")),
+                image: require("./Juan_Carlos/thumb_0.jpg"),
+            },
+            {
+                name: "Réré", 
+                audio: Asset.fromModule(require("./Juan_Carlos/réré.mp3")),
+                image: require("./Juan_Carlos/thumb_0.jpg"),
+            },
+            {
+                name: "Trop violent", 
+                audio: Asset.fromModule(require("./Juan_Carlos/trop_violent.mp3")),
+                image: require("./Juan_Carlos/thumb_0.jpg"),
             }
         ],
     },
@@ -898,6 +980,16 @@ const soundLibrary: Sound[] = [
                 image: require("./Liam/thumb_0.jpg"),
             },
             {
+                name: "Police de FDP", 
+                audio: Asset.fromModule(require("./Liam/police_de_FDP.mp3")),
+                image: require("./Liam/thumb_0.jpg"),
+            },
+            {
+                name: "Salut mon pote", 
+                audio: Asset.fromModule(require("./Liam/salut_mon_pote.mp3")),
+                image: require("./Liam/thumb_0.jpg"),
+            },
+            {
                 name: "Stupido", 
                 audio: Asset.fromModule(require("./Liam/stupido.mp3")),
                 image: require("./Liam/thumb_0.jpg"),
@@ -1036,8 +1128,18 @@ const soundLibrary: Sound[] = [
         image: require("./Lorenza_Blake/thumb_0.jpg"),
         sounds: [ 
             {
+                name: "Ciao", 
+                audio: Asset.fromModule(require("./Lorenza_Blake/ciao.mp3")),
+                image: require("./Lorenza_Blake/thumb_0.jpg"),
+            },
+            {
                 name: "Dona dona", 
                 audio: Asset.fromModule(require("./Lorenza_Blake/dona_dona.mp3")),
+                image: require("./Lorenza_Blake/thumb_0.jpg"),
+            },
+            {
+                name: "Tu t'incline", 
+                audio: Asset.fromModule(require("./Lorenza_Blake/tu_t'incline.mp3")),
                 image: require("./Lorenza_Blake/thumb_0.jpg"),
             }
         ],
@@ -1100,6 +1202,11 @@ const soundLibrary: Sound[] = [
             {
                 name: "J'en revieng pas", 
                 audio: Asset.fromModule(require("./Marius_Rotarez/j'en_revieng_pas.mp3")),
+                image: require("./Marius_Rotarez/thumb_0.jpg"),
+            },
+            {
+                name: "J'suis innocent", 
+                audio: Asset.fromModule(require("./Marius_Rotarez/j'suis_innocent.mp3")),
                 image: require("./Marius_Rotarez/thumb_0.jpg"),
             },
             {
