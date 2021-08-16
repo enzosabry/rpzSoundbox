@@ -11,14 +11,15 @@ import {
     View
 } from "react-native";
 import soundLibrary from "../../assets/category/config";
-import {RouteProp} from "@react-navigation/native";
-import {DrawerParams} from "../../App";
-import {StackNavigationProp} from "@react-navigation/stack";
+import { RouteProp } from "@react-navigation/native";
+import { DrawerParams } from "../../App";
+import { StackNavigationProp } from "@react-navigation/stack";
 import SortableGridView from 'react-native-sortable-gridview';
-import {Ionicons} from "@expo/vector-icons";
-import {RFValue} from "react-native-responsive-fontsize";
+import { Ionicons } from "@expo/vector-icons";
+import { RFValue } from "react-native-responsive-fontsize";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import Dialog from "react-native-dialog";
+import LogoDiscord from "../components/LogoDiscord";
 
 type CategoriesScreenRouteProp = RouteProp<DrawerParams, 'Categories'>;
 
@@ -29,7 +30,7 @@ type Props = {
     navigation: CategoriesScreenNavigationProp;
 };
 
-const {width, height} = Dimensions.get("window");
+const { width, height } = Dimensions.get("window");
 
 const styles = StyleSheet.create({
     container: {
@@ -95,10 +96,10 @@ export class Categories extends React.Component<Props, object> {
             const value = await AsyncStorage.getItem('@alreadyLaunchedd');
             if (value !== null) {
                 // We have data!!
-                this.setState({firstLaunch: false})
-            }else {
+                this.setState({ firstLaunch: false })
+            } else {
                 await this._storeData()
-                this.setState({firstLaunch: true})
+                this.setState({ firstLaunch: true })
             }
             console.log(value);
         } catch (error) {
@@ -111,7 +112,7 @@ export class Categories extends React.Component<Props, object> {
     }
 
     showNav() {
-        const {route, navigation} = this.props;
+        const { route, navigation } = this.props;
         let prevSound;
         navigation.setOptions({
             headerTitle: () => <Text style={styles.textHeader}>Categories</Text>,
@@ -128,44 +129,46 @@ export class Categories extends React.Component<Props, object> {
             },
             headerTitleAlign: 'center',
             headerLeft: () =>
-                (<TouchableOpacity onPress={() => navigation.navigate("Home", undefined)}>
-                    <Ionicons name="home-outline" size={32} style={{marginLeft: 15, marginTop: 5, color: "#FFF"}}/>
-                </TouchableOpacity>),
+            (<TouchableOpacity onPress={() => navigation.navigate("Home", undefined)}>
+                <Ionicons name="home-outline" size={32} style={{ marginLeft: 15, marginTop: 5, color: "#FFF" }} />
+            </TouchableOpacity>),
             headerRight: () =>
-                (<TouchableOpacity onPress={() => Linking.openURL("https://twitter.com/Playa_Dev")}>
-                    <Ionicons name="logo-twitter" size={32} style={{marginRight: 15, marginTop: 5, color: "#00acee"}}/>
-                </TouchableOpacity>),
-                (<TouchableOpacity onPress={() => Linking.openURL("https://discord.gg/Ry5qNYJG83)}>
-                    <Ionicons name="logo-discord" size={32} style={{marginRight: 15, marginTop: 5, color: "#6d84d9"}}/>
-                 </TouchableOpacity>),
+            (<View style={{ display: 'flex', flexDirection: 'row' }}>
+                <TouchableOpacity onPress={() => Linking.openURL("https://twitter.com/Playa_Dev")}>
+                    <Ionicons name="logo-twitter" size={32} style={{ marginRight: 15, marginTop: 5, color: "#00acee" }} />
+                </TouchableOpacity>
+                <TouchableOpacity onPress={() => Linking.openURL("https://discord.gg/Ry5qNYJG83")} style={{ marginRight: 15, marginTop: 5 }}>
+                    <LogoDiscord width={32} height={32} />
+                </TouchableOpacity>
+            </View>),
         });
     }
 
     render() {
-        const {route, navigation} = this.props;
+        const { route, navigation } = this.props;
         const navigate = navigation.navigate;
         let aspectRatio;
         let nbrCat = 3;
-        if(width>2700) {
+        if (width > 2700) {
             aspectRatio = 0.7;
             nbrCat = 8
-        }else if(width>1675) {
+        } else if (width > 1675) {
             aspectRatio = 0.6;
             nbrCat = 7
-        }else if(width>1375) {
+        } else if (width > 1375) {
             aspectRatio = 0.6;
             nbrCat = 6
-        }else if(width>960) {
+        } else if (width > 960) {
             aspectRatio = 0.6;
             nbrCat = 5
-        }else if(width>780) {
+        } else if (width > 780) {
             aspectRatio = 0.6;
             nbrCat = 4
-        }else {
+        } else {
             aspectRatio = 1;
             nbrCat = 3
         }
-        {this.showNav()}
+        { this.showNav() }
 
         const showDialog = () => {
             this.setState({
@@ -177,7 +180,7 @@ export class Categories extends React.Component<Props, object> {
                 visible: false
             });
         };
-        let dial: JSX.Element = <View/>;
+        let dial: JSX.Element = <View />;
         if (Platform.OS !== 'web') {
             dial = (
                 <View>
@@ -189,26 +192,26 @@ export class Categories extends React.Component<Props, object> {
                             <Text>Tu veux ajouter un nouveau son ou alors participer au développement de l'app ? Rejoins
                                 nous vite sur :{"\n"}</Text>
                             -<Text onPress={() => Linking.openURL('https://github.com/enzosabry/rpzSoundbox')}
-                                   style={{textDecorationLine: 'underline', color: 'blue'}}>Github</Text>{"\n"}
+                                style={{ textDecorationLine: 'underline', color: 'blue' }}>Github</Text>{"\n"}
 
                             -<Text onPress={() => Linking.openURL('https://discord.gg/Ry5qNYJG83')}
-                                   style={{textDecorationLine: 'underline', color: 'blue'}}>Discord</Text>{"\n"}
+                                style={{ textDecorationLine: 'underline', color: 'blue' }}>Discord</Text>{"\n"}
                             <Text>Bisou.</Text>
                         </Dialog.Description>
-                        <Dialog.Button color={"#169689"} label="Laisse moi tester !" onPress={handleCancel}/>
+                        <Dialog.Button color={"#169689"} label="Laisse moi tester !" onPress={handleCancel} />
                     </Dialog.Container>
                 </View>);
-        }else
+        } else
             dial = null;
 
         return (
             <ScrollView style={styles.container}>
-                { this.state.firstLaunch? dial:null}
+                {this.state.firstLaunch ? dial : null}
                 <Text style={styles.textCat}>Choisis une catégorie :</Text>
-                <View style={{ justifyContent: 'center', alignItems: 'center', width: width, alignSelf: 'center',}}>
+                <View style={{ justifyContent: 'center', alignItems: 'center', width: width, alignSelf: 'center', }}>
                     <SortableGridView
                         data={[undefined, ...soundLibrary.map(s => {
-                            return {name: s.name, image: s.image}
+                            return { name: s.name, image: s.image }
                         })]}
                         gapWidth={20}
                         aspectRatio={aspectRatio}
@@ -218,15 +221,15 @@ export class Categories extends React.Component<Props, object> {
                                 <TouchableOpacity
                                     key={item?.name || "general"} // Important! Should add this props!!!
                                     onPress={() => {
-                                        navigate('Home', {category: item ? i - 1 : undefined});
+                                        navigate('Home', { category: item ? i - 1 : undefined });
                                     }}
                                     style={styles.item}
                                 >
                                     <View style={styles.itemImage}>
                                         <ImageBackground
                                             style={styles.itemImage}
-                                            imageStyle={{height: 80, resizeMode: 'center',}}
-                                            source={item?.image || require("../../assets/img/logorpz.png")}/>
+                                            imageStyle={{ height: 80, resizeMode: 'center', }}
+                                            source={item?.image || require("../../assets/img/logorpz.png")} />
                                     </View>
                                     <Text style={styles.text}>{item?.name || "Tout"}</Text>
                                 </TouchableOpacity>
