@@ -136,7 +136,7 @@ export class Categories extends React.Component<Props, object> {
                     <Ionicons name="logo-twitter" size={32} style={{marginRight: 15, marginTop: 5, color: "#00acee"}}/>
                 </TouchableOpacity>),
                 (<TouchableOpacity onPress={() => Linking.openURL("https://discord.gg/Ry5qNYJG83)}>
-                    <Ionicons name="logo-discord" size={32} style={{marginRight: 15, marginTop: 5, color: "#00acee"}}/>
+                    <Ionicons name="logo-discord" size={32} style={{marginRight: 15, marginTop: 5, color: "#6d84d9"}}/>
                  </TouchableOpacity>),
         });
     }
