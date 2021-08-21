@@ -18,3 +18,11 @@ Crée une issue sur github ou parle nous sur [Discord!](https://discord.gg/Ry5qN
 
 # Tu veux améliorer l'application?
 Le projet est en [React Native](https://github.com/facebook/react-native) et utilise [Expo](https://github.com/expo/expo), fais-nous une pull request propre et elle sera certainement acceptée ;)
+## Guide de développement
+### Ajout de réplique
+   - ajouter le fichier audio dans assets/category/[nom du perso], le nom de la réplique est le nom du fichier audio avec des "_" à la place des espaces
+   - si il n'y a pas de miniature pour le perso : ajouter une image de **300x300** avec le nom "thumb_0"
+   - Avant de push, executer la commande : ``` node src/utils/soundLibrary.js ```
+### Deploiment de la version web
+   - Executer ``` yarn deploy ```
+   - push les fichiers créés
