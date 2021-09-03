@@ -6,6 +6,7 @@ import {
     Linking, PixelRatio,
     SafeAreaView,
     StyleSheet,
+    ScrollView,
     Text,
     TouchableOpacity,
     View
@@ -82,7 +83,7 @@ export class Home extends React.Component<Props, {}> {
                 <Text style={styles.textCat}>
                     {category !== undefined ? soundLibrary[category]?.name : "Accueil"}
                 </Text>
-                <View>
+                <ScrollView>
                     <SafeAreaView style={{ marginTop: 20 }}>
                         <FlatGrid
                             data={category !== undefined ? soundLibrary[category]?.sounds : soundLibrary.flatMap(s => s.sounds)}
@@ -108,7 +109,7 @@ export class Home extends React.Component<Props, {}> {
                             }}
                         />
                     </SafeAreaView>
-                </View>
+                </ScrollView>
             </View>
         );
     }
