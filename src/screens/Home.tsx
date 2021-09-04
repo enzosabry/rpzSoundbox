@@ -84,8 +84,8 @@ export class Home extends React.Component<Props, {}> {
                 <Text style={styles.textCat}>
                     {category !== undefined ? soundLibrary[category]?.name : "Accueil"}
                 </Text>
-                <ScrollView>
-                    <SafeAreaView style={{ flex: 1, flexDirection: 'row', marginTop: 20 }}>
+                <ScrollView style={{ flex: 1, flexDirection: 'row' }}>
+                    <SafeAreaView style={{ marginTop: 20 }}>
                         <FlatGrid
                             data={category !== undefined ? soundLibrary[category]?.sounds : soundLibrary.flatMap(s => s.sounds)}
                             keyExtractor={(s, i) => s.name + i}
