@@ -208,7 +208,8 @@ export class Categories extends React.Component<Props, object> {
             <ScrollView style={styles.container}>
                 {this.state.firstLaunch ? dial : null}
                 <Text style={styles.textCat}>Choisis une catégorie :</Text>
-                <View style={{ justifyContent: 'center', alignItems: 'center', width: width, alignSelf: 'center', }}>
+                <ScrollView>
+                <View style={{ justifyContent: 'center', alignItems: 'center', width: width, alignSelf: 'center'}}>
                     <SortableGridView
                         data={[undefined, ...soundLibrary.map(s => {
                             return { name: s.name, image: s.image }
@@ -237,6 +238,7 @@ export class Categories extends React.Component<Props, object> {
                         }}
                     />
                 </View>
+              </ScrollView>
             </ScrollView>
         );
     }

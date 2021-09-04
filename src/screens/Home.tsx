@@ -20,7 +20,6 @@ import { Ionicons } from "@expo/vector-icons";
 import { RFValue } from "react-native-responsive-fontsize";
 import { Audio } from "expo-av";
 import LogoDiscord from '../components/LogoDiscord';
-import SortableGridView from 'react-native-sortable-gridview';
 
 const { width, height } = Dimensions.get("window");
 
@@ -84,7 +83,7 @@ export class Home extends React.Component<Props, {}> {
                 <Text style={styles.textCat}>
                     {category !== undefined ? soundLibrary[category]?.name : "Accueil"}
                 </Text>
-                <ScrollView style={{ flex: 1, flexDirection: 'row' }}>
+                <ScrollView>
                     <SafeAreaView style={{ marginTop: 20 }}>
                         <FlatGrid
                             data={category !== undefined ? soundLibrary[category]?.sounds : soundLibrary.flatMap(s => s.sounds)}
