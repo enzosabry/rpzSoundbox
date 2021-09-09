@@ -12,18 +12,18 @@ const soundLibrary: Sound[] = [
         image: require("./Autres/thumb_0.png"),
         sounds: [ 
             {
+                name: "Hey friend", 
+                audio: Asset.fromModule(require("./Autres/Hey_friend.mp3")),
+                image: require("./Autres/thumb_0.png"),
+            },
+            {
                 name: "Coma", 
                 audio: Asset.fromModule(require("./Autres/coma.mp3")),
-                image: require("./Autres/thumb_0.png"),
+                image: require("./Autres/thumb_2.png"),
             },
             {
                 name: "Hey Don Juan", 
                 audio: Asset.fromModule(require("./Autres/hey_Don_Juan.mp3")),
-                image: require("./Autres/thumb_2.png"),
-            },
-            {
-                name: "Hey friend", 
-                audio: Asset.fromModule(require("./Autres/Hey_friend.mp3")),
                 image: require("./Autres/thumb_3.png"),
             },
             {
@@ -38,18 +38,8 @@ const soundLibrary: Sound[] = [
         image: require("./Bazil/thumb_0.jpg"),
         sounds: [ 
             {
-                name: "Déjà s**é un pote", 
-                audio: Asset.fromModule(require("./Bazil/déjà_sXXé_un_pote.mp3")),
-                image: require("./Bazil/thumb_0.jpg"),
-            },
-            {
                 name: "J'suis chasseur de truffes", 
                 audio: Asset.fromModule(require("./Bazil/J'suis_chasseur_de_truffes.mp3")),
-                image: require("./Bazil/thumb_0.jpg"),
-            },
-            {
-                name: "J'vous montre mon pipou", 
-                audio: Asset.fromModule(require("./Bazil/j'vous_montre_mon_pipou.mp3")),
                 image: require("./Bazil/thumb_0.jpg"),
             },
             {
@@ -61,6 +51,16 @@ const soundLibrary: Sound[] = [
                 name: "Vous êtes mon héro", 
                 audio: Asset.fromModule(require("./Bazil/Vous_êtes_mon_héro.mp3")),
                 image: require("./Bazil/thumb_0.jpg"),
+            },
+            {
+                name: "Déjà s**é un pote", 
+                audio: Asset.fromModule(require("./Bazil/déjà_sXXé_un_pote.mp3")),
+                image: require("./Bazil/thumb_0.jpg"),
+            },
+            {
+                name: "J'vous montre mon pipou", 
+                audio: Asset.fromModule(require("./Bazil/j'vous_montre_mon_pipou.mp3")),
+                image: require("./Bazil/thumb_0.jpg"),
             }
         ],
     },
@@ -68,6 +68,11 @@ const soundLibrary: Sound[] = [
         name: "Bill Boid",
         image: require("./Bill_Boid/thumb_0.jpg"),
         sounds: [ 
+            {
+                name: "PUT YOUR HANDSUUUP", 
+                audio: Asset.fromModule(require("./Bill_Boid/PUT_YOUR_HANDSUUUP.mp3")),
+                image: require("./Bill_Boid/thumb_0.jpg"),
+            },
             {
                 name: "Fin de service", 
                 audio: Asset.fromModule(require("./Bill_Boid/fin_de_service.mp3")),
@@ -84,23 +89,18 @@ const soundLibrary: Sound[] = [
                 image: require("./Bill_Boid/thumb_0.jpg"),
             },
             {
-                name: "Mais qui vois là'je", 
-                audio: Asset.fromModule(require("./Bill_Boid/mais_qui_vois_là'je.mp3")),
-                image: require("./Bill_Boid/thumb_0.jpg"),
-            },
-            {
                 name: "Ma tension je t'la met dans l'c*l", 
                 audio: Asset.fromModule(require("./Bill_Boid/ma_tension_je_t'la_met_dans_l'cXl.mp3")),
                 image: require("./Bill_Boid/thumb_0.jpg"),
             },
             {
-                name: "Oui rien à f**tre", 
-                audio: Asset.fromModule(require("./Bill_Boid/oui_rien_à_fXXtre.mp3")),
+                name: "Mais qui vois là'je", 
+                audio: Asset.fromModule(require("./Bill_Boid/mais_qui_vois_là'je.mp3")),
                 image: require("./Bill_Boid/thumb_0.jpg"),
             },
             {
-                name: "PUT YOUR HANDSUUUP", 
-                audio: Asset.fromModule(require("./Bill_Boid/PUT_YOUR_HANDSUUUP.mp3")),
+                name: "Oui rien à f**tre", 
+                audio: Asset.fromModule(require("./Bill_Boid/oui_rien_à_fXXtre.mp3")),
                 image: require("./Bill_Boid/thumb_0.jpg"),
             },
             {
@@ -137,6 +137,11 @@ const soundLibrary: Sound[] = [
         image: require("./Docteur_Cox/thumb_0.jpg"),
         sounds: [ 
             {
+                name: "Dr Cox pète un plomb", 
+                audio: Asset.fromModule(require("./Docteur_Cox/Dr_Cox_pète_un_plomb.mp3")),
+                image: require("./Docteur_Cox/thumb_0.jpg"),
+            },
+            {
                 name: "C'est mon travail", 
                 audio: Asset.fromModule(require("./Docteur_Cox/c'est_mon_travail.mp3")),
                 image: require("./Docteur_Cox/thumb_0.jpg"),
@@ -144,11 +149,6 @@ const soundLibrary: Sound[] = [
             {
                 name: "Conquérir le monde", 
                 audio: Asset.fromModule(require("./Docteur_Cox/conquérir_le_monde.mp3")),
-                image: require("./Docteur_Cox/thumb_0.jpg"),
-            },
-            {
-                name: "Dr Cox pète un plomb", 
-                audio: Asset.fromModule(require("./Docteur_Cox/Dr_Cox_pète_un_plomb.mp3")),
                 image: require("./Docteur_Cox/thumb_0.jpg"),
             },
             {
@@ -167,13 +167,13 @@ const soundLibrary: Sound[] = [
                 image: require("./Docteur_Cox/thumb_0.jpg"),
             },
             {
-                name: "Manipuler les gens", 
-                audio: Asset.fromModule(require("./Docteur_Cox/manipuler_les_gens.mp3")),
+                name: "Ma soupe", 
+                audio: Asset.fromModule(require("./Docteur_Cox/ma_soupe.mp3")),
                 image: require("./Docteur_Cox/thumb_0.jpg"),
             },
             {
-                name: "Ma soupe", 
-                audio: Asset.fromModule(require("./Docteur_Cox/ma_soupe.mp3")),
+                name: "Manipuler les gens", 
+                audio: Asset.fromModule(require("./Docteur_Cox/manipuler_les_gens.mp3")),
                 image: require("./Docteur_Cox/thumb_0.jpg"),
             },
             {
@@ -187,11 +187,6 @@ const soundLibrary: Sound[] = [
         name: "Docteur Maison",
         image: require("./Docteur_Maison/thumb_0.png"),
         sounds: [ 
-            {
-                name: "Appuyer sur la détente", 
-                audio: Asset.fromModule(require("./Docteur_Maison/appuyer_sur_la_détente.mp3")),
-                image: require("./Docteur_Maison/thumb_0.png"),
-            },
             {
                 name: "Attachiante et Célibatante", 
                 audio: Asset.fromModule(require("./Docteur_Maison/Attachiante_et_Célibatante.mp3")),
@@ -220,11 +215,6 @@ const soundLibrary: Sound[] = [
             {
                 name: "Formidable", 
                 audio: Asset.fromModule(require("./Docteur_Maison/Formidable.mp3")),
-                image: require("./Docteur_Maison/thumb_0.png"),
-            },
-            {
-                name: "J'aime les burgers", 
-                audio: Asset.fromModule(require("./Docteur_Maison/j'aime_les_burgers.mp3")),
                 image: require("./Docteur_Maison/thumb_0.png"),
             },
             {
@@ -260,6 +250,16 @@ const soundLibrary: Sound[] = [
             {
                 name: "Vous êtes exquise", 
                 audio: Asset.fromModule(require("./Docteur_Maison/Vous_êtes_exquise.mp3")),
+                image: require("./Docteur_Maison/thumb_0.png"),
+            },
+            {
+                name: "Appuyer sur la détente", 
+                audio: Asset.fromModule(require("./Docteur_Maison/appuyer_sur_la_détente.mp3")),
+                image: require("./Docteur_Maison/thumb_0.png"),
+            },
+            {
+                name: "J'aime les burgers", 
+                audio: Asset.fromModule(require("./Docteur_Maison/j'aime_les_burgers.mp3")),
                 image: require("./Docteur_Maison/thumb_0.png"),
             }
         ],
@@ -341,11 +341,6 @@ const soundLibrary: Sound[] = [
                 image: require("./Donatien_de_Montazac/thumb_0.png"),
             },
             {
-                name: "C'est un cauchemard", 
-                audio: Asset.fromModule(require("./Donatien_de_Montazac/c'est_un_cauchemard.mp3")),
-                image: require("./Donatien_de_Montazac/thumb_0.png"),
-            },
-            {
                 name: "C'est un piège", 
                 audio: Asset.fromModule(require("./Donatien_de_Montazac/C'est_un_piège.mp3")),
                 image: require("./Donatien_de_Montazac/thumb_0.png"),
@@ -361,8 +356,8 @@ const soundLibrary: Sound[] = [
                 image: require("./Donatien_de_Montazac/thumb_0.png"),
             },
             {
-                name: "D'amitié", 
-                audio: Asset.fromModule(require("./Donatien_de_Montazac/d'amitié.mp3")),
+                name: "DOoonNez moi la MalEeeEtteE", 
+                audio: Asset.fromModule(require("./Donatien_de_Montazac/DOoonNez_moi_la_MalEeeEtteE.mp3")),
                 image: require("./Donatien_de_Montazac/thumb_0.png"),
             },
             {
@@ -381,18 +376,13 @@ const soundLibrary: Sound[] = [
                 image: require("./Donatien_de_Montazac/thumb_0.png"),
             },
             {
-                name: "Donatien doit faire justice", 
-                audio: Asset.fromModule(require("./Donatien_de_Montazac/Donatien_doit_faire_justice.mp3")),
-                image: require("./Donatien_de_Montazac/thumb_0.png"),
-            },
-            {
                 name: "Dona vrille complètement", 
                 audio: Asset.fromModule(require("./Donatien_de_Montazac/Dona_vrille_complètement.mp3")),
                 image: require("./Donatien_de_Montazac/thumb_0.png"),
             },
             {
-                name: "DOoonNez moi la MalEeeEtteE", 
-                audio: Asset.fromModule(require("./Donatien_de_Montazac/DOoonNez_moi_la_MalEeeEtteE.mp3")),
+                name: "Donatien doit faire justice", 
+                audio: Asset.fromModule(require("./Donatien_de_Montazac/Donatien_doit_faire_justice.mp3")),
                 image: require("./Donatien_de_Montazac/thumb_0.png"),
             },
             {
@@ -421,8 +411,8 @@ const soundLibrary: Sound[] = [
                 image: require("./Donatien_de_Montazac/thumb_0.png"),
             },
             {
-                name: "Je passe mon permis c*nnard", 
-                audio: Asset.fromModule(require("./Donatien_de_Montazac/je_passe_mon_permis_cXnnard.mp3")),
+                name: "JE suis Donatien de Montazac", 
+                audio: Asset.fromModule(require("./Donatien_de_Montazac/JE_suis_Donatien_de_Montazac.mp3")),
                 image: require("./Donatien_de_Montazac/thumb_0.png"),
             },
             {
@@ -431,33 +421,13 @@ const soundLibrary: Sound[] = [
                 image: require("./Donatien_de_Montazac/thumb_0.png"),
             },
             {
-                name: "JE suis Donatien de Montazac", 
-                audio: Asset.fromModule(require("./Donatien_de_Montazac/JE_suis_Donatien_de_Montazac.mp3")),
-                image: require("./Donatien_de_Montazac/thumb_0.png"),
-            },
-            {
                 name: "Je suis en colère", 
                 audio: Asset.fromModule(require("./Donatien_de_Montazac/Je_suis_en_colère.mp3")),
                 image: require("./Donatien_de_Montazac/thumb_0.png"),
             },
             {
-                name: "Je suis millionaire", 
-                audio: Asset.fromModule(require("./Donatien_de_Montazac/je_suis_millionaire.mp3")),
-                image: require("./Donatien_de_Montazac/thumb_0.png"),
-            },
-            {
                 name: "Je veux chanter", 
                 audio: Asset.fromModule(require("./Donatien_de_Montazac/Je_veux_chanter.mp3")),
-                image: require("./Donatien_de_Montazac/thumb_0.png"),
-            },
-            {
-                name: "Les croutes me rappellent cette chanson", 
-                audio: Asset.fromModule(require("./Donatien_de_Montazac/les_croutes_me_rappellent_cette_chanson.mp3")),
-                image: require("./Donatien_de_Montazac/thumb_0.png"),
-            },
-            {
-                name: "New sherif in town", 
-                audio: Asset.fromModule(require("./Donatien_de_Montazac/new_sherif_in_town.mp3")),
                 image: require("./Donatien_de_Montazac/thumb_0.png"),
             },
             {
@@ -491,11 +461,6 @@ const soundLibrary: Sound[] = [
                 image: require("./Donatien_de_Montazac/thumb_0.png"),
             },
             {
-                name: "Un énorme respect pour la fonction policière", 
-                audio: Asset.fromModule(require("./Donatien_de_Montazac/un_énorme_respect_pour_la_fonction_policière.mp3")),
-                image: require("./Donatien_de_Montazac/thumb_0.png"),
-            },
-            {
                 name: "VITE", 
                 audio: Asset.fromModule(require("./Donatien_de_Montazac/VITE.mp3")),
                 image: require("./Donatien_de_Montazac/thumb_0.png"),
@@ -513,6 +478,41 @@ const soundLibrary: Sound[] = [
             {
                 name: "Wonderwall", 
                 audio: Asset.fromModule(require("./Donatien_de_Montazac/Wonderwall.mp3")),
+                image: require("./Donatien_de_Montazac/thumb_0.png"),
+            },
+            {
+                name: "C'est un cauchemard", 
+                audio: Asset.fromModule(require("./Donatien_de_Montazac/c'est_un_cauchemard.mp3")),
+                image: require("./Donatien_de_Montazac/thumb_0.png"),
+            },
+            {
+                name: "D'amitié", 
+                audio: Asset.fromModule(require("./Donatien_de_Montazac/d'amitié.mp3")),
+                image: require("./Donatien_de_Montazac/thumb_0.png"),
+            },
+            {
+                name: "Je passe mon permis c*nnard", 
+                audio: Asset.fromModule(require("./Donatien_de_Montazac/je_passe_mon_permis_cXnnard.mp3")),
+                image: require("./Donatien_de_Montazac/thumb_0.png"),
+            },
+            {
+                name: "Je suis millionaire", 
+                audio: Asset.fromModule(require("./Donatien_de_Montazac/je_suis_millionaire.mp3")),
+                image: require("./Donatien_de_Montazac/thumb_0.png"),
+            },
+            {
+                name: "Les croutes me rappellent cette chanson", 
+                audio: Asset.fromModule(require("./Donatien_de_Montazac/les_croutes_me_rappellent_cette_chanson.mp3")),
+                image: require("./Donatien_de_Montazac/thumb_0.png"),
+            },
+            {
+                name: "New sherif in town", 
+                audio: Asset.fromModule(require("./Donatien_de_Montazac/new_sherif_in_town.mp3")),
+                image: require("./Donatien_de_Montazac/thumb_0.png"),
+            },
+            {
+                name: "Un énorme respect pour la fonction policière", 
+                audio: Asset.fromModule(require("./Donatien_de_Montazac/un_énorme_respect_pour_la_fonction_policière.mp3")),
                 image: require("./Donatien_de_Montazac/thumb_0.png"),
             },
             {
@@ -553,11 +553,6 @@ const soundLibrary: Sound[] = [
         image: require("./Fabien_Torez/thumb_0.jpg"),
         sounds: [ 
             {
-                name: "Allez l'om", 
-                audio: Asset.fromModule(require("./Fabien_Torez/allez_l'om.mp3")),
-                image: require("./Fabien_Torez/thumb_0.jpg"),
-            },
-            {
                 name: "C'EST D'LA BOOOOMBE", 
                 audio: Asset.fromModule(require("./Fabien_Torez/C'EST_D'LA_BOOOOMBE.mp3")),
                 image: require("./Fabien_Torez/thumb_0.jpg"),
@@ -578,28 +573,13 @@ const soundLibrary: Sound[] = [
                 image: require("./Fabien_Torez/thumb_0.jpg"),
             },
             {
-                name: "Dans mon vomit", 
-                audio: Asset.fromModule(require("./Fabien_Torez/dans_mon_vomit.mp3")),
-                image: require("./Fabien_Torez/thumb_0.jpg"),
-            },
-            {
                 name: "Depuis la 1ère fois où j'ai fait l'amour", 
                 audio: Asset.fromModule(require("./Fabien_Torez/Depuis_la_1ère_fois_où_j'ai_fait_l'amour.mp3")),
                 image: require("./Fabien_Torez/thumb_0.jpg"),
             },
             {
-                name: "Doonnaa", 
-                audio: Asset.fromModule(require("./Fabien_Torez/doonnaa.mp3")),
-                image: require("./Fabien_Torez/thumb_0.jpg"),
-            },
-            {
                 name: "Gardien de la merde", 
                 audio: Asset.fromModule(require("./Fabien_Torez/Gardien_de_la_merde.mp3")),
-                image: require("./Fabien_Torez/thumb_0.jpg"),
-            },
-            {
-                name: "Le domaine en feu", 
-                audio: Asset.fromModule(require("./Fabien_Torez/le_domaine_en_feu.mp3")),
                 image: require("./Fabien_Torez/thumb_0.jpg"),
             },
             {
@@ -613,16 +593,6 @@ const soundLibrary: Sound[] = [
                 image: require("./Fabien_Torez/thumb_0.jpg"),
             },
             {
-                name: "Répompa", 
-                audio: Asset.fromModule(require("./Fabien_Torez/répompa.mp3")),
-                image: require("./Fabien_Torez/thumb_0.jpg"),
-            },
-            {
-                name: "Salut moi c'est Fab", 
-                audio: Asset.fromModule(require("./Fabien_Torez/salut_moi_c'est_Fab.mp3")),
-                image: require("./Fabien_Torez/thumb_0.jpg"),
-            },
-            {
                 name: "Tout va bieng", 
                 audio: Asset.fromModule(require("./Fabien_Torez/Tout_va_bieng.mp3")),
                 image: require("./Fabien_Torez/thumb_0.jpg"),
@@ -630,6 +600,36 @@ const soundLibrary: Sound[] = [
             {
                 name: "Tu peux me retazer gros", 
                 audio: Asset.fromModule(require("./Fabien_Torez/Tu_peux_me_retazer_gros.mp3")),
+                image: require("./Fabien_Torez/thumb_0.jpg"),
+            },
+            {
+                name: "Allez l'om", 
+                audio: Asset.fromModule(require("./Fabien_Torez/allez_l'om.mp3")),
+                image: require("./Fabien_Torez/thumb_0.jpg"),
+            },
+            {
+                name: "Dans mon vomit", 
+                audio: Asset.fromModule(require("./Fabien_Torez/dans_mon_vomit.mp3")),
+                image: require("./Fabien_Torez/thumb_0.jpg"),
+            },
+            {
+                name: "Doonnaa", 
+                audio: Asset.fromModule(require("./Fabien_Torez/doonnaa.mp3")),
+                image: require("./Fabien_Torez/thumb_0.jpg"),
+            },
+            {
+                name: "Le domaine en feu", 
+                audio: Asset.fromModule(require("./Fabien_Torez/le_domaine_en_feu.mp3")),
+                image: require("./Fabien_Torez/thumb_0.jpg"),
+            },
+            {
+                name: "Répompa", 
+                audio: Asset.fromModule(require("./Fabien_Torez/répompa.mp3")),
+                image: require("./Fabien_Torez/thumb_0.jpg"),
+            },
+            {
+                name: "Salut moi c'est Fab", 
+                audio: Asset.fromModule(require("./Fabien_Torez/salut_moi_c'est_Fab.mp3")),
                 image: require("./Fabien_Torez/thumb_0.jpg"),
             }
         ],
@@ -730,6 +730,11 @@ const soundLibrary: Sound[] = [
         image: require("./Johnny_Monnay/thumb_0.jpg"),
         sounds: [ 
             {
+                name: "TA GUEULE", 
+                audio: Asset.fromModule(require("./Johnny_Monnay/TA_GUEULE.mp3")),
+                image: require("./Johnny_Monnay/thumb_0.jpg"),
+            },
+            {
                 name: "J'dois prendre congé", 
                 audio: Asset.fromModule(require("./Johnny_Monnay/j'dois_prendre_congé.mp3")),
                 image: require("./Johnny_Monnay/thumb_0.jpg"),
@@ -740,23 +745,18 @@ const soundLibrary: Sound[] = [
                 image: require("./Johnny_Monnay/thumb_0.jpg"),
             },
             {
-                name: "Passif agressif", 
-                audio: Asset.fromModule(require("./Johnny_Monnay/passif_agressif.mp3")),
-                image: require("./Johnny_Monnay/thumb_0.jpg"),
-            },
-            {
                 name: "Pas faire ch**r papa Johnny", 
                 audio: Asset.fromModule(require("./Johnny_Monnay/pas_faire_chXXr_papa_Johnny.mp3")),
                 image: require("./Johnny_Monnay/thumb_0.jpg"),
             },
             {
-                name: "Pub", 
-                audio: Asset.fromModule(require("./Johnny_Monnay/pub.mp3")),
+                name: "Passif agressif", 
+                audio: Asset.fromModule(require("./Johnny_Monnay/passif_agressif.mp3")),
                 image: require("./Johnny_Monnay/thumb_0.jpg"),
             },
             {
-                name: "TA GUEULE", 
-                audio: Asset.fromModule(require("./Johnny_Monnay/TA_GUEULE.mp3")),
+                name: "Pub", 
+                audio: Asset.fromModule(require("./Johnny_Monnay/pub.mp3")),
                 image: require("./Johnny_Monnay/thumb_0.jpg"),
             },
             {
@@ -883,6 +883,17 @@ const soundLibrary: Sound[] = [
         ],
     },
     {
+        name: "Le iench",
+        image: require("./Le_iench/thumb_0.jpg"),
+        sounds: [ 
+            {
+                name: "Programme iench", 
+                audio: Asset.fromModule(require("./Le_iench/programme_iench.mp3")),
+                image: require("./Le_iench/thumb_0.jpg"),
+            }
+        ],
+    },
+    {
         name: "Lenny Johnson",
         image: require("./Lenny_Johnson/thumb_0.jpg"),
         sounds: [ 
@@ -913,6 +924,16 @@ const soundLibrary: Sound[] = [
                 image: require("./Les_Croute_♡/thumb_0.png"),
             },
             {
+                name: "J'me suis laissé taper", 
+                audio: Asset.fromModule(require("./Les_Croute_♡/J'me_suis_laissé_taper.mp3")),
+                image: require("./Les_Croute_♡/thumb_0.png"),
+            },
+            {
+                name: "On a planté l'hélico", 
+                audio: Asset.fromModule(require("./Les_Croute_♡/On_a_planté_l'hélico.mp3")),
+                image: require("./Les_Croute_♡/thumb_0.png"),
+            },
+            {
                 name: "Bien fait", 
                 audio: Asset.fromModule(require("./Les_Croute_♡/bien_fait.mp3")),
                 image: require("./Les_Croute_♡/thumb_0.png"),
@@ -928,16 +949,6 @@ const soundLibrary: Sound[] = [
                 image: require("./Les_Croute_♡/thumb_0.png"),
             },
             {
-                name: "J'me suis laissé taper", 
-                audio: Asset.fromModule(require("./Les_Croute_♡/J'me_suis_laissé_taper.mp3")),
-                image: require("./Les_Croute_♡/thumb_0.png"),
-            },
-            {
-                name: "On a planté l'hélico", 
-                audio: Asset.fromModule(require("./Les_Croute_♡/On_a_planté_l'hélico.mp3")),
-                image: require("./Les_Croute_♡/thumb_0.png"),
-            },
-            {
                 name: "Trace trace trace", 
                 audio: Asset.fromModule(require("./Les_Croute_♡/trace_trace_trace.mp3")),
                 image: require("./Les_Croute_♡/thumb_0.png"),
@@ -946,17 +957,6 @@ const soundLibrary: Sound[] = [
                 name: "Un barrage pour les sangliers M'sieur", 
                 audio: Asset.fromModule(require("./Les_Croute_♡/un_barrage_pour_les_sangliers_M'sieur.mp3")),
                 image: require("./Les_Croute_♡/thumb_0.png"),
-            }
-        ],
-    },
-    {
-        name: "Le iench",
-        image: require("./Le_iench/thumb_0.jpg"),
-        sounds: [ 
-            {
-                name: "Programme iench", 
-                audio: Asset.fromModule(require("./Le_iench/programme_iench.mp3")),
-                image: require("./Le_iench/thumb_0.jpg"),
             }
         ],
     },
@@ -1036,13 +1036,13 @@ const soundLibrary: Sound[] = [
                 image: require("./Lieutenant_Kuck/thumb_0.jpg"),
             },
             {
-                name: "Nous sommes les unités d'élite du LSPD", 
-                audio: Asset.fromModule(require("./Lieutenant_Kuck/nous_sommes_les_unités_d'élite_du_LSPD.mp3")),
+                name: "Opération rondement menée", 
+                audio: Asset.fromModule(require("./Lieutenant_Kuck/Opération_rondement_menée.mp3")),
                 image: require("./Lieutenant_Kuck/thumb_0.jpg"),
             },
             {
-                name: "Opération rondement menée", 
-                audio: Asset.fromModule(require("./Lieutenant_Kuck/Opération_rondement_menée.mp3")),
+                name: "Nous sommes les unités d'élite du LSPD", 
+                audio: Asset.fromModule(require("./Lieutenant_Kuck/nous_sommes_les_unités_d'élite_du_LSPD.mp3")),
                 image: require("./Lieutenant_Kuck/thumb_0.jpg"),
             },
             {
@@ -1072,16 +1072,6 @@ const soundLibrary: Sound[] = [
         image: require("./Lindsay_Walker/thumb_0.png"),
         sounds: [ 
             {
-                name: "C'est en sucant n'importe qui", 
-                audio: Asset.fromModule(require("./Lindsay_Walker/c'est_en_sucant_n'importe_qui.mp3")),
-                image: require("./Lindsay_Walker/thumb_0.png"),
-            },
-            {
-                name: "Comme Gibbs dans NCISSS", 
-                audio: Asset.fromModule(require("./Lindsay_Walker/comme_Gibbs_dans_NCISSS.mp3")),
-                image: require("./Lindsay_Walker/thumb_2.png"),
-            },
-            {
                 name: "NCIS", 
                 audio: Asset.fromModule(require("./Lindsay_Walker/NCIS.mp3")),
                 image: require("./Lindsay_Walker/thumb_0.png"),
@@ -1089,7 +1079,7 @@ const soundLibrary: Sound[] = [
             {
                 name: "NCISSS", 
                 audio: Asset.fromModule(require("./Lindsay_Walker/NCISSS.mp3")),
-                image: require("./Lindsay_Walker/thumb_0.png"),
+                image: require("./Lindsay_Walker/thumb_2.png"),
             },
             {
                 name: "NCIS GET DOWN", 
@@ -1102,13 +1092,23 @@ const soundLibrary: Sound[] = [
                 image: require("./Lindsay_Walker/thumb_0.png"),
             },
             {
-                name: "Pas vu NCIS version longue", 
-                audio: Asset.fromModule(require("./Lindsay_Walker/pas_vu_NCIS_version_longue.mp3")),
+                name: "Qu'est-ce que Gibbs ferait dans NCIS", 
+                audio: Asset.fromModule(require("./Lindsay_Walker/Qu'est-ce_que_Gibbs_ferait_dans_NCIS.mp3")),
                 image: require("./Lindsay_Walker/thumb_0.png"),
             },
             {
-                name: "Qu'est-ce que Gibbs ferait dans NCIS", 
-                audio: Asset.fromModule(require("./Lindsay_Walker/Qu'est-ce_que_Gibbs_ferait_dans_NCIS.mp3")),
+                name: "C'est en sucant n'importe qui", 
+                audio: Asset.fromModule(require("./Lindsay_Walker/c'est_en_sucant_n'importe_qui.mp3")),
+                image: require("./Lindsay_Walker/thumb_0.png"),
+            },
+            {
+                name: "Comme Gibbs dans NCISSS", 
+                audio: Asset.fromModule(require("./Lindsay_Walker/comme_Gibbs_dans_NCISSS.mp3")),
+                image: require("./Lindsay_Walker/thumb_0.png"),
+            },
+            {
+                name: "Pas vu NCIS version longue", 
+                audio: Asset.fromModule(require("./Lindsay_Walker/pas_vu_NCIS_version_longue.mp3")),
                 image: require("./Lindsay_Walker/thumb_0.png"),
             },
             {
@@ -1145,17 +1145,33 @@ const soundLibrary: Sound[] = [
         ],
     },
     {
+        name: "MT",
+        image: require("./MT/thumb_0.jpg"),
+        sounds: [ 
+            {
+                name: "Dommage collateral", 
+                audio: Asset.fromModule(require("./MT/dommage_collateral.mp3")),
+                image: require("./MT/thumb_0.jpg"),
+            },
+            {
+                name: "Mes petits caramels", 
+                audio: Asset.fromModule(require("./MT/mes_petits_caramels.mp3")),
+                image: require("./MT/thumb_0.jpg"),
+            }
+        ],
+    },
+    {
         name: "Marcello Capone",
         image: require("./Marcello_Capone/thumb_0.jpg"),
         sounds: [ 
             {
-                name: "Cara cara caramel", 
-                audio: Asset.fromModule(require("./Marcello_Capone/cara_cara_caramel.mp3")),
+                name: "Le roumain du roi", 
+                audio: Asset.fromModule(require("./Marcello_Capone/Le_roumain_du_roi.mp3")),
                 image: require("./Marcello_Capone/thumb_0.jpg"),
             },
             {
-                name: "Le roumain du roi", 
-                audio: Asset.fromModule(require("./Marcello_Capone/Le_roumain_du_roi.mp3")),
+                name: "Cara cara caramel", 
+                audio: Asset.fromModule(require("./Marcello_Capone/cara_cara_caramel.mp3")),
                 image: require("./Marcello_Capone/thumb_0.jpg"),
             },
             {
@@ -1200,16 +1216,6 @@ const soundLibrary: Sound[] = [
                 image: require("./Marius_Rotarez/thumb_0.jpg"),
             },
             {
-                name: "J'en revieng pas", 
-                audio: Asset.fromModule(require("./Marius_Rotarez/j'en_revieng_pas.mp3")),
-                image: require("./Marius_Rotarez/thumb_0.jpg"),
-            },
-            {
-                name: "J'suis innocent", 
-                audio: Asset.fromModule(require("./Marius_Rotarez/j'suis_innocent.mp3")),
-                image: require("./Marius_Rotarez/thumb_0.jpg"),
-            },
-            {
                 name: "Vive le vin froid", 
                 audio: Asset.fromModule(require("./Marius_Rotarez/Vive_le_vin_froid.mp3")),
                 image: require("./Marius_Rotarez/thumb_0.jpg"),
@@ -1217,6 +1223,16 @@ const soundLibrary: Sound[] = [
             {
                 name: "Vous êtes en état d'arrestation", 
                 audio: Asset.fromModule(require("./Marius_Rotarez/Vous_êtes_en_état_d'arrestation.mp3")),
+                image: require("./Marius_Rotarez/thumb_0.jpg"),
+            },
+            {
+                name: "J'en revieng pas", 
+                audio: Asset.fromModule(require("./Marius_Rotarez/j'en_revieng_pas.mp3")),
+                image: require("./Marius_Rotarez/thumb_0.jpg"),
+            },
+            {
+                name: "J'suis innocent", 
+                audio: Asset.fromModule(require("./Marius_Rotarez/j'suis_innocent.mp3")),
                 image: require("./Marius_Rotarez/thumb_0.jpg"),
             }
         ],
@@ -1262,6 +1278,16 @@ const soundLibrary: Sound[] = [
         image: require("./Miguel_Rodriguez/thumb_0.jpg"),
         sounds: [ 
             {
+                name: "Y'en peux plou", 
+                audio: Asset.fromModule(require("./Miguel_Rodriguez/Y'en_peux_plou.mp3")),
+                image: require("./Miguel_Rodriguez/thumb_0.jpg"),
+            },
+            {
+                name: "Ce que yé dans mon calbout", 
+                audio: Asset.fromModule(require("./Miguel_Rodriguez/ce_que_yé_dans_mon_calbout.mp3")),
+                image: require("./Miguel_Rodriguez/thumb_0.jpg"),
+            },
+            {
                 name: "Ceintoure", 
                 audio: Asset.fromModule(require("./Miguel_Rodriguez/ceintoure.mp3")),
                 image: require("./Miguel_Rodriguez/thumb_0.jpg"),
@@ -1269,11 +1295,6 @@ const soundLibrary: Sound[] = [
             {
                 name: "Ceintoutoutour", 
                 audio: Asset.fromModule(require("./Miguel_Rodriguez/ceintoutoutour.mp3")),
-                image: require("./Miguel_Rodriguez/thumb_0.jpg"),
-            },
-            {
-                name: "Ce que yé dans mon calbout", 
-                audio: Asset.fromModule(require("./Miguel_Rodriguez/ce_que_yé_dans_mon_calbout.mp3")),
                 image: require("./Miguel_Rodriguez/thumb_0.jpg"),
             },
             {
@@ -1312,11 +1333,6 @@ const soundLibrary: Sound[] = [
                 image: require("./Miguel_Rodriguez/thumb_0.jpg"),
             },
             {
-                name: "Y'en peux plou", 
-                audio: Asset.fromModule(require("./Miguel_Rodriguez/Y'en_peux_plou.mp3")),
-                image: require("./Miguel_Rodriguez/thumb_0.jpg"),
-            },
-            {
                 name: "Yenpeutplou des Croute", 
                 audio: Asset.fromModule(require("./Miguel_Rodriguez/yenpeutplou_des_Croute.mp3")),
                 image: require("./Miguel_Rodriguez/thumb_0.jpg"),
@@ -1325,22 +1341,6 @@ const soundLibrary: Sound[] = [
                 name: "Yélétu", 
                 audio: Asset.fromModule(require("./Miguel_Rodriguez/yélétu.mp3")),
                 image: require("./Miguel_Rodriguez/thumb_0.jpg"),
-            }
-        ],
-    },
-    {
-        name: "MT",
-        image: require("./MT/thumb_0.jpg"),
-        sounds: [ 
-            {
-                name: "Dommage collateral", 
-                audio: Asset.fromModule(require("./MT/dommage_collateral.mp3")),
-                image: require("./MT/thumb_0.jpg"),
-            },
-            {
-                name: "Mes petits caramels", 
-                audio: Asset.fromModule(require("./MT/mes_petits_caramels.mp3")),
-                image: require("./MT/thumb_0.jpg"),
             }
         ],
     },

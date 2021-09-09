@@ -4,6 +4,7 @@ import {
     Image,
     ImageBackground,
     Linking, PixelRatio, Platform,
+    SafeAreaView,
     ScrollView,
     StyleSheet,
     Text,
@@ -20,6 +21,7 @@ import { RFValue } from "react-native-responsive-fontsize";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import Dialog from "react-native-dialog";
 import LogoDiscord from "../components/LogoDiscord";
+import { FlatGrid } from 'react-native-super-grid';
 
 type CategoriesScreenRouteProp = RouteProp<DrawerParams, 'Categories'>;
 
@@ -208,22 +210,20 @@ export class Categories extends React.Component<Props, object> {
             <ScrollView style={styles.container}>
                 {this.state.firstLaunch ? dial : null}
                 <Text style={styles.textCat}>Choisis une catégorie :</Text>
-                <View style={{ justifyContent: 'center', alignItems: 'center', width: width, alignSelf: 'center'}}>
-                    <SortableGridView
+                    <SafeAreaView style={{ marginTop: 20 }}>
+                        <FlatGrid
                         data={[undefined, ...soundLibrary.map(s => {
                             return { name: s.name, image: s.image }
                         })]}
-                        gapWidth={20}
-                        aspectRatio={aspectRatio}
-                        numPerRow={nbrCat}
-                        renderItem={(item: { name: string, image: any } | undefined, i) => {
+                        keyExtractor={item=>Math.random()+"="}
+                        renderItem={({item, index }) => {
                             return (
                                 <TouchableOpacity
                                     key={item?.name || "general"} // Important! Should add this props!!!
                                     onPress={() => {
-                                        navigate('Home', { category: item ? i - 1 : undefined });
+                                        navigate('Home', { category: item ? index - 1 : undefined });
                                     }}
-                                    style={styles.item}
+                                    style={{...styles.item, height: 175, borderRadius: 50}}
                                 >
                                     <View style={styles.itemImage}>
                                         <ImageBackground
@@ -234,9 +234,8 @@ export class Categories extends React.Component<Props, object> {
                                     <Text style={styles.text}>{item?.name || "Tout"}</Text>
                                 </TouchableOpacity>
                             )
-                        }}
-                    />
-                </View>
+                        }} />
+                    </SafeAreaView>
             </ScrollView>
         );
     }
