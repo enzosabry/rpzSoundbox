@@ -1,7 +1,7 @@
 {
   "files": {
-    "app.js": "/rpzSoundbox/static/js/app.b91cc9c6.chunk.js",
-    "app.js.map": "/rpzSoundbox/static/js/app.b91cc9c6.chunk.js.map",
+    "app.js": "/rpzSoundbox/static/js/app.dff64d9c.chunk.js",
+    "app.js.map": "/rpzSoundbox/static/js/app.dff64d9c.chunk.js.map",
     "runtime~app.js": "/rpzSoundbox/static/js/runtime~app.9d040d6a.js",
     "runtime~app.js.map": "/rpzSoundbox/static/js/runtime~app.9d040d6a.js.map",
     "static/js/2.8e46ba7e.chunk.js": "/rpzSoundbox/static/js/2.8e46ba7e.chunk.js",
@@ -272,6 +272,6 @@
   "entrypoints": [
     "static/js/runtime~app.9d040d6a.js",
     "static/js/2.8e46ba7e.chunk.js",
-    "static/js/app.b91cc9c6.chunk.js"
+    "static/js/app.dff64d9c.chunk.js"
   ]
 }
