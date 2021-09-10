@@ -14,7 +14,7 @@ import {
 import soundLibrary from "../../assets/category/config";
 import { StackNavigationProp } from "@react-navigation/stack";
 import { RouteProp } from '@react-navigation/native';
-import { DrawerParams } from "../../App";
+import { StackParams } from "../../App";
 import { FlatGrid } from 'react-native-super-grid';
 import { Ionicons } from "@expo/vector-icons";
 import { RFValue } from "react-native-responsive-fontsize";
@@ -23,9 +23,9 @@ import LogoDiscord from '../components/LogoDiscord';
 
 const { width, height } = Dimensions.get("window");
 
-type HomeScreenRouteProp = RouteProp<DrawerParams, 'Home'>;
+type HomeScreenRouteProp = RouteProp<StackParams, 'Home'>;
 
-type HomeScreenNavigationProp = StackNavigationProp<DrawerParams, 'Home'>;
+type HomeScreenNavigationProp = StackNavigationProp<StackParams, 'Home'>;
 
 type Props = {
     route: HomeScreenRouteProp;

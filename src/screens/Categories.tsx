@@ -13,7 +13,7 @@ import {
 } from "react-native";
 import soundLibrary from "../../assets/category/config";
 import { RouteProp } from "@react-navigation/native";
-import { DrawerParams } from "../../App";
+import { StackParams } from "../../App";
 import { StackNavigationProp } from "@react-navigation/stack";
 import { Ionicons } from "@expo/vector-icons";
 import { RFValue } from "react-native-responsive-fontsize";
@@ -22,9 +22,9 @@ import Dialog from "react-native-dialog";
 import LogoDiscord from "../components/LogoDiscord";
 import { FlatGrid } from 'react-native-super-grid';
 
-type CategoriesScreenRouteProp = RouteProp<DrawerParams, 'Categories'>;
+type CategoriesScreenRouteProp = RouteProp<StackParams, 'Categories'>;
 
-type CategoriesScreenNavigationProp = StackNavigationProp<DrawerParams, 'Categories'>;
+type CategoriesScreenNavigationProp = StackNavigationProp<StackParams, 'Categories'>;
 
 type Props = {
     route: CategoriesScreenRouteProp;
