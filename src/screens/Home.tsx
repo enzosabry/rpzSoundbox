@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import {
     Alert,
     Dimensions,
@@ -32,11 +32,12 @@ type Props = {
     navigation: HomeScreenNavigationProp;
 };
 
-export class Home extends React.Component<Props, {}> {
+export const Home = ({route, navigation}: Props) => {
+    const category = route.params.category;
+    const sound = new Audio.Sound();
+    let prevSound: Audio.Sound;
 
-    showNav() {
-        const { route, navigation } = this.props;
-        const { category } = route.params;
+    useEffect(() => {
         let prevSound;
         navigation.setOptions({
             headerTitle: () => <Text style={styles.textHeader}>RPZ SoundBox</Text>,
@@ -54,7 +55,7 @@ export class Home extends React.Component<Props, {}> {
             headerLeft: () =>
             (<TouchableOpacity onPress={() => {
                 if (prevSound) prevSound.stopAsync();
-                navigation.navigate("Categories");
+                navigation.push("Categories");
             }}>
                 <Ionicons name="apps-outline" size={32} style={{ marginLeft: 15, marginTop: 5, color: "#FFF" }} />
             </TouchableOpacity>),
@@ -68,18 +69,10 @@ export class Home extends React.Component<Props, {}> {
                 </TouchableOpacity>
             </View>),
         });
-    }
+    }, []);
 
-    render() {
-        const { route, navigation } = this.props;
-        const { category } = route.params;
-        const sound = new Audio.Sound();
-        let prevSound: Audio.Sound;
-        { this.showNav() }
-
-        return (
-
-            <View style={styles.container}>
+    return (
+        <View style={styles.container}>
                 <Text style={styles.textCat}>
                     {category !== undefined ? soundLibrary[category]?.name : "Accueil"}
                 </Text>
@@ -111,9 +104,9 @@ export class Home extends React.Component<Props, {}> {
                     </SafeAreaView>
                 </ScrollView>
             </View>
-        );
-    }
+    );
 }
+
 
 const styles = StyleSheet.create({
     container: {
