@@ -114,7 +114,7 @@ export const Categories = ({ route, navigation }: Props) => {
                             style={{ textDecorationLine: 'underline', color: 'blue' }}>Discord</Text>{"\n"}
                         <Text>Bisou.</Text>
                     </Dialog.Description>
-                    <Dialog.Button color={"#169689"} label="Laisse moi tester !" onPress={() => { }} />
+                    <Dialog.Button color={"#169689"} label="Laisse moi tester !" onPress={() => setVisible(false)} />
                 </Dialog.Container>
             ) : null}
             <ScrollView style={styles.container}>
