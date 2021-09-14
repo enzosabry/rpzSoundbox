@@ -32,7 +32,7 @@ type Props = {
     navigation: HomeScreenNavigationProp;
 };
 
-export const Home = ({route, navigation}: Props) => {
+export const Home = ({ route, navigation }: Props) => {
     const category = route.params.category;
     const sound = new Audio.Sound();
     let prevSound: Audio.Sound;
@@ -73,37 +73,35 @@ export const Home = ({route, navigation}: Props) => {
 
     return (
         <View style={styles.container}>
-                <Text style={styles.textCat}>
-                    {category !== undefined ? soundLibrary[category]?.name : "Accueil"}
-                </Text>
-                <ScrollView>
-                    <SafeAreaView style={{ marginTop: 20 }}>
-                        <FlatGrid
-                            data={category !== undefined ? soundLibrary[category]?.sounds : soundLibrary.flatMap(s => s.sounds)}
-                            keyExtractor={(s, i) => s.name + i}
-                            renderItem={({ item, index }) => {
-                                return (
-                                    <TouchableOpacity
-                                        style={{ height: 175, borderRadius: 50, justifyContent: 'center' }}
-                                        onPress={async () => {
-                                            if (prevSound) await prevSound.unloadAsync();
-                                            await sound.loadAsync(item.audio);
-                                            await sound.playAsync();
-                                            prevSound = sound;
-                                            //await sound.unloadAsync();
-                                        }}>
-                                        <ImageBackground
-                                            style={{ height: 100, width: 100, alignSelf: 'center', position: "relative" }}
-                                            imageStyle={{ borderRadius: 50 }}
-                                            source={item.image} />
-                                        <Text style={styles.text}>{item.name}</Text>
-                                    </TouchableOpacity>
-                                )
-                            }}
-                        />
-                    </SafeAreaView>
-                </ScrollView>
-            </View>
+            <Text style={styles.textCat}>
+                {category !== undefined ? soundLibrary[category]?.name : "Accueil"}
+            </Text>
+            <ScrollView style={{ marginTop: 20 }}>
+                    <FlatGrid
+                        data={category !== undefined ? soundLibrary[category]?.sounds : soundLibrary.flatMap(s => s.sounds)}
+                        keyExtractor={(s, i) => s.name + i}
+                        renderItem={({ item, index }) => {
+                            return (
+                                <TouchableOpacity
+                                    style={{ height: 175, borderRadius: 50, justifyContent: 'center' }}
+                                    onPress={async () => {
+                                        if (prevSound) await prevSound.unloadAsync();
+                                        await sound.loadAsync(item.audio);
+                                        await sound.playAsync();
+                                        prevSound = sound;
+                                        //await sound.unloadAsync();
+                                    }}>
+                                    <ImageBackground
+                                        style={{ height: 100, width: 100, alignSelf: 'center', position: "relative" }}
+                                        imageStyle={{ borderRadius: 50 }}
+                                        source={item.image} />
+                                    <Text style={styles.text}>{item.name}</Text>
+                                </TouchableOpacity>
+                            )
+                        }}
+                    />
+            </ScrollView>
+        </View>
     );
 }
 

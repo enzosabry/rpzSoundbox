@@ -118,8 +118,7 @@ export const Categories = ({ route, navigation }: Props) => {
                 </Dialog.Container>
             ) : null}
             <ScrollView style={styles.container}>
-                <Text style={styles.textCat}>Choisis une catégorie :</Text>
-                <SafeAreaView style={{ marginTop: 20 }}>
+                <Text style={{...styles.textCat, marginBottom: 15}}>Choisis une catégorie :</Text>
                     <FlatGrid
                         data={[undefined, ...soundLibrary.map(s => {
                             return { name: s.name, image: s.image }
@@ -142,7 +141,6 @@ export const Categories = ({ route, navigation }: Props) => {
                                 </TouchableOpacity>
                             )
                         }} />
-                </SafeAreaView>
             </ScrollView>
         </View>
     );
