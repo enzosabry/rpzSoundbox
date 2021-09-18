@@ -91,7 +91,7 @@ export class Home extends React.Component<Props, {}> {
                             renderItem={({ item, index }) => {
                                 return (
                                     <TouchableOpacity
-                                        style={{ height: 175, borderRadius: 50, }}
+                                        style={{ height: 175, borderRadius: 50, justifyContent: 'center' }}
                                         onPress={async () => {
                                             if (prevSound) await prevSound.unloadAsync();
                                             await sound.loadAsync(item.audio);
