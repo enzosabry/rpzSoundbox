@@ -1,11 +1,11 @@
 {
   "files": {
-    "app.js": "/rpzSoundbox/static/js/app.dff64d9c.chunk.js",
-    "app.js.map": "/rpzSoundbox/static/js/app.dff64d9c.chunk.js.map",
+    "app.js": "/rpzSoundbox/static/js/app.ade966a8.chunk.js",
+    "app.js.map": "/rpzSoundbox/static/js/app.ade966a8.chunk.js.map",
     "runtime~app.js": "/rpzSoundbox/static/js/runtime~app.9d040d6a.js",
     "runtime~app.js.map": "/rpzSoundbox/static/js/runtime~app.9d040d6a.js.map",
-    "static/js/2.8e46ba7e.chunk.js": "/rpzSoundbox/static/js/2.8e46ba7e.chunk.js",
-    "static/js/2.8e46ba7e.chunk.js.map": "/rpzSoundbox/static/js/2.8e46ba7e.chunk.js.map",
+    "static/js/2.173a64a2.chunk.js": "/rpzSoundbox/static/js/2.173a64a2.chunk.js",
+    "static/js/2.173a64a2.chunk.js.map": "/rpzSoundbox/static/js/2.173a64a2.chunk.js.map",
     "fonts/AntDesign.ttf": "/rpzSoundbox/./fonts/AntDesign.ttf",
     "fonts/Entypo.ttf": "/rpzSoundbox/./fonts/Entypo.ttf",
     "fonts/Feather.ttf": "/rpzSoundbox/./fonts/Feather.ttf",
@@ -24,7 +24,7 @@
     "index.html": "/rpzSoundbox/index.html",
     "manifest.json": "/rpzSoundbox/manifest.json",
     "serve.json": "/rpzSoundbox/serve.json",
-    "static/js/2.8e46ba7e.chunk.js.LICENSE.txt": "/rpzSoundbox/static/js/2.8e46ba7e.chunk.js.LICENSE.txt",
+    "static/js/2.173a64a2.chunk.js.LICENSE.txt": "/rpzSoundbox/static/js/2.173a64a2.chunk.js.LICENSE.txt",
     "static/media/39_44.mp3": "/rpzSoundbox/static/media/39_44.fa1c82f3.mp3",
     "static/media/ALLEZ_GONTRANNNN.mp3": "/rpzSoundbox/static/media/ALLEZ_GONTRANNNN.004ddc0b.mp3",
     "static/media/Accidents_de_parcours.mp3": "/rpzSoundbox/static/media/Accidents_de_parcours.b49e69e3.mp3",
@@ -150,6 +150,7 @@
     "static/media/allez_l'om.mp3": "/rpzSoundbox/static/media/allez_l'om.5172ef9d.mp3",
     "static/media/appuyer_sur_la_détente.mp3": "/rpzSoundbox/static/media/appuyer_sur_la_détente.eeae6148.mp3",
     "static/media/au_boulooot.mp3": "/rpzSoundbox/static/media/au_boulooot.194909c1.mp3",
+    "static/media/bat_les_couilles_frère.mp3": "/rpzSoundbox/static/media/bat_les_couilles_frère.35c98593.mp3",
     "static/media/bien_fait.mp3": "/rpzSoundbox/static/media/bien_fait.5965ade6.mp3",
     "static/media/bonjour_la_lampe.mp3": "/rpzSoundbox/static/media/bonjour_la_lampe.207c4c9b.mp3",
     "static/media/c'est_en_sucant_n'importe_qui.mp3": "/rpzSoundbox/static/media/c'est_en_sucant_n'importe_qui.c4624376.mp3",
@@ -167,7 +168,9 @@
     "static/media/conquérir_le_monde.mp3": "/rpzSoundbox/static/media/conquérir_le_monde.642636e0.mp3",
     "static/media/croix_dbois.mp3": "/rpzSoundbox/static/media/croix_dbois.6c720ec5.mp3",
     "static/media/d'amitié.mp3": "/rpzSoundbox/static/media/d'amitié.1603eefa.mp3",
+    "static/media/daniel_syncopes.mp3": "/rpzSoundbox/static/media/daniel_syncopes.d8ed7d1c.mp3",
     "static/media/dans_mon_vomit.mp3": "/rpzSoundbox/static/media/dans_mon_vomit.c101cf73.mp3",
+    "static/media/dans_ton_cul.mp3": "/rpzSoundbox/static/media/dans_ton_cul.8c5186b9.mp3",
     "static/media/dommage_collateral.mp3": "/rpzSoundbox/static/media/dommage_collateral.3ed34467.mp3",
     "static/media/dona_dona.mp3": "/rpzSoundbox/static/media/dona_dona.397c7f32.mp3",
     "static/media/doonnaa.mp3": "/rpzSoundbox/static/media/doonnaa.1108bb1a.mp3",
@@ -225,6 +228,7 @@
     "static/media/pas_vu_NCIS_version_longue.mp3": "/rpzSoundbox/static/media/pas_vu_NCIS_version_longue.e03c6c2c.mp3",
     "static/media/passif_agressif.mp3": "/rpzSoundbox/static/media/passif_agressif.459bbb09.mp3",
     "static/media/pepperoni.mp3": "/rpzSoundbox/static/media/pepperoni.eda028dd.mp3",
+    "static/media/personne_ne_m'aime.mp3": "/rpzSoundbox/static/media/personne_ne_m'aime.c4f63ec8.mp3",
     "static/media/plein_le_cul.mp3": "/rpzSoundbox/static/media/plein_le_cul.82359826.mp3",
     "static/media/police_de_FDP.mp3": "/rpzSoundbox/static/media/police_de_FDP.128e6750.mp3",
     "static/media/pompage.mp3": "/rpzSoundbox/static/media/pompage.de24b71b.mp3",
@@ -239,6 +243,7 @@
     "static/media/sonnerie.mp3": "/rpzSoundbox/static/media/sonnerie.1d587ac4.mp3",
     "static/media/stupido.mp3": "/rpzSoundbox/static/media/stupido.7b7019e0.mp3",
     "static/media/tazer.mp3": "/rpzSoundbox/static/media/tazer.1cc4d88b.mp3",
+    "static/media/tellement_AMERICAIN.mp3": "/rpzSoundbox/static/media/tellement_AMERICAIN.0a222f14.mp3",
     "static/media/tension_dans_l'coude.mp3": "/rpzSoundbox/static/media/tension_dans_l'coude.82912fa1.mp3",
     "static/media/thumb_0.jpg": "/rpzSoundbox/static/media/thumb_0.fd3b38c6.jpg",
     "static/media/thumb_0.png": "/rpzSoundbox/static/media/thumb_0.f29e9772.png",
@@ -271,7 +276,7 @@
   },
   "entrypoints": [
     "static/js/runtime~app.9d040d6a.js",
-    "static/js/2.8e46ba7e.chunk.js",
-    "static/js/app.dff64d9c.chunk.js"
+    "static/js/2.173a64a2.chunk.js",
+    "static/js/app.ade966a8.chunk.js"
   ]
 }
