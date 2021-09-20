@@ -1,11 +1,11 @@
 {
   "files": {
-    "app.js": "/rpzSoundbox/static/js/app.ade966a8.chunk.js",
-    "app.js.map": "/rpzSoundbox/static/js/app.ade966a8.chunk.js.map",
+    "app.js": "/rpzSoundbox/static/js/app.a4136560.chunk.js",
+    "app.js.map": "/rpzSoundbox/static/js/app.a4136560.chunk.js.map",
     "runtime~app.js": "/rpzSoundbox/static/js/runtime~app.9d040d6a.js",
     "runtime~app.js.map": "/rpzSoundbox/static/js/runtime~app.9d040d6a.js.map",
-    "static/js/2.173a64a2.chunk.js": "/rpzSoundbox/static/js/2.173a64a2.chunk.js",
-    "static/js/2.173a64a2.chunk.js.map": "/rpzSoundbox/static/js/2.173a64a2.chunk.js.map",
+    "static/js/2.c3e3ef21.chunk.js": "/rpzSoundbox/static/js/2.c3e3ef21.chunk.js",
+    "static/js/2.c3e3ef21.chunk.js.map": "/rpzSoundbox/static/js/2.c3e3ef21.chunk.js.map",
     "fonts/AntDesign.ttf": "/rpzSoundbox/./fonts/AntDesign.ttf",
     "fonts/Entypo.ttf": "/rpzSoundbox/./fonts/Entypo.ttf",
     "fonts/Feather.ttf": "/rpzSoundbox/./fonts/Feather.ttf",
@@ -24,7 +24,7 @@
     "index.html": "/rpzSoundbox/index.html",
     "manifest.json": "/rpzSoundbox/manifest.json",
     "serve.json": "/rpzSoundbox/serve.json",
-    "static/js/2.173a64a2.chunk.js.LICENSE.txt": "/rpzSoundbox/static/js/2.173a64a2.chunk.js.LICENSE.txt",
+    "static/js/2.c3e3ef21.chunk.js.LICENSE.txt": "/rpzSoundbox/static/js/2.c3e3ef21.chunk.js.LICENSE.txt",
     "static/media/39_44.mp3": "/rpzSoundbox/static/media/39_44.fa1c82f3.mp3",
     "static/media/ALLEZ_GONTRANNNN.mp3": "/rpzSoundbox/static/media/ALLEZ_GONTRANNNN.004ddc0b.mp3",
     "static/media/Accidents_de_parcours.mp3": "/rpzSoundbox/static/media/Accidents_de_parcours.b49e69e3.mp3",
@@ -96,6 +96,7 @@
     "static/media/Je_suis_en_colère.mp3": "/rpzSoundbox/static/media/Je_suis_en_colère.01f6b910.mp3",
     "static/media/Je_suis_très_beau.mp3": "/rpzSoundbox/static/media/Je_suis_très_beau.4b9484f3.mp3",
     "static/media/Je_veux_chanter.mp3": "/rpzSoundbox/static/media/Je_veux_chanter.ba0e2b4d.mp3",
+    "static/media/Jeanne_d'Arc.mp3": "/rpzSoundbox/static/media/Jeanne_d'Arc.a4bb1f58.mp3",
     "static/media/Jsuis_bourré.mp3": "/rpzSoundbox/static/media/Jsuis_bourré.debeaf91.mp3",
     "static/media/L'hymne.mp3": "/rpzSoundbox/static/media/L'hymne.300aa0d2.mp3",
     "static/media/LSPD_don't_move.mp3": "/rpzSoundbox/static/media/LSPD_don't_move.1d0eccee.mp3",
@@ -276,7 +277,7 @@
   },
   "entrypoints": [
     "static/js/runtime~app.9d040d6a.js",
-    "static/js/2.173a64a2.chunk.js",
-    "static/js/app.ade966a8.chunk.js"
+    "static/js/2.c3e3ef21.chunk.js",
+    "static/js/app.a4136560.chunk.js"
   ]
 }

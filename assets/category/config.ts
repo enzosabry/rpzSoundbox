@@ -990,6 +990,11 @@ const soundLibrary: Sound[] = [
                 image: require("./Liam/thumb_0.jpg"),
             },
             {
+                name: "Jeanne d'Arc", 
+                audio: Asset.fromModule(require("./Liam/Jeanne_d'Arc.mp3")),
+                image: require("./Liam/thumb_0.jpg"),
+            },
+            {
                 name: "La charrue avant les boeufs", 
                 audio: Asset.fromModule(require("./Liam/la_charrue_avant_les_boeufs.mp3")),
                 image: require("./Liam/thumb_0.jpg"),
