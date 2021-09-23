@@ -1,7 +1,7 @@
 {
   "files": {
-    "app.js": "/rpzSoundbox/static/js/app.64b89571.chunk.js",
-    "app.js.map": "/rpzSoundbox/static/js/app.64b89571.chunk.js.map",
+    "app.js": "/rpzSoundbox/static/js/app.1d8688d3.chunk.js",
+    "app.js.map": "/rpzSoundbox/static/js/app.1d8688d3.chunk.js.map",
     "runtime~app.js": "/rpzSoundbox/static/js/runtime~app.9d040d6a.js",
     "runtime~app.js.map": "/rpzSoundbox/static/js/runtime~app.9d040d6a.js.map",
     "static/js/2.05bb3490.chunk.js": "/rpzSoundbox/static/js/2.05bb3490.chunk.js",
@@ -205,7 +205,7 @@
     "static/media/l'information_s'enfuit.mp3": "/rpzSoundbox/static/media/l'information_s'enfuit.b5b70209.mp3",
     "static/media/l'information_à_tout_prix.mp3": "/rpzSoundbox/static/media/l'information_à_tout_prix.7dcffef2.mp3",
     "static/media/la_charrue_avant_les_boeufs.mp3": "/rpzSoundbox/static/media/la_charrue_avant_les_boeufs.b9c6f675.mp3",
-    "static/media/le_bien_c'est_bien.mp3": "/rpzSoundbox/static/media/le_bien_c'est_bien.82110f4e.mp3",
+    "static/media/le_bien_c'est_bien.mp3": "/rpzSoundbox/static/media/le_bien_c'est_bien.1af8031b.mp3",
     "static/media/le_domaine_en_feu.mp3": "/rpzSoundbox/static/media/le_domaine_en_feu.c84ed4c5.mp3",
     "static/media/le_mal_de_le_hélicoptère.mp3": "/rpzSoundbox/static/media/le_mal_de_le_hélicoptère.83d2eda5.mp3",
     "static/media/les_croutes_me_rappellent_cette_chanson.mp3": "/rpzSoundbox/static/media/les_croutes_me_rappellent_cette_chanson.5438113d.mp3",
@@ -270,7 +270,7 @@
     "static/media/une_ville_de_dégénérés.mp3": "/rpzSoundbox/static/media/une_ville_de_dégénérés.56f72290.mp3",
     "static/media/vagosvagosvagos.mp3": "/rpzSoundbox/static/media/vagosvagosvagos.73c35dd0.mp3",
     "static/media/viande_dans_le_torchon.mp3": "/rpzSoundbox/static/media/viande_dans_le_torchon.8e1b6e56.mp3",
-    "static/media/vos_ceintures.mp3": "/rpzSoundbox/static/media/vos_ceintures.6bf78860.mp3",
+    "static/media/vos_ceintures.mp3": "/rpzSoundbox/static/media/vos_ceintures.42b7038a.mp3",
     "static/media/vous_êtes_connes_ou_quoi.mp3": "/rpzSoundbox/static/media/vous_êtes_connes_ou_quoi.118ef07c.mp3",
     "static/media/véhicule_neutralisé.mp3": "/rpzSoundbox/static/media/véhicule_neutralisé.ca7f1c0b.mp3",
     "static/media/woa_mais_c'est_génial_ici.mp3": "/rpzSoundbox/static/media/woa_mais_c'est_génial_ici.9ff0dd18.mp3",
@@ -284,6 +284,6 @@
   "entrypoints": [
     "static/js/runtime~app.9d040d6a.js",
     "static/js/2.05bb3490.chunk.js",
-    "static/js/app.64b89571.chunk.js"
+    "static/js/app.1d8688d3.chunk.js"
   ]
 }
