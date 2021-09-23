@@ -471,6 +471,11 @@ const soundLibrary: Sound[] = [
                 image: require("./Donatien_de_Montazac/thumb_0.png"),
             },
             {
+                name: "Pas touche les Croute", 
+                audio: Asset.fromModule(require("./Donatien_de_Montazac/pas_touche_les_Croute.mp3")),
+                image: require("./Donatien_de_Montazac/thumb_0.png"),
+            },
+            {
                 name: "Pathétique", 
                 audio: Asset.fromModule(require("./Donatien_de_Montazac/Pathétique.mp3")),
                 image: require("./Donatien_de_Montazac/thumb_0.png"),
@@ -745,6 +750,16 @@ const soundLibrary: Sound[] = [
         image: require("./Johnny_Monnay/thumb_0.jpg"),
         sounds: [ 
             {
+                name: "Ca va être funky", 
+                audio: Asset.fromModule(require("./Johnny_Monnay/ca_va_être_funky.mp3")),
+                image: require("./Johnny_Monnay/thumb_0.jpg"),
+            },
+            {
+                name: "Dispo pour du foufou", 
+                audio: Asset.fromModule(require("./Johnny_Monnay/dispo_pour_du_foufou.mp3")),
+                image: require("./Johnny_Monnay/thumb_0.jpg"),
+            },
+            {
                 name: "J'dois prendre congé", 
                 audio: Asset.fromModule(require("./Johnny_Monnay/j'dois_prendre_congé.mp3")),
                 image: require("./Johnny_Monnay/thumb_0.jpg"),
@@ -935,6 +950,11 @@ const soundLibrary: Sound[] = [
             {
                 name: "C'est la poule", 
                 audio: Asset.fromModule(require("./Les_Croute_♡/c'est_la_poule.mp3")),
+                image: require("./Les_Croute_♡/thumb_0.png"),
+            },
+            {
+                name: "Daniel content syncopes", 
+                audio: Asset.fromModule(require("./Les_Croute_♡/Daniel_content_syncopes.mp3")),
                 image: require("./Les_Croute_♡/thumb_0.png"),
             },
             {
@@ -1375,6 +1395,17 @@ const soundLibrary: Sound[] = [
         ],
     },
     {
+        name: "Panis",
+        image: require("./Panis/thumb_0.png"),
+        sounds: [ 
+            {
+                name: "Le bien c'est bien", 
+                audio: Asset.fromModule(require("./Panis/le_bien_c'est_bien.mp3")),
+                image: require("./Panis/thumb_0.png"),
+            }
+        ],
+    },
+    {
         name: "Pasteur William",
         image: require("./Pasteur_William/thumb_0.jpg"),
         sounds: [ 
@@ -1465,6 +1496,17 @@ const soundLibrary: Sound[] = [
                 name: "Le mal de le hélicoptère", 
                 audio: Asset.fromModule(require("./Tim_Lambert/le_mal_de_le_hélicoptère.mp3")),
                 image: require("./Tim_Lambert/thumb_0.jpg"),
+            }
+        ],
+    },
+    {
+        name: "Titouan Martoni",
+        image: require("./Titouan Martoni/thumb_0.jpg"),
+        sounds: [ 
+            {
+                name: "Vos ceintures", 
+                audio: Asset.fromModule(require("./Titouan Martoni/vos_ceintures.mp3")),
+                image: require("./Titouan Martoni/thumb_0.jpg"),
             }
         ],
     },

@@ -1,11 +1,11 @@
 {
   "files": {
-    "app.js": "/rpzSoundbox/static/js/app.a4136560.chunk.js",
-    "app.js.map": "/rpzSoundbox/static/js/app.a4136560.chunk.js.map",
+    "app.js": "/rpzSoundbox/static/js/app.64b89571.chunk.js",
+    "app.js.map": "/rpzSoundbox/static/js/app.64b89571.chunk.js.map",
     "runtime~app.js": "/rpzSoundbox/static/js/runtime~app.9d040d6a.js",
     "runtime~app.js.map": "/rpzSoundbox/static/js/runtime~app.9d040d6a.js.map",
-    "static/js/2.c3e3ef21.chunk.js": "/rpzSoundbox/static/js/2.c3e3ef21.chunk.js",
-    "static/js/2.c3e3ef21.chunk.js.map": "/rpzSoundbox/static/js/2.c3e3ef21.chunk.js.map",
+    "static/js/2.05bb3490.chunk.js": "/rpzSoundbox/static/js/2.05bb3490.chunk.js",
+    "static/js/2.05bb3490.chunk.js.map": "/rpzSoundbox/static/js/2.05bb3490.chunk.js.map",
     "fonts/AntDesign.ttf": "/rpzSoundbox/./fonts/AntDesign.ttf",
     "fonts/Entypo.ttf": "/rpzSoundbox/./fonts/Entypo.ttf",
     "fonts/Feather.ttf": "/rpzSoundbox/./fonts/Feather.ttf",
@@ -24,7 +24,7 @@
     "index.html": "/rpzSoundbox/index.html",
     "manifest.json": "/rpzSoundbox/manifest.json",
     "serve.json": "/rpzSoundbox/serve.json",
-    "static/js/2.c3e3ef21.chunk.js.LICENSE.txt": "/rpzSoundbox/static/js/2.c3e3ef21.chunk.js.LICENSE.txt",
+    "static/js/2.05bb3490.chunk.js.LICENSE.txt": "/rpzSoundbox/static/js/2.05bb3490.chunk.js.LICENSE.txt",
     "static/media/39_44.mp3": "/rpzSoundbox/static/media/39_44.fa1c82f3.mp3",
     "static/media/ALLEZ_GONTRANNNN.mp3": "/rpzSoundbox/static/media/ALLEZ_GONTRANNNN.004ddc0b.mp3",
     "static/media/Accidents_de_parcours.mp3": "/rpzSoundbox/static/media/Accidents_de_parcours.b49e69e3.mp3",
@@ -56,6 +56,7 @@
     "static/media/Cui_Cui_Cui.mp3": "/rpzSoundbox/static/media/Cui_Cui_Cui.480ae77f.mp3",
     "static/media/DEGLINGUÉ.mp3": "/rpzSoundbox/static/media/DEGLINGUÉ.53456ac9.mp3",
     "static/media/DOoonNez_moi_la_MalEeeEtteE.mp3": "/rpzSoundbox/static/media/DOoonNez_moi_la_MalEeeEtteE.841f1126.mp3",
+    "static/media/Daniel_content_syncopes.mp3": "/rpzSoundbox/static/media/Daniel_content_syncopes.26403490.mp3",
     "static/media/Dans_le_domaine.mp3": "/rpzSoundbox/static/media/Dans_le_domaine.3cc06bae.mp3",
     "static/media/Depuis_la_1ère_fois_où_j'ai_fait_l'amour.mp3": "/rpzSoundbox/static/media/Depuis_la_1ère_fois_où_j'ai_fait_l'amour.1d4f8668.mp3",
     "static/media/Dernières_chances.mp3": "/rpzSoundbox/static/media/Dernières_chances.4f3f1f30.mp3",
@@ -158,6 +159,7 @@
     "static/media/c'est_la_poule.mp3": "/rpzSoundbox/static/media/c'est_la_poule.ef0f435f.mp3",
     "static/media/c'est_mon_travail.mp3": "/rpzSoundbox/static/media/c'est_mon_travail.f13b9696.mp3",
     "static/media/c'est_un_cauchemard.mp3": "/rpzSoundbox/static/media/c'est_un_cauchemard.fb35f1f9.mp3",
+    "static/media/ca_va_être_funky.mp3": "/rpzSoundbox/static/media/ca_va_être_funky.c639d323.mp3",
     "static/media/cara_cara_caramel.mp3": "/rpzSoundbox/static/media/cara_cara_caramel.0d8b4c17.mp3",
     "static/media/caramel.mp3": "/rpzSoundbox/static/media/caramel.d1602a4f.mp3",
     "static/media/ce_que_yé_dans_mon_calbout.mp3": "/rpzSoundbox/static/media/ce_que_yé_dans_mon_calbout.7ea4a651.mp3",
@@ -172,6 +174,7 @@
     "static/media/daniel_syncopes.mp3": "/rpzSoundbox/static/media/daniel_syncopes.d8ed7d1c.mp3",
     "static/media/dans_mon_vomit.mp3": "/rpzSoundbox/static/media/dans_mon_vomit.c101cf73.mp3",
     "static/media/dans_ton_cul.mp3": "/rpzSoundbox/static/media/dans_ton_cul.8c5186b9.mp3",
+    "static/media/dispo_pour_du_foufou.mp3": "/rpzSoundbox/static/media/dispo_pour_du_foufou.0c37b4b1.mp3",
     "static/media/dommage_collateral.mp3": "/rpzSoundbox/static/media/dommage_collateral.3ed34467.mp3",
     "static/media/dona_dona.mp3": "/rpzSoundbox/static/media/dona_dona.397c7f32.mp3",
     "static/media/doonnaa.mp3": "/rpzSoundbox/static/media/doonnaa.1108bb1a.mp3",
@@ -202,6 +205,7 @@
     "static/media/l'information_s'enfuit.mp3": "/rpzSoundbox/static/media/l'information_s'enfuit.b5b70209.mp3",
     "static/media/l'information_à_tout_prix.mp3": "/rpzSoundbox/static/media/l'information_à_tout_prix.7dcffef2.mp3",
     "static/media/la_charrue_avant_les_boeufs.mp3": "/rpzSoundbox/static/media/la_charrue_avant_les_boeufs.b9c6f675.mp3",
+    "static/media/le_bien_c'est_bien.mp3": "/rpzSoundbox/static/media/le_bien_c'est_bien.82110f4e.mp3",
     "static/media/le_domaine_en_feu.mp3": "/rpzSoundbox/static/media/le_domaine_en_feu.c84ed4c5.mp3",
     "static/media/le_mal_de_le_hélicoptère.mp3": "/rpzSoundbox/static/media/le_mal_de_le_hélicoptère.83d2eda5.mp3",
     "static/media/les_croutes_me_rappellent_cette_chanson.mp3": "/rpzSoundbox/static/media/les_croutes_me_rappellent_cette_chanson.5438113d.mp3",
@@ -225,6 +229,7 @@
     "static/media/pas_dans_GTA.mp3": "/rpzSoundbox/static/media/pas_dans_GTA.80de9657.mp3",
     "static/media/pas_faire_chXXr_papa_Johnny.mp3": "/rpzSoundbox/static/media/pas_faire_chXXr_papa_Johnny.2f14a20c.mp3",
     "static/media/pas_nXqué.mp3": "/rpzSoundbox/static/media/pas_nXqué.5d8273b5.mp3",
+    "static/media/pas_touche_les_Croute.mp3": "/rpzSoundbox/static/media/pas_touche_les_Croute.950ff350.mp3",
     "static/media/pas_vu_NCISS.mp3": "/rpzSoundbox/static/media/pas_vu_NCISS.647b7daa.mp3",
     "static/media/pas_vu_NCIS_version_longue.mp3": "/rpzSoundbox/static/media/pas_vu_NCIS_version_longue.e03c6c2c.mp3",
     "static/media/passif_agressif.mp3": "/rpzSoundbox/static/media/passif_agressif.459bbb09.mp3",
@@ -265,6 +270,7 @@
     "static/media/une_ville_de_dégénérés.mp3": "/rpzSoundbox/static/media/une_ville_de_dégénérés.56f72290.mp3",
     "static/media/vagosvagosvagos.mp3": "/rpzSoundbox/static/media/vagosvagosvagos.73c35dd0.mp3",
     "static/media/viande_dans_le_torchon.mp3": "/rpzSoundbox/static/media/viande_dans_le_torchon.8e1b6e56.mp3",
+    "static/media/vos_ceintures.mp3": "/rpzSoundbox/static/media/vos_ceintures.6bf78860.mp3",
     "static/media/vous_êtes_connes_ou_quoi.mp3": "/rpzSoundbox/static/media/vous_êtes_connes_ou_quoi.118ef07c.mp3",
     "static/media/véhicule_neutralisé.mp3": "/rpzSoundbox/static/media/véhicule_neutralisé.ca7f1c0b.mp3",
     "static/media/woa_mais_c'est_génial_ici.mp3": "/rpzSoundbox/static/media/woa_mais_c'est_génial_ici.9ff0dd18.mp3",
@@ -277,7 +283,7 @@
   },
   "entrypoints": [
     "static/js/runtime~app.9d040d6a.js",
-    "static/js/2.c3e3ef21.chunk.js",
-    "static/js/app.a4136560.chunk.js"
+    "static/js/2.05bb3490.chunk.js",
+    "static/js/app.64b89571.chunk.js"
   ]
 }
