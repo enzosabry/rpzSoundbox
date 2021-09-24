@@ -11,12 +11,12 @@ export enum ROUTES {
     Categories = "Categories",
 }
 
-export type DrawerParams = {
+export type StackParams = {
     Home: { category: number };
-    Categories: { setCategory: (category: number) => void };
+    Categories: { group: number, setCategory: (category: number) => void };
 }
 
-const Stack = createStackNavigator<DrawerParams>();
+const Stack = createStackNavigator<StackParams>();
 
 const forFade = ({ current, closing }) => ({
     cardStyle: {
@@ -32,7 +32,7 @@ export const App = () => {
         <NavigationContainer>
             <StatusBar style="light" />
             <Stack.Navigator>
-                <Stack.Screen name={ROUTES.Categories} component={Categories} options={{ cardStyleInterpolator: forFade }}/>
+                <Stack.Screen name={ROUTES.Categories} component={Categories} initialParams={{group: 0}} options={{ cardStyleInterpolator: forFade }}/>
                 <Stack.Screen name={ROUTES.Home} component={Home} initialParams={{category: undefined}} options={{ cardStyleInterpolator: forFade }}/>
             </Stack.Navigator>
         </NavigationContainer>

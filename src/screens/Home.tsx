@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import {
     Alert,
     Dimensions,
@@ -14,7 +14,7 @@ import {
 import soundLibrary from "../../assets/category/config";
 import { StackNavigationProp } from "@react-navigation/stack";
 import { RouteProp } from '@react-navigation/native';
-import { DrawerParams } from "../../App";
+import { StackParams } from "../../App";
 import { FlatGrid } from 'react-native-super-grid';
 import { Ionicons } from "@expo/vector-icons";
 import { RFValue } from "react-native-responsive-fontsize";
@@ -23,20 +23,21 @@ import LogoDiscord from '../components/LogoDiscord';
 
 const { width, height } = Dimensions.get("window");
 
-type HomeScreenRouteProp = RouteProp<DrawerParams, 'Home'>;
+type HomeScreenRouteProp = RouteProp<StackParams, 'Home'>;
 
-type HomeScreenNavigationProp = StackNavigationProp<DrawerParams, 'Home'>;
+type HomeScreenNavigationProp = StackNavigationProp<StackParams, 'Home'>;
 
 type Props = {
     route: HomeScreenRouteProp;
     navigation: HomeScreenNavigationProp;
 };
 
-export class Home extends React.Component<Props, {}> {
+export const Home = ({ route, navigation }: Props) => {
+    const category = route.params.category;
+    const sound = new Audio.Sound();
+    let prevSound: Audio.Sound;
 
-    showNav() {
-        const { route, navigation } = this.props;
-        const { category } = route.params;
+    useEffect(() => {
         let prevSound;
         navigation.setOptions({
             headerTitle: () => <Text style={styles.textHeader}>RPZ SoundBox</Text>,
@@ -54,7 +55,7 @@ export class Home extends React.Component<Props, {}> {
             headerLeft: () =>
             (<TouchableOpacity onPress={() => {
                 if (prevSound) prevSound.stopAsync();
-                navigation.navigate("Categories");
+                navigation.push("Categories");
             }}>
                 <Ionicons name="apps-outline" size={32} style={{ marginLeft: 15, marginTop: 5, color: "#FFF" }} />
             </TouchableOpacity>),
@@ -68,52 +69,42 @@ export class Home extends React.Component<Props, {}> {
                 </TouchableOpacity>
             </View>),
         });
-    }
+    }, []);
 
-    render() {
-        const { route, navigation } = this.props;
-        const { category } = route.params;
-        const sound = new Audio.Sound();
-        let prevSound: Audio.Sound;
-        { this.showNav() }
-
-        return (
-
-            <View style={styles.container}>
-                <Text style={styles.textCat}>
-                    {category !== undefined ? soundLibrary[category]?.name : "Accueil"}
-                </Text>
-                <ScrollView>
-                    <SafeAreaView style={{ marginTop: 20 }}>
-                        <FlatGrid
-                            data={category !== undefined ? soundLibrary[category]?.sounds : soundLibrary.flatMap(s => s.sounds)}
-                            keyExtractor={(s, i) => s.name + i}
-                            renderItem={({ item, index }) => {
-                                return (
-                                    <TouchableOpacity
-                                        style={{ height: 175, borderRadius: 50, justifyContent: 'center' }}
-                                        onPress={async () => {
-                                            if (prevSound) await prevSound.unloadAsync();
-                                            await sound.loadAsync(item.audio);
-                                            await sound.playAsync();
-                                            prevSound = sound;
-                                            //await sound.unloadAsync();
-                                        }}>
-                                        <ImageBackground
-                                            style={{ height: 100, width: 100, alignSelf: 'center', position: "relative" }}
-                                            imageStyle={{ borderRadius: 50 }}
-                                            source={item.image} />
-                                        <Text style={styles.text}>{item.name}</Text>
-                                    </TouchableOpacity>
-                                )
-                            }}
-                        />
-                    </SafeAreaView>
-                </ScrollView>
-            </View>
-        );
-    }
+    return (
+        <View style={styles.container}>
+            <Text style={styles.textCat}>
+                {category !== undefined ? soundLibrary[category]?.name : "Accueil"}
+            </Text>
+            <ScrollView style={{ marginTop: 20 }}>
+                    <FlatGrid
+                        data={category !== undefined ? soundLibrary[category]?.sounds : soundLibrary.flatMap(s => s.sounds)}
+                        keyExtractor={(s, i) => s.name + i}
+                        renderItem={({ item, index }) => {
+                            return (
+                                <TouchableOpacity
+                                    style={{ height: 175, borderRadius: 50, justifyContent: 'center' }}
+                                    onPress={async () => {
+                                        if (prevSound) await prevSound.unloadAsync();
+                                        await sound.loadAsync(item.audio);
+                                        await sound.playAsync();
+                                        prevSound = sound;
+                                        //await sound.unloadAsync();
+                                    }}>
+                                    <ImageBackground
+                                        style={{ height: 100, width: 100, alignSelf: 'center', position: "relative" }}
+                                        imageStyle={{ borderRadius: 50 }}
+                                        source={item.image} />
+                                    <Text style={styles.text}>{item.name}</Text>
+                                </TouchableOpacity>
+                            )
+                        }}
+                    />
+            </ScrollView>
+        </View>
+    );
 }
+
 
 const styles = StyleSheet.create({
     container: {
