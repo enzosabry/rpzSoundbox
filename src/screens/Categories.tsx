@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, {useEffect, useState} from 'react';
 import {
     Dimensions,
     Image,
@@ -12,15 +12,16 @@ import {
     View
 } from "react-native";
 import soundLibrary from "../../assets/category/config";
-import { RouteProp } from "@react-navigation/native";
-import { StackParams } from "../../App";
-import { StackNavigationProp } from "@react-navigation/stack";
-import { Ionicons } from "@expo/vector-icons";
-import { RFValue } from "react-native-responsive-fontsize";
+import {RouteProp} from "@react-navigation/native";
+import {StackParams} from "../../App";
+import {StackNavigationProp} from "@react-navigation/stack";
+import {Ionicons} from "@expo/vector-icons";
+import {RFValue} from "react-native-responsive-fontsize";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import Dialog from "react-native-dialog";
 import LogoDiscord from "../components/LogoDiscord";
-import { FlatGrid } from 'react-native-super-grid';
+import {FlatGrid} from 'react-native-super-grid';
+import {DiscordPopup} from "../components/DiscordPopup";
 
 type CategoriesScreenRouteProp = RouteProp<StackParams, 'Categories'>;
 
@@ -31,14 +32,14 @@ type Props = {
     navigation: CategoriesScreenNavigationProp;
 };
 
-const { width, height } = Dimensions.get("window");
+const {width, height} = Dimensions.get("window");
 
 
-
-export const Categories = ({ route, navigation }: Props) => {
+export const Categories = ({route, navigation}: Props) => {
 
     const [firstLaunch, setFirstLaunch] = useState(false);
     const [visible, setVisible] = useState(true);
+    const [discordPopup, showDiscordPopup] = useState(false);
 
     const storeData = async () => {
         try {
@@ -79,22 +80,27 @@ export const Categories = ({ route, navigation }: Props) => {
             },
             headerTitleAlign: 'center',
             headerLeft: () =>
-            (<TouchableOpacity onPress={() => navigation.navigate("Home", undefined)}>
-                <Ionicons name="home-outline" size={32} style={{ marginLeft: 15, marginTop: 5, color: "#FFF" }} />
-            </TouchableOpacity>),
+                (<TouchableOpacity onPress={() => navigation.navigate("Home", undefined)}>
+                    <Ionicons name="home-outline" size={32} style={{marginLeft: 15, marginTop: 5, color: "#FFF"}}/>
+                </TouchableOpacity>),
             headerRight: () =>
-            (<View style={{ display: 'flex', flexDirection: 'row' }}>
-                <TouchableOpacity onPress={() => Linking.openURL("https://twitter.com/Playa_Dev")}>
-                    <Ionicons name="logo-twitter" size={32} style={{ marginRight: 15, marginTop: 5, color: "#00acee" }} />
-                </TouchableOpacity>
-                <TouchableOpacity onPress={() => Linking.openURL("https://discord.gg/Ry5qNYJG83")} style={{ marginRight: 15, marginTop: 5 }}>
-                    <LogoDiscord width={32} height={32} />
-                </TouchableOpacity>
-            </View>),
+                (<View style={{display: 'flex', flexDirection: 'row'}}>
+                    <TouchableOpacity onPress={() => Linking.openURL("https://twitter.com/Playa_Dev")}>
+                        <Ionicons name="logo-twitter" size={32}
+                                  style={{marginRight: 15, marginTop: 5, color: "#00acee"}}/>
+                    </TouchableOpacity>
+                    <TouchableOpacity onPress={() => {
+                        if (Platform.OS !== 'android' && Platform.OS !== 'ios')
+                            Linking.openURL("https://discord.gg/Ry5qNYJG83");
+                        else
+                            showDiscordPopup(true)
+                    }} style={{marginRight: 15, marginTop: 5}}>
+                        <LogoDiscord width={32} height={32}/>
+                    </TouchableOpacity>
+                </View>),
         });
         retrieveData();
     }, []);
-
 
 
     return (
@@ -108,39 +114,42 @@ export const Categories = ({ route, navigation }: Props) => {
                         <Text>Tu veux ajouter un nouveau son ou alors participer au développement de l'app ? Rejoins
                             nous vite sur :{"\n"}</Text>
                         - <Text onPress={() => Linking.openURL('https://github.com/enzosabry/rpzSoundbox')}
-                            style={{ textDecorationLine: 'underline', color: 'blue' }}>Github</Text>{"\n"}
+                                style={{textDecorationLine: 'underline', color: 'blue'}}>Github</Text>{"\n"}
 
                         - <Text onPress={() => Linking.openURL('https://discord.gg/Ry5qNYJG83')}
-                            style={{ textDecorationLine: 'underline', color: 'blue' }}>Discord</Text>{"\n"}
+                                style={{textDecorationLine: 'underline', color: 'blue'}}>Discord</Text>{"\n"}
                         <Text>Bisou.</Text>
                     </Dialog.Description>
-                    <Dialog.Button color={"#169689"} label="Laisse moi tester !" onPress={() => setVisible(false)} />
+                    <Dialog.Button color={"#169689"} label="Laisse moi tester !" onPress={() => setVisible(false)}/>
                 </Dialog.Container>
             ) : null}
+            {discordPopup ?
+                <DiscordPopup visible={discordPopup} close={() => showDiscordPopup(false)}/>
+                : null}
             <ScrollView style={styles.container}>
                 <Text style={{...styles.textCat, marginBottom: 15}}>Choisis une catégorie :</Text>
-                    <FlatGrid
-                        data={[undefined, ...soundLibrary.map(s => {
-                            return { name: s.name, image: s.image }
-                        })]}
-                        keyExtractor={() => Math.random() + "="}
-                        renderItem={({ item, index }) => {
-                            return (
-                                <TouchableOpacity
-                                    key={item?.name || "general"} // Important! Should add this props!!!
-                                    onPress={() => {
-                                        navigation.push('Home', { category: item ? index - 1 : undefined });
-                                    }}
-                                    style={{ ...styles.item, height: 175, borderRadius: 50, alignItems: 'center' }}
-                                >
-                                    <ImageBackground
-                                        style={styles.itemImage}
-                                        imageStyle={{ height: 80, resizeMode: 'center', }}
-                                        source={item?.image || require("../../assets/img/logorpz.png")} />
-                                    <Text style={styles.text}>{item?.name || "Tout"}</Text>
-                                </TouchableOpacity>
-                            )
-                        }} />
+                <FlatGrid
+                    data={[undefined, ...soundLibrary.map(s => {
+                        return {name: s.name, image: s.image}
+                    })]}
+                    keyExtractor={() => Math.random() + "="}
+                    renderItem={({item, index}) => {
+                        return (
+                            <TouchableOpacity
+                                key={item?.name || "general"} // Important! Should add this props!!!
+                                onPress={() => {
+                                    navigation.push('Home', {category: item ? index - 1 : undefined});
+                                }}
+                                style={{...styles.item, height: 175, borderRadius: 50, alignItems: 'center'}}
+                            >
+                                <ImageBackground
+                                    style={styles.itemImage}
+                                    imageStyle={{height: 80, resizeMode: 'center',}}
+                                    source={item?.image || require("../../assets/img/logorpz.png")}/>
+                                <Text style={styles.text}>{item?.name || "Tout"}</Text>
+                            </TouchableOpacity>
+                        )
+                    }}/>
             </ScrollView>
         </View>
     );
