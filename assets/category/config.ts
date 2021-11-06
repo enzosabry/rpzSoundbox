@@ -223,6 +223,11 @@ const soundLibrary: Sound[] = [
                 image: require("./Docteur_Maison/thumb_0.png"),
             },
             {
+                name: "En avant Guingamp", 
+                audio: Asset.fromModule(require("./Docteur_Maison/en_avant_Guingamp.mp3")),
+                image: require("./Docteur_Maison/thumb_0.png"),
+            },
+            {
                 name: "Expert en Bukakke", 
                 audio: Asset.fromModule(require("./Docteur_Maison/Expert_en_Bukakke.mp3")),
                 image: require("./Docteur_Maison/thumb_0.png"),
@@ -368,6 +373,11 @@ const soundLibrary: Sound[] = [
             {
                 name: "Cui Cui Cui", 
                 audio: Asset.fromModule(require("./Donatien_de_Montazac/Cui_Cui_Cui.mp3")),
+                image: require("./Donatien_de_Montazac/thumb_0.png"),
+            },
+            {
+                name: "D'accord avec votre mère", 
+                audio: Asset.fromModule(require("./Donatien_de_Montazac/d'accord_avec_votre_mère.mp3")),
                 image: require("./Donatien_de_Montazac/thumb_0.png"),
             },
             {
@@ -917,6 +927,11 @@ const soundLibrary: Sound[] = [
         image: require("./Lenny_Johnson/thumb_0.jpg"),
         sounds: [ 
             {
+                name: "Bonjour des Vagos", 
+                audio: Asset.fromModule(require("./Lenny_Johnson/bonjour_des_Vagos.mp3")),
+                image: require("./Lenny_Johnson/thumb_0.jpg"),
+            },
+            {
                 name: "Mais boss burnouuut", 
                 audio: Asset.fromModule(require("./Lenny_Johnson/mais_boss_burnouuut.mp3")),
                 image: require("./Lenny_Johnson/thumb_0.jpg"),
@@ -958,8 +973,23 @@ const soundLibrary: Sound[] = [
                 image: require("./Les_Croute_♡/thumb_0.png"),
             },
             {
+                name: "Daniel lait de coyote", 
+                audio: Asset.fromModule(require("./Les_Croute_♡/Daniel_lait_de_coyote.mp3")),
+                image: require("./Les_Croute_♡/thumb_0.png"),
+            },
+            {
                 name: "Daniel syncopes", 
                 audio: Asset.fromModule(require("./Les_Croute_♡/daniel_syncopes.mp3")),
+                image: require("./Les_Croute_♡/thumb_0.png"),
+            },
+            {
+                name: "Daniel toujours moi la victime", 
+                audio: Asset.fromModule(require("./Les_Croute_♡/Daniel_toujours_moi_la_victime.mp3")),
+                image: require("./Les_Croute_♡/thumb_0.png"),
+            },
+            {
+                name: "Daniel toujours moi qui prends", 
+                audio: Asset.fromModule(require("./Les_Croute_♡/Daniel_toujours_moi_qui_prends.mp3")),
                 image: require("./Les_Croute_♡/thumb_0.png"),
             },
             {
@@ -1081,6 +1111,11 @@ const soundLibrary: Sound[] = [
                 image: require("./Lieutenant_Kuck/thumb_0.jpg"),
             },
             {
+                name: "Merci le iench", 
+                audio: Asset.fromModule(require("./Lieutenant_Kuck/merci_le_iench.mp3")),
+                image: require("./Lieutenant_Kuck/thumb_0.jpg"),
+            },
+            {
                 name: "Nous sommes les unités d'élite du LSPD", 
                 audio: Asset.fromModule(require("./Lieutenant_Kuck/nous_sommes_les_unités_d'élite_du_LSPD.mp3")),
                 image: require("./Lieutenant_Kuck/thumb_0.jpg"),
@@ -1091,6 +1126,11 @@ const soundLibrary: Sound[] = [
                 image: require("./Lieutenant_Kuck/thumb_0.jpg"),
             },
             {
+                name: "Pas le temps", 
+                audio: Asset.fromModule(require("./Lieutenant_Kuck/pas_le_temps.mp3")),
+                image: require("./Lieutenant_Kuck/thumb_0.jpg"),
+            },
+            {
                 name: "Pompage", 
                 audio: Asset.fromModule(require("./Lieutenant_Kuck/pompage.mp3")),
                 image: require("./Lieutenant_Kuck/thumb_0.jpg"),
@@ -1098,6 +1138,11 @@ const soundLibrary: Sound[] = [
             {
                 name: "Rien à f**tre de NCIS", 
                 audio: Asset.fromModule(require("./Lieutenant_Kuck/rien_à_fXXtre_de_NCIS.mp3")),
+                image: require("./Lieutenant_Kuck/thumb_0.jpg"),
+            },
+            {
+                name: "Situation délicate", 
+                audio: Asset.fromModule(require("./Lieutenant_Kuck/situation_délicate.mp3")),
                 image: require("./Lieutenant_Kuck/thumb_0.jpg"),
             },
             {
@@ -1312,6 +1357,11 @@ const soundLibrary: Sound[] = [
         image: require("./Miguel_Rodriguez/thumb_0.jpg"),
         sounds: [ 
             {
+                name: "Aucune preuve", 
+                audio: Asset.fromModule(require("./Miguel_Rodriguez/aucune_preuve.mp3")),
+                image: require("./Miguel_Rodriguez/thumb_0.jpg"),
+            },
+            {
                 name: "Ceintoure", 
                 audio: Asset.fromModule(require("./Miguel_Rodriguez/ceintoure.mp3")),
                 image: require("./Miguel_Rodriguez/thumb_0.jpg"),
@@ -1324,6 +1374,11 @@ const soundLibrary: Sound[] = [
             {
                 name: "Ce que yé dans mon calbout", 
                 audio: Asset.fromModule(require("./Miguel_Rodriguez/ce_que_yé_dans_mon_calbout.mp3")),
+                image: require("./Miguel_Rodriguez/thumb_0.jpg"),
+            },
+            {
+                name: "Finesse discretion sobriété", 
+                audio: Asset.fromModule(require("./Miguel_Rodriguez/finesse discretion sobriété.mp3")),
                 image: require("./Miguel_Rodriguez/thumb_0.jpg"),
             },
             {
@@ -1342,8 +1397,23 @@ const soundLibrary: Sound[] = [
                 image: require("./Miguel_Rodriguez/thumb_0.jpg"),
             },
             {
+                name: "Mousquetaires", 
+                audio: Asset.fromModule(require("./Miguel_Rodriguez/mousquetaires.mp3")),
+                image: require("./Miguel_Rodriguez/thumb_0.jpg"),
+            },
+            {
                 name: "Mout-mout", 
                 audio: Asset.fromModule(require("./Miguel_Rodriguez/mout-mout.mp3")),
+                image: require("./Miguel_Rodriguez/thumb_0.jpg"),
+            },
+            {
+                name: "Pas besoin de permis", 
+                audio: Asset.fromModule(require("./Miguel_Rodriguez/pas_besoin_de_permis.mp3")),
+                image: require("./Miguel_Rodriguez/thumb_0.jpg"),
+            },
+            {
+                name: "Pas dit tu t'évades pas", 
+                audio: Asset.fromModule(require("./Miguel_Rodriguez/pas_dit_tu_t'évades_pas.mp3")),
                 image: require("./Miguel_Rodriguez/thumb_0.jpg"),
             },
             {
