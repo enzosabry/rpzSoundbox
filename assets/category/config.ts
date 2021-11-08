@@ -1571,12 +1571,12 @@ const soundLibrary: Sound[] = [
     },
     {
         name: "Titouan Martoni",
-        image: require("./Titouan Martoni/thumb_0.jpg"),
+        image: require("./Titouan_Martoni/thumb_0.jpg"),
         sounds: [ 
             {
                 name: "Vos ceintures", 
-                audio: Asset.fromModule(require("./Titouan Martoni/vos_ceintures.mp3")),
-                image: require("./Titouan Martoni/thumb_0.jpg"),
+                audio: Asset.fromModule(require("./Titouan_Martoni/vos_ceintures.mp3")),
+                image: require("./Titouan_Martoni/thumb_0.jpg"),
             }
         ],
     },

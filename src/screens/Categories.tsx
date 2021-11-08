@@ -126,8 +126,8 @@ export const Categories = ({route, navigation}: Props) => {
             {discordPopup ?
                 <DiscordPopup visible={discordPopup} close={() => showDiscordPopup(false)}/>
                 : null}
-            <ScrollView style={styles.container}>
-                <Text style={{...styles.textCat, marginBottom: 15}}>Choisis une catégorie :</Text>
+            <ScrollView style={[styles.container,{height: Platform.OS === 'web' ? height : "100%"}]}>
+                <Text style={[styles.textCat, {marginBottom: 15}]}>Choisis une catégorie :</Text>
                 <FlatGrid
                     data={[undefined, ...soundLibrary.map(s => {
                         return {name: s.name, image: s.image}
@@ -165,7 +165,7 @@ const styles = StyleSheet.create({
     },
     text: {
         color: "#fff",
-        fontSize: RFValue(12, 700),
+        fontSize: height*0.024,
         textAlign: 'center',
         textAlignVertical: 'center',
         //height: 30,
